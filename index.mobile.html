@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+
+  <script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?clientId=jk8SwrsCHDz3Wfm7SHPU&submodules=geocoder"></script>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    
+  <title>쉐어밸류</title>
+
+  <link href="css/styles.mobile.css" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Change this in 'webpack-config.js' or remove -->
+  <div class="gnb">
+    <img src="./img/ci-sharevalue.png"
+         srcset="./img/ci-sharevalue@2x.png 2x, ./img/ci-sharevalue@3x.png 3x"
+         class="ci_sharevalue">
+  </div>
+  <div class="header">
+    <div id="carouselFade">
+      <div class="carousel-inner">
+        <div class="box box1 carousel-item active">
+          <div class="h1 Business-management-system">성공적인 여행사업의 파트너<br><span class="text-style-1">쉐어밸류</span></div>
+          <div class="desc">For your success travel business</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="content">
+    <div class="container">
+      <div class="row no-gutters">
+        <div class="content-box">
+          <div id="carouselBanner" class="carousel slide carousel" data-interval="4000">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselBanner" data-slide-to="1"></li>
+              <li data-target="#carouselBanner" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="left-box">
+                  <img src="./img/small-1.png"
+                      srcset="./img/small-1@2x.png 2x,
+                              ./img/small-1@3x.png 3x"
+                      class="small-1">
+                </div>
+                <div class="center-box">
+                  <h2>01</h2>
+                  <div class="title">성공 경영을 위한<br><b>시스템 <span class="normal"></span></b></div>
+                  <div class="desc">Business management<br>system</div>
+                </div>
+                <div class="right-box">
+                  <img src="./img/big-1.png"
+                      srcset="./img/big-1@2x.png 2x,
+                              ./img/big-1@3x.png 3x"
+                      class="big-1">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="left-box">
+                  <img src="./img/small-2.png"
+                      srcset="./img/small-2@2x.png 2x,
+                              ./img/small-2@3x.png 3x"
+                      class="small-1">
+                </div>
+                <div class="center-box">
+                  <h2>02</h2>
+                  <div class="title">지속 성장을 위한<br><b>판매채널 <span class="normal"></span></b></div>
+                  <div class="desc">ONLINE SERVICE</div>
+                </div>
+                <div class="right-box">
+                  <img src="./img/big-2.png"
+                      srcset="./img/big-2@2x.png 2x,
+                              ./img/big-2@3x.png 3x"
+                      class="big-1">
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="left-box">
+                  <img src="./img/small-3.png"
+                      srcset="./img/small-3@2x.png 2x,
+                              ./img/small-3@3x.png 3x"
+                      class="small-1">
+                </div>
+                <div class="center-box">
+                  <h2>03</h2>
+		  <div class="title"><b>전문 인재</b> 와<br><b>정보</b> 공유</div>
+                  <div class="desc">Resources &amp; information</div>
+                </div>
+                <div class="right-box">
+                  <img src="./img/big-3.png"
+                      srcset="./img/big-3@2x.png 2x,
+                              ./img/big-3@3x.png 3x"
+                      class="big-1">
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>          
+          </div>
+        </div>
+        <div class="content-box">
+          <div class="content-title">VISION</div>
+          <div class="content-desc">시스템, 채널, 인재, 정보 공유로 <br><b>여행사의 성공경영</b></div>
+          <div class="For-your-success-travel-business">For your success<br><span class="text-style-1">travel business</span></div>
+          <div class="diagram">
+            <img src="./img/diagram.png"
+                srcset="./img/diagram@2x.png 2x,
+                        ./img/diagram@3x.png 3x"
+                class="diagram">
+          </div>
+        </div>
+        <div class="content-box">
+          <div class="content-title">WHO & WHAT</div>
+          <div class="content-desc">
+		  "30년 여행사 경력의 여행사 업무,<br> 최고 시스템 개발 경험과 성공 경영 노하우"를 바탕으로<br><b>시스템, 판매채널, 전문인재, 맞춤정보 플랫폼 개발 제공</b>
+          </div>
+          <div class="icons row no-gutters">
+            <div class="management col-3">
+              <img src="./img/ico-business-management.png"
+                  srcset="./img/ico-business-management@2x.png 2x,
+                          ./img/ico-business-management@3x.png 3x"
+                  class="ico_business_management">
+              <div class="txt">
+                <div class="title">Business management</div>
+                <div class="kor">경영관리 시스템</div>
+              </div>
+            </div>
+            <div class="customer col-3">
+              <img src="./img/ico-online-service.png"
+                  srcset="./img/ico-online-service@2x.png 2x,
+                          ./img/ico-online-service@3x.png 3x"
+                  class="ico_business_management">
+              <div class="txt">
+                <div class="title">ONLINE SERVICE</div>
+                <div class="kor">판매채널</div>
+              </div>
+            </div>
+            <div class="human col-3">
+              <img src="./img/ico-human-resources.png"
+                  srcset="./img/ico-human-resources@2x.png 2x,
+                          ./img/ico-human-resources@3x.png 3x"
+                  class="ico_business_management">                
+              <div class="txt">
+                <div class="title">Human Resources</div>
+                <div class="kor">우수한 전문인재</div>
+              </div>
+            </div>
+            <div class="expertise col-3">
+              <img src="./img/ico-expertise-information.png"
+                  srcset="./img/ico-expertise-information@2x.png 2x,
+                          ./img/ico-expertise-information@3x.png 3x"
+                  class="ico_business_management">
+              <div class="txt">
+                <div class="title">Expertise information</div>
+                <div class="kor">맞춤 전문정보</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-box map-area">
+          <div class="content-title">CONTACT US</div>
+          <div id="map" class="map">
+          </div>
+          <div class="addr">
+            서울특별시 서대문구 충정로53, 골든타워빌딩 1613호<br>mscho@sharevaluecorp.com
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="content-box">
+      <div class="footer-logo">
+        <img src="./img/copyright-ci.png"
+            srcset="./img/copyright-ci@2x.png 2x,
+                    ./img/copyright-ci@3x.png 3x"
+            class="copyright_ci">      
+      </div>
+      <div class="footer-content">
+        ㈜쉐어밸류<br>
+        대표이사 조미숙 <span class="bar"></span> 사업자등록번호 750-86-00899<br>
+        서울특별시 서대문구 충정로53, 골든타워빌딩 1613호<br>
+        전화. 02-364-5400 <span class="bar"></span> 팩스. 02-364-9800<br>
+        Copyright © 2018 Sharevalue Co., Ltd. All rights reserved.
+      </div>
+      <div class="btn-top">TOP
+        <img src="./img/ico-up.png"
+            srcset="./img/ico-up@2x.png 2x,
+                    ./img/ico-up@3x.png 3x"
+            class="ico-up">
+      </div>
+    </div>
+  </div>
+  <script>
+    $('#carouselBanner').carousel('cycle');
+
+    $('#carouselBanner').swipe({
+
+      swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+
+      },
+      allowPageScroll:"vertical"
+
+    });
+    
+    // button top event
+    $('.btn-top').on('click', function() {
+      window.scrollTo(0, 0)
+    })
+
+    // gnb sticky
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('.gnb').outerHeight();
+    $(window).scroll(function() {
+      if (window.scrollY > 640) {
+        $('.gnb, .header').addClass('sticky')
+      } else {
+        $('.gnb, .header').removeClass('sticky')
+      }
+    }); 
+    
+    var map = new naver.maps.Map('map');
+    map.setZoom(12);
+    
+    var myaddr = new naver.maps.Point(126.964636, 37.563706);
+    map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+        
+    var marker = new naver.maps.Marker({
+        position: myaddr,
+        map: map,
+        icon: {
+            url: './img/map-pin.png',
+            size: new naver.maps.Size(104, 85),
+            anchor: new naver.maps.Point(52, 85)
+        }
+    });
+    
+    
+  </script>
+<script type="text/javascript" src="app.bundle.js"></script></body>
+</html>
