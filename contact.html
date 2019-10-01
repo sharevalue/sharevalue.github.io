@@ -35,7 +35,11 @@
     <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-149122103-2“></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
         gtag('js', new Date());
         gtag('config', 'UA-149122103-2');
     </script>
@@ -161,22 +165,20 @@
             if (name === '' || email === '' || title === '' || message === '' || !agree || company === '' || tel === '') {
                 alert("이름, 이메일, 제목, 내용, 개인정보 수집 정책 동의를 확인해주세요");
             } else {
+                var data = {
+                    name: name,
+                    title: title,
+                    content: message,
+                    tel: tel,
+                    email: email,
+                    companyName: company
+                };
                 $.ajax({
-                    type : 'post',
+                    type: 'post',
+                    data: JSON.stringify(data),
                     url: url,
                     dataType: 'json',
-                    headers: {
-                        'Content-type': 'application/json'
-                    },
-                    data : {
-                        "name": name,
-                        "title": title,
-                        "content" : message,
-                        "tel": tel,
-                        "email": email,
-                        "companyName": company
-                    },
-                    succees: function () {
+                    success: function () {
                         alert('정상적으로 접수하였습니다.')
                     }
                 })
