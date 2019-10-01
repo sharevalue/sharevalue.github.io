@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1fdx00k4dv&submodules=geocoder"></script>
+
+    <meta name="twitter:image" content="/img/logo-og.png"/>
+    <meta property="og:image" content="/img/logo-og.png"/>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+    <title>쉐어밸류</title>
+
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <link href="main.mobile.css" rel="stylesheet">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-149122103-2');
+    </script>
+</head>
+
+<body class="engine">
+<!-- Change this in 'webpack-config.js' or remove -->
+<div class="gnb">
+    <div class="container">
+        <div class="gnb-ci">
+            <a href="./index.mobile.html">
+                <img src="./img/ci-sharevalue.png"
+                     srcset="./img/ci-sharevalue@2x.png 2x, ./img/ci-sharevalue@3x.png 3x"
+                     class="ci_sharevalue">
+            </a>
+            <a id="btn_menu_toggle" href="" class="menu-burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+        <div id="top_menu" style="display: none">
+            <ul class="top-menu">
+                <li><a href="./company.mobile.html" class="active">Company</a></li>
+                <li><a href="./bm.mobile.html">Smart Bm</a></li>
+                <li><a href="./engine.mobile.html">Smart Booking Engine</a></li>
+                <li><a href="./contact.mobile.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="content-box">
+                <h1 class="title">SMART BOOKING ENGINE</h1>
+                <div class="content-desc">
+                    고가의 소프트웨어, 서버 개발과<br>
+                    운영 번거로움없이 브랜드와 가격으로<br> 판매 가능한
+                    쉽고 편리한<br> <b>SMART BOOKING ENGINE</b>과<br>
+                    귀사의 전문서비스를 접목하여<br>
+                    <b>고객과 판매 채널</b>을 확대하세요
+                </div>
+                <div class="diagram">
+                    <img src="img/smart-engine-diagram.png"
+                         srcset="img/smart-engine-diagram@2x.png 2x,
+                        img/smart-engine-diagram@3x.png 3x"
+                         class="smart_engine_diagram">
+                </div>
+                <div class="content-sub-desc">
+                    <ul class="engine-desc">
+                        <li>
+                            개발 및 운영비 제로<br>
+                            직관적인 화면 설계로 초 스피드예약, 결제 가능<br>
+                            타 온라인 판매채널 연동 가능<br>
+                            고객 (기업 & 개인 & 여행사)별 통합 사용 가능한 솔루션
+                        </li>
+                        <li>
+                            온라인 오프라인 통합 예약관리 및<br> 매출, 수익, 미수 관리 제공<br>
+                            고객구분 수수료, 할인 맞춤 노출 및 운영 대행<br>
+                            기업고객 출장 승인 절차 & 비용관리, 통계 자료 제공
+                        </li>
+                        <li>
+                            항공 타임테이블 조회 및 스케쥴 공유 가능<br>
+                            예약 스케쥴 변경 용이
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-title">PROCESS</div>
+                <div class="content-desc"><b>서비스</b> 진행절차</div>
+                <div class="content-sub-desc">
+                    <ul class="process-list">
+                        <li>
+                            <img src="img/smart-engine-process-1.png"
+                                 srcset="img/smart-engine-process-1@2x.png 2x,
+                        img/smart-engine-process-1@3x.png 3x"
+                                 class="smart_engine_process_1">
+                        </li>
+                        <li>
+                            <img src="img/smart-engine-process-2.png"
+                                 srcset="img/smart-engine-process-2@2x.png 2x,
+                        img/smart-engine-process-2@3x.png 3x"
+                                 class="smart_engine_process_2">
+                        </li>
+                        <li>
+                            <img src="img/smart-engine-process-3.png"
+                                 srcset="img/smart-engine-process-3@2x.png 2x,
+                        img/smart-engine-process-3@3x.png 3x"
+                                 class="smart_engine_process_3">
+                        </li>
+                        <li>
+                            <img src="img/smart-engine-process-4.png"
+                                 srcset="img/smart-engine-process-4@2x.png 2x,
+                        img/smart-engine-process-4@3x.png 3x"
+                                 class="smart_engine_process_4">
+                        </li>
+                        <li>
+                            <img src="img/smart-engine-process-5.png"
+                                 srcset="img/smart-engine-process-5@2x.png 2x,
+                        img/smart-engine-process-5@3x.png 3x"
+                                 class="smart_engine_process_5">
+                        </li>
+                        <li>
+                            <img src="img/smart-engine-process-6.png"
+                                 srcset="img/smart-engine-process-6@2x.png 2x,
+                        img/smart-engine-process-6@3x.png 3x"
+                                 class="smart_engine_process_6">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="content-box">
+        <div class="footer-logo">
+            <img src="./img/copyright-ci.png"
+                 srcset="./img/copyright-ci@2x.png 2x,
+                    ./img/copyright-ci@3x.png 3x"
+                 class="copyright_ci">
+        </div>
+        <div class="footer-content">
+            ㈜쉐어밸류<br>
+            대표이사 조미숙 <span class="bar"></span> 사업자등록번호 750-86-00899<br>
+            서울특별시 서대문구 충정로53, 골든타워빌딩 1613호<br>
+            전화. 02-364-5400 <span class="bar"></span> 팩스. 02-364-9800<br>
+            Copyright © 2018 Sharevalue Co., Ltd. All rights reserved.
+        </div>
+        <div class="btn-top">TOP
+            <img src="./img/ico-up.png"
+                 srcset="./img/ico-up@2x.png 2x,
+                    ./img/ico-up@3x.png 3x"
+                 class="ico-up">
+        </div>
+    </div>
+</div>
+<script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    if (!md.mobile()) {
+        location.href = "engine.html";
+    }
+    //모바일 메뉴 토글
+    $('#btn_menu_toggle').on('click', function (event) {
+        $('#top_menu').toggle();
+        return false;
+    })
+
+    // button top event
+    $('.btn-top').on('click', function () {
+        window.scrollTo(0, 0)
+    })
+
+    $('#carouselBanner').carousel('cycle');
+
+    // gnb sticky
+    var didScroll;
+    var lastScrollTop = 0;
+    var delta = 5;
+    var navbarHeight = $('.gnb').outerHeight();
+    // $(window).scroll(function() {
+    //   if (window.pageYOffset > 640) {
+    //     $('.gnb, .header').addClass('sticky')
+    //   } else {
+    //     $('.gnb, .header').removeClass('sticky')
+    //   }
+    // });
+
+    var map = new naver.maps.Map('map');
+    var myaddr = new naver.maps.Point(126.964636, 37.563706);
+    map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+
+    var marker = new naver.maps.Marker({
+        position: myaddr,
+        map: map,
+        icon: {
+            url: './img/map-pin.png',
+            size: new naver.maps.Size(104, 85),
+            anchor: new naver.maps.Point(52, 85)
+        }
+    });
+
+</script>
+<script type="text/javascript" src="app.bundle.js"></script>
+<script type="text/javascript" src="app.bundle.js"></script>
+</body>
+</html>

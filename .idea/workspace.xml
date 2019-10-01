@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ce3052e-6f40-4a20-afd7-491c9af31bf7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app.bundle.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bm.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bm.mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/company.mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contact.mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine.mobile.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bm-content-mobile.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bm-content-mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bm-header-mobile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bm-header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/bm-why.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-3@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/ico-smart-bm-what-3@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-diagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-diagram@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-diagram@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-1@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-1@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-2@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-2@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-3@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-3@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-4@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-4@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-5@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-5@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-6@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-6@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-arrow@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process-arrow@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smart-engine-process@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smartbm-diagram.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smartbm-diagram@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/smartbm-diagram@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/text-gap-ico-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/text-gap-ico-blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/text-gap-ico-blue@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/text-gap-ico-line-blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/text-gap-ico-line-blue@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/text-gap-ico-line-blue@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/title-dot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/title-dot@2x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/title-dot@3x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/main.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/tail.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.bundle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/arrow-left.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/arrow-left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/arrow-right.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/arrow-right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-1@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-1@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-2@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-2@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-3@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-3@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/big-3@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/big-3@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ci-sharevalue.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ci-sharevalue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ci-sharevalue@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ci-sharevalue@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ci-sharevalue@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ci-sharevalue@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/contactus-ci.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/contactus-ci.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/copyright-ci.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/copyright-ci.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/copyright-ci@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/copyright-ci@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/copyright-ci@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/copyright-ci@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/diagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/diagram@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/diagram@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/diagram@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/diagram@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-business-management.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-business-management.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-business-management@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-business-management@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-business-management@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-business-management@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-expertise-information.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-expertise-information.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-expertise-information@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-expertise-information@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-expertise-information@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-expertise-information@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-human-resources.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-human-resources.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-human-resources@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-human-resources@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-human-resources@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-human-resources@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-online-service.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-online-service.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-online-service@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-online-service@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-online-service@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-online-service@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-up.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-up.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-up@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-up@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/ico-up@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/ico-up@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/logo-og.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/logo-og.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/main-visual.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/main-visual.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/map-pin.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/map-pin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-1@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-1@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-1@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-1@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-2@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-2@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-2@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-2@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-3@2x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-3@2x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/small-3@3x.png" beforeDir="false" afterPath="$PROJECT_DIR$/img/small-3@3x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.mobile.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.mobile.html" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/contact.mobile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>mobile</find>
+      <find>index.mo</find>
+      <find>보내기</find>
+      <find>jqu</find>
+      <find>name</find>
+      <find>p</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/bm.html" />
+        <option value="$PROJECT_DIR$/bm.mobile.html" />
+        <option value="$PROJECT_DIR$/company.html" />
+        <option value="$PROJECT_DIR$/company.mobile.html" />
+        <option value="$PROJECT_DIR$/engine.html" />
+        <option value="$PROJECT_DIR$/engine.mobile.html" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/index.mobile.html" />
+        <option value="$PROJECT_DIR$/contact.html" />
+        <option value="$PROJECT_DIR$/contact.mobile.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/git.iml" />
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="877" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="git" type="b2602c69:ProjectViewProjectNode" />
+              <item name="git" type="462c0819:PsiDirectoryNode" />
+              <item name="app.bundle.js" type="620a8d5e:NestingTreeNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mobile" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/img" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ce3052e-6f40-4a20-afd7-491c9af31bf7" name="Default Changelist" comment="" />
+      <created>1569891987430</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1569891987430</updated>
+      <workItem from="1569891988635" duration="8365000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="8365000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="877" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21111111" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="GraphQL" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/CNAME">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/app.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/bm.mobile.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-156" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.mobile.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.bundle.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bm.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bm.mobile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company.mobile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/engine.mobile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="582">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.mobile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/company.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4227">
+          <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="148" column="4" selection-start-line="148" selection-start-column="4" selection-end-line="184" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact.mobile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="146" column="5" lean-forward="true" selection-start-line="146" selection-start-column="5" selection-end-line="146" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
