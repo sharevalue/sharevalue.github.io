@@ -72,10 +72,8 @@
             <div class="content-box">
                 <h1 class="title">SMART BOOKING ENGINE</h1>
                 <div class="content-desc">
-                    고가의 소프트웨어, 서버 개발과 운영 번거로움없이<br>
-                    브랜드와 가격으로 판매 가능한<br>
-                    쉽고 편리한 <b>SMART BOOKING ENGINE</b>과 귀사의 전문서비스를 접목하여<br>
-                    <b>고객과 판매 채널</b>을 확대하세요
+                    고비용 개발과 번거로운 운영 부담이 없는 <b>SMART BOOKING ENGINE</b> 으로 <br>
+                    귀사의 브랜드와 전문서비스를 접목한 <b>맞춤 온라인 항공서비스</b>를 시작하세요
                 </div>
                 <div class="diagram">
                     <img src="img/smart-engine-diagram.png"
@@ -88,7 +86,7 @@
                         <li>
                             직관적인 화면 설계로 초 스피드 예약, 결제 가능<br>
                             고객 별 맞춤 수수료, 할인 운임 노출 가능<br>
-                            항공 타임테이블 조회 및 스케쥴 공유, 예약요청 가능<br>
+                            항공 타임테이 조회 및 스케쥴 공유, 예약요청 가능<br>
                             에약 스케쥴 변경 용이
                         </li>
                         <li>
@@ -142,7 +140,7 @@
 <script>
     var md = new MobileDetect(window.navigator.userAgent);
     if (md.mobile()) {
-        location.href = "index.mobile.html";
+        location.href = "engine.mobile.html";
     }
     // button top event
     $('.btn-top').on('click', function () {
@@ -156,13 +154,13 @@
     var lastScrollTop = 0;
     var delta = 5;
     var navbarHeight = $('.gnb').outerHeight();
-    // $(window).scroll(function() {
-    //   if (window.pageYOffset > 640) {
-    //     $('.gnb, .header').addClass('sticky')
-    //   } else {
-    //     $('.gnb, .header').removeClass('sticky')
-    //   }
-    // });
+    $(window).scroll(function() {
+      if (window.pageYOffset > 640) {
+        $('.gnb, .header').addClass('sticky')
+      } else {
+        $('.gnb, .header').removeClass('sticky')
+      }
+    });
 
     var map = new naver.maps.Map('map');
     var myaddr = new naver.maps.Point(126.964636, 37.563706);

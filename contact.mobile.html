@@ -201,13 +201,13 @@
     var lastScrollTop = 0;
     var delta = 5;
     var navbarHeight = $('.gnb').outerHeight();
-    // $(window).scroll(function() {
-    //   if (window.pageYOffset > 640) {
-    //     $('.gnb, .header').addClass('sticky')
-    //   } else {
-    //     $('.gnb, .header').removeClass('sticky')
-    //   }
-    // });
+    $(window).scroll(function() {
+      if (window.pageYOffset > 640) {
+        $('.gnb, .header').addClass('sticky')
+      } else {
+        $('.gnb, .header').removeClass('sticky')
+      }
+    });
 
     var map = new naver.maps.Map('map');
     var myaddr = new naver.maps.Point(126.964636, 37.563706);
