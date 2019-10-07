@@ -242,39 +242,20 @@
     // button top event
     $('.btn-top').on('click', function () {
         window.scrollTo(0, 0)
-    })
+    });
 
     $('#carouselBanner').carousel('cycle');
 
     // gnb sticky
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
     var navbarHeight = $('.gnb').outerHeight();
     $(window).scroll(function() {
-      if (window.pageYOffset > 640) {
-        $('.gnb, .header').addClass('sticky')
-      } else {
-        $('.gnb, .header').removeClass('sticky')
-      }
-    });
-
-    var map = new naver.maps.Map('map');
-    var myaddr = new naver.maps.Point(126.964636, 37.563706);
-    map.setCenter(myaddr); // 검색된 좌표로 지도 이동
-
-    var marker = new naver.maps.Marker({
-        position: myaddr,
-        map: map,
-        icon: {
-            url: './img/map-pin.png',
-            size: new naver.maps.Size(104, 85),
-            anchor: new naver.maps.Point(52, 85)
+        if (window.pageYOffset > navbarHeight) {
+            $('.gnb, .header').addClass('sticky')
+        } else {
+            $('.gnb, .header').removeClass('sticky')
         }
     });
-
 </script>
-<script type="text/javascript" src="app.bundle.js"></script>
 <script type="text/javascript" src="app.bundle.js"></script>
 </body>
 </html>

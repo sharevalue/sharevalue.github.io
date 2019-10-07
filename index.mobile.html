@@ -111,22 +111,19 @@
     $('#btn_menu_toggle').on('click', function (event) {
         $('#top_menu').toggle();
         return false;
-    })
+    });
 
     // button top event
     $('.btn-top').on('click', function () {
         window.scrollTo(0, 0)
-    })
+    });
 
     $('#carouselBanner').carousel('cycle');
 
     // gnb sticky
-    var didScroll;
-    var lastScrollTop = 0;
-    var delta = 5;
     var navbarHeight = $('.gnb').outerHeight();
     $(window).scroll(function () {
-        if (window.pageYOffset > 640) {
+        if (window.pageYOffset > navbarHeight) {
             $('.gnb, .header').addClass('sticky')
         } else {
             $('.gnb, .header').removeClass('sticky')
