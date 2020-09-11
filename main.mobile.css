@@ -745,13 +745,13 @@ body, html {
     margin: 0;
 }
 
-.bm-desc li {
+.engine-desc li {
     width: 100%;
     font-size: 38px;
     list-style: none
 }
 
-.bm-desc li .dot {
+.engine-desc li .dot {
     width: 80px;
     height: 80px;
     background-color: #17ade5;
