@@ -732,3 +732,19 @@ body, html {
     background-size: 17px 59px;
     margin: 20px auto
 }*/
+
+.engine-service-list {
+    display: inline-block;
+}
+
+.engine-service-list li {
+    list-style: none;
+}
+
+.engine-service-list li:before {
+    width: 40px;
+    height: 40px;
+    background-image: url(./img/text-gap-ico-check.png);
+    background-repeat: no-repeat;
+    /*background: #ffffff;*/
+}

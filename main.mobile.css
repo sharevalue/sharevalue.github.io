@@ -784,6 +784,18 @@ body, html {
 /*    margin: 20px auto*/
 /*}*/
 
+.engine-service-list {
+    display: inline-block;
+}
+
+.engine-service-list li {
+
+}
+
+.engine-service-list li:before {
+
+}
+
 .process-list {
     margin-top: -60px !important;
     list-style: none
