@@ -425,6 +425,10 @@ body {
   background-color: #fff;
 }
 
+.sc6 .btnReverse:hover {
+  color: #0056b3;
+}
+
 /* media queries */
 @media screen and (max-width: 1024px) {
   .title {
