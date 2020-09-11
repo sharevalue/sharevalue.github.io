@@ -484,11 +484,11 @@ html {
 .bm-desc {
     padding: 0;
     margin: 0;
-    font-size: 15px;
+    
 }
 .bm-desc li {
     width: 100%;
-    font-size: 38px;
+    font-size: 30px;
     list-style: none
 }
 .bm-desc li .dot {
