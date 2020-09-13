@@ -425,14 +425,19 @@ body, html {
 
 .footer {
     border-top: 1px solid #ebebeb;
-    background-color: #303030;
     width: 100%;
     min-width: 1110px
+}
+
+.footer-content-box {
+    width: 100%;
+    background-color: #303030;
 }
 
 .footer .content-box {
     width: 970px;
     margin: 0 auto;
+    background-color: #303030;
     padding-top: 50px;
     padding-bottom: 50px;
     position: relative
@@ -468,7 +473,7 @@ body, html {
     display: inline-block;
     font-family: NanumSquare;
     font-size: 30px;
-    color: #b0b0b0
+    color: #b0b0b0;
 }
 
 .footer .btn-top {
@@ -477,6 +482,29 @@ body, html {
     right: 0;
     cursor: pointer
 }
+
+.footer-icon-box {
+    text-align: center;
+    margin: 20px 0px;
+    padding-bottom: 30px;
+}
+
+.footer-icon-box .footer-icon {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.footer-icon-box .footer-icon span {
+    font-size: 30px;
+    color: #666666;
+    line-height: 48px;
+}
+
+.footer-icon-box .footer-icon img {
+    height: 80px;
+    box-sizing: content-box;
+}
+
 
 .menu-burger {
     float: right;
