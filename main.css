@@ -452,16 +452,22 @@ body, html {
 
 .footer {
     border-top: 1px solid #ebebeb;
-    background-color: #303030;
+    /*background-color: #303030;*/
     width: 100%;
     min-width: 1110px;
     height: 250px
 }
 
+.footer-content-box {
+    width: 100%;
+    background-color: #303030;
+}
+
 .footer .content-box {
     width: 970px;
+    background-color: #303030;
     margin: 0 auto;
-    padding-top: 50px;
+    padding: 50px 0px;
     position: relative
 }
 
@@ -499,6 +505,23 @@ body, html {
     position: absolute;
     right: 0;
     cursor: pointer
+}
+
+.footer-icon-box {
+    text-align: center;
+    margin: 20px 0px;
+    padding-bottom: 30px;
+}
+
+.footer-icon-box .footer-icon {
+    display: inline-block;
+    margin: 0px 20px;
+}
+
+.footer-icon-box .footer-icon span {
+    font-size: 14px;
+    color: #666666;
+    line-height: 24px;
 }
 
 .content-box h1.title {
