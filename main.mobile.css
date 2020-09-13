@@ -783,17 +783,38 @@ body, html {
 /*    background-size: 17px 59px;*/
 /*    margin: 20px auto*/
 /*}*/
+.engine-content {
+    width: 100%;
+    text-align: center;
+}
+
+.engine-content .engine-content-img {
+    width: 100%;
+    /*vertical-align: top;*/
+    margin: 25px;
+}
 
 .engine-service-list {
-    display: inline-block;
+    margin: 50px auto;
+    padding-left: 20px;
 }
 
 .engine-service-list li {
-
+    list-style: none;
+    line-height: 76px;
+    text-align: left;
+    font-size: 36px;
+    color: #333;
+    font-weight: bold;
 }
 
 .engine-service-list li:before {
-
+    padding: 30px;
+    background-image: url(./img/text-gap-ico-check@3x.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    content: "\00a0 ";
+    /*background: #ffffff;*/
 }
 
 .process-list {

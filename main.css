@@ -733,18 +733,38 @@ body, html {
     margin: 20px auto
 }*/
 
+.engine-content {
+    display: inline-block;
+}
+
+.engine-content .engine-content-img {
+    width: 550px !important;
+    vertical-align: top;
+    margin: 25px;
+}
+
 .engine-service-list {
     display: inline-block;
+    margin: 50px 0px;
+    padding-left: 20px;
 }
 
 .engine-service-list li {
     list-style: none;
+    line-height: 54px;
+    text-align: left;
+    font-size: 22px;
+    color: #333;
+    font-weight: bold;
 }
 
 .engine-service-list li:before {
     width: 40px;
     height: 40px;
-    background-image: url(./img/text-gap-ico-check.png);
+    padding: 20px;
+    background-image: url(./img/text-gap-ico-check@2x.png);
     background-repeat: no-repeat;
+    background-position: center center;
+    content: "\00a0 ";
     /*background: #ffffff;*/
 }
