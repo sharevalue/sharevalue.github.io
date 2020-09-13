@@ -570,7 +570,8 @@ body, html {
 
 .bm-desc {
     padding: 0;
-    margin: 0
+    margin: 0;
+    font-size: 15px;
 }
 
 .bm-desc li {

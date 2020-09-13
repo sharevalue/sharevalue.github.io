@@ -593,8 +593,8 @@ body, html {
 
 .bm-desc li {
     width: 100%;
-    font-size: 38px;
-    list-style: none
+    font-size: 30px;
+    list-style: none;
 }
 
 .bm-desc li .dot {
