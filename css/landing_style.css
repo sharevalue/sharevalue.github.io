@@ -327,6 +327,9 @@ body {
     border-bottom: 2px solid #1eaee7;
     font-weight: bold;
 }
+.sc4 ul{
+    display: flex;
+}
 .sc4 .why li {
     flex: 1;
 }
@@ -463,6 +466,9 @@ body {
   }
   .sc4 .why-info {
       font-size: 4vw;
+  }
+  .sc4 ul{
+     display: block;
   }
   .sc4 .why li {
       margin: 50px 0px;
