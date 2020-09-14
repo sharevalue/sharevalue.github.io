@@ -317,7 +317,6 @@ body {
     max-width: 1030px;
 }
 .sc4 .why {
-    display: flex;
     margin-top: 40px;
     text-align: center;
     font-size: 25px;
@@ -455,17 +454,28 @@ body {
     padding-top: 10%;
     padding-bottom: 10%;
   }
+  .sc4 .header {
+      margin-bottom: 10px;
+  }
   .sc4 .why {
     margin-top: 6%;
     font-size: 3vw;
   }
-  .sc4 .why .graph {
-    width: 82%;
-    margin-bottom: 0.8em;
-    padding-bottom: 82%;
+  .sc4 .why-info {
+      font-size: 4vw;
   }
-  .sc4 .why .num {
-    font-size: 5vw;
+  .sc4 .why li {
+      margin: 20px 0px;
+  }
+  .sc4 .why .info-image {
+    width: 88%;
+    margin-bottom: 1em;
+  }
+  .sc4 .why .info-image img {
+      width: 88%;
+  }
+  .sc4 .why li span {
+    font-size: 4vw;
   }
   .sc5 {
     padding-top: 10%;
@@ -490,7 +500,7 @@ body {
   }
   .sc6 .btn {
     padding: 15px 0;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -535,10 +545,16 @@ body {
   .sc4 .why {
     font-size: 16px;
   }
-  .sc4 .why .graph {
-    width: 90%;
+    .sc4 .why-info {
+        font-size: 5vw;
+    }
+  .sc4 .why li {
+      width: 100%;
+      display: block;
+  }
+  .sc4 .why .info-image {
+    width: 100%;
     margin-bottom: 0.5em;
-    padding-bottom: 90%;
   }
   .sc5 .price {
     font-size: 14px;
@@ -554,5 +570,6 @@ body {
   }
   .sc6 .btn {
     max-width: 50%;
+    font-size: 16px;
   }
 }
