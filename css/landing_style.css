@@ -309,57 +309,46 @@ body {
 }
 /* section4 */
 .sc4 {
-  padding-top: 110px;
-  padding-bottom: 130px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    background-color: #f5f5f5;
 }
 .sc4 .container {
-  max-width: 1030px;
+    max-width: 1030px;
 }
 .sc4 .why {
-  display: flex;
-  margin-top: 80px;
-  text-align: center;
-  font-size: 25px;
+    margin-top: 40px;
+    text-align: center;
+    font-size: 25px;
+}
+.sc4 .why-info {
+    font-size: 24px;
+    line-height: 32px;
+    border-bottom: 2px solid #1eaee7;
+    font-weight: bold;
+}
+.sc4 ul{
+    display: flex;
 }
 .sc4 .why li {
-  flex: 1;
+    flex: 1;
 }
-.sc4 .why .graph {
-  position: relative;
-  width: 180px;
-  padding-bottom: 180px;
-  margin: 0 auto 1em;
-  background-size: contain;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+.sc4 .why li span {
+    font-size: 20px;
+    line-height: 36px;
 }
-.sc4 .why li:nth-of-type(1) .graph {
-  color: #094f91;
-  background-image: url('../img/landing/graph_1_1.png');
+.sc4 .why .info-image {
+    position: relative;
+    width: 270px;
+    margin: 0 auto 1em;
 }
-.sc4 .why li:nth-of-type(2) .graph {
-  color: #0573b1;
-  background-image: url('../img/landing/graph_1_2.png');
-}
-.sc4 .why li:nth-of-type(3) .graph {
-  color: #038dc9;
-  background-image: url('../img/landing/graph_1_3.png');
-}
-.sc4 .why li:nth-of-type(4) .graph {
-  color: #029ed9;
-  background-image: url('../img/landing/graph_1_4.png');
-}
-.sc4 .why .num {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: 5px;
-  font-size: 1.8em;
-  transform: translate(-50%, -50%);
+.sc4 .why .info-image img {
+    border: 1px solid #cccccc;
+    box-shadow: 2px 4px 16px rgba(161,168,178,.25);
 }
 /* section5 */
 .sc5 {
-  padding-top: 100px;
+  padding-top: 50px;
   padding-bottom: 110px;
   background-color: #f5f5f5;
 }
@@ -425,6 +414,10 @@ body {
   background-color: #fff;
 }
 
+.sc6 .btnReverse:hover {
+  color: #0056b3;
+}
+
 /* media queries */
 @media screen and (max-width: 1024px) {
   .title {
@@ -464,17 +457,31 @@ body {
     padding-top: 10%;
     padding-bottom: 10%;
   }
+  .sc4 .header {
+      margin-bottom: 10px;
+  }
   .sc4 .why {
     margin-top: 6%;
     font-size: 3vw;
   }
-  .sc4 .why .graph {
-    width: 82%;
-    margin-bottom: 0.8em;
-    padding-bottom: 82%;
+  .sc4 .why-info {
+      font-size: 4vw;
   }
-  .sc4 .why .num {
-    font-size: 5vw;
+  .sc4 ul{
+     display: block;
+  }
+  .sc4 .why li {
+      margin: 50px 0px;
+  }
+  .sc4 .why .info-image {
+    width: 88%;
+    margin-bottom: 1em;
+  }
+  .sc4 .why .info-image img {
+      width: 88%;
+  }
+  .sc4 .why li span {
+    font-size: 4vw;
   }
   .sc5 {
     padding-top: 10%;
@@ -499,7 +506,7 @@ body {
   }
   .sc6 .btn {
     padding: 15px 0;
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -544,10 +551,16 @@ body {
   .sc4 .why {
     font-size: 16px;
   }
-  .sc4 .why .graph {
-    width: 90%;
+    .sc4 .why-info {
+        font-size: 5vw;
+    }
+  .sc4 .why li {
+      width: 100%;
+      display: block;
+  }
+  .sc4 .why .info-image {
+    width: 100%;
     margin-bottom: 0.5em;
-    padding-bottom: 90%;
   }
   .sc5 .price {
     font-size: 14px;
@@ -563,5 +576,6 @@ body {
   }
   .sc6 .btn {
     max-width: 50%;
+    font-size: 16px;
   }
 }
