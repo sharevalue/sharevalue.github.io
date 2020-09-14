@@ -259,10 +259,10 @@
     </div>
 </div>
 <script>
-    // var md = new MobileDetect(window.navigator.userAgent);
-    // if(md.mobile()) {
-    //     location.href = "index.mobile.html";
-    // }
+    var md = new MobileDetect(window.navigator.userAgent);
+    if(md.mobile()) {
+        location.href = "index.mobile.html";
+    }
     // // button top event
     $('.btn-top').on('click', function() {
         window.scrollTo(0, 0)
