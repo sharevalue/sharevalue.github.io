@@ -582,13 +582,13 @@ body, html {
 }
 
 .bm-desc {
-    padding: 0;
+    padding: 0 120px;
     margin: 0;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .bm-desc li {
-    width: 49%;
+    width: 98%;
     display: inline-block
 }
 

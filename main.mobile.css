@@ -553,7 +553,7 @@ body, html {
 
 .content-box h1.title, .content-box h2 {
     font-family: NanumSquare;
-    font-size: 54px;
+    font-size: 52px;
     line-height: 1.41
 }
 
@@ -742,7 +742,8 @@ body, html {
     font-size: 54px;
     text-align: center;
     width: 100%;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .gnb {
@@ -838,7 +839,7 @@ body, html {
     list-style: none;
     line-height: 76px;
     text-align: left;
-    font-size: 36px;
+    font-size: 40px;
     color: #333;
     font-weight: bold;
 }
