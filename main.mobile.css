@@ -211,6 +211,10 @@ body, html {
     margin: 0 auto 100px
 }
 
+.content .bm-content {
+    margin-bottom: 150px;
+}
+
 .content .content-title {
     font-family: NanumSquare;
     margin-bottom: 15px;
