@@ -804,3 +804,7 @@ body, html {
     content: "\00a0 ";
     /*background: #ffffff;*/
 }
+
+.agree-info {
+    padding-left: 15px;
+}
