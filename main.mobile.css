@@ -600,7 +600,7 @@ body, html {
 
 .bm-desc li {
     width: 100%;
-    font-size: 30px;
+    font-size: 34px;
     list-style: none;
 }
 
@@ -880,4 +880,8 @@ body, html {
     background-position: 50%;
     background-size: 100%;
     margin: 20px auto
+}
+
+.agree-info {
+    font-size: 32px;
 }
