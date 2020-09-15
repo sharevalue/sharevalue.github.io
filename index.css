@@ -699,6 +699,9 @@ body {
   border: 1px solid #cccccc;
   box-shadow: 2px 4px 16px rgba(161,168,178,.25);
 }
+.sc4 .header.sticky {
+  margin-top: 40px !important;
+}
 /* section5 */
 .sc5 {
   padding-top: 50px;
@@ -729,6 +732,9 @@ body {
 .sc5 .memo {
   margin-top: 1em;
   font-size: 21px;
+}
+.sc5 .header.sticky {
+  margin-top: 10px !important;
 }
 /* section6 */
 .sc6 {
