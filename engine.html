@@ -183,13 +183,13 @@
                 <div class="brochure-input-area">
                     <div class="brochure-sub-title">이메일 주소로 상품 소개서가 발송됩니다.</div>
                     <div class="brochure-input-company">
-                        <input type="text" placeholder="회사명"/>
+                        <input type="text" id="brochure_company" placeholder="회사명"/>
                     </div>
                     <div class="brochure-input-name">
-                        <input type="text" placeholder="이름"/>
+                        <input type="text" id="brochure_name" placeholder="이름"/>
                     </div>
                     <div class="brochure-input-email">
-                        <input type="text" placeholder="이메일주소"/>
+                        <input type="text" id="brochure_email" placeholder="이메일주소"/>
                     </div>
                     <div class="brochure-agree-policy">
                         <label>
@@ -316,6 +316,45 @@
     })
 
     $('#carouselBanner').carousel('cycle');
+
+    $(document).ready(function () {
+        $(".brochure-btn").click(function () {
+            event.preventDefault();
+            var name = $("#brochure_name").val();
+            var company = $("#brochure_company").val();
+            var email = $("#brochure_email").val();
+            var agree = $("input:checkbox[id='agree_send_brochure']").is(":checked") === true;
+
+            console.log(name)
+            console.log(email)
+            console.log(agree)
+            console.log(company)
+
+            var url = "https://4s1xlh5cp5.execute-api.ap-northeast-2.amazonaws.com/dev/sbm/inquiry";
+            if (name === '' || email === '' || !agree || company === '') {
+                alert("이름, 이메일, 회사, 개인정보 수집 정책 동의를 확인해주세요");
+            } else {
+                var data = {
+                    name: name,
+                    title: '스마트부킹플러스 소개서 신청',
+                    content: '스마트부킹플러스 소개서 신청',
+                    tel: '',
+                    email: email,
+                    companyName: company
+                };
+                $.ajax({
+                    type: 'post',
+                    data: JSON.stringify(data),
+                    url: url,
+                    dataType: 'json',
+                    success: function () {
+                        alert('정상적으로 접수하였습니다.');
+                        window.location.reload();
+                    }
+                })
+            }
+        })
+    });
 
     // gnb sticky
     var navbarHeight = $('.gnb').outerHeight();
