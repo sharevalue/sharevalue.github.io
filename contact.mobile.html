@@ -65,7 +65,7 @@
             <ul class="top-menu">
                 <li><a href="./company.mobile.html">Company</a></li>
                 <li><a href="./bm.mobile.html">Smart Bm</a></li>
-                <li><a href="./engine.mobile.html">Smart Booking Engine</a></li>
+                <li><a href="./engine.mobile.html">Smart Booking Plus</a></li>
                 <li><a href="./contact.mobile.html" class="active">Contact Us</a></li>
             </ul>
         </div>
@@ -191,7 +191,7 @@
             var message = $("#message").val();
             var agree = $("input:checkbox[id='agree']").is(":checked") === true;
 
-            var url = "https://i8ickh7lyd.execute-api.ap-northeast-2.amazonaws.com/dev/sbm/inquiry";
+            var url = "https://4s1xlh5cp5.execute-api.ap-northeast-2.amazonaws.com/dev/sbm/inquiry";
             if (name === '' || email === '' || title === '' || message === '' || !agree || company === '' || tel === '') {
                 alert("이름, 이메일, 제목, 내용, 개인정보 수집 정책 동의를 확인해주세요");
             } else {
@@ -209,7 +209,8 @@
                     url: url,
                     dataType: 'json',
                     success: function () {
-                        alert('정상적으로 접수하였습니다.')
+                        alert('정상적으로 접수하였습니다.');
+                        window.location.reload();
                     }
                 })
             }

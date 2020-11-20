@@ -60,7 +60,7 @@
             <ul class="top-menu">
                 <li><a href="./company.html">Company</a></li>
                 <li><a href="./bm.html">Smart Bm</a></li>
-                <li><a href="./engine.html" class="active">Smart Booking Engine</a></li>
+                <li><a href="./engine.html" class="active">Smart Booking Plus</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </div>
@@ -70,9 +70,9 @@
     <div class="container">
         <div class="row no-gutters">
             <div class="content-box">
-                <h1 class="title">SMART BOOKING ENGINE</h1>
+                <h1 class="title">SMART BOOKING PLUS</h1>
                 <div class="content-desc">
-                    고비용 개발과 번거로운 운영 부담이 없는 <b>SMART BOOKING ENGINE</b> 으로 <br>
+                    고비용 개발과 번거로운 운영 부담이 없는 <b>SMART BOOKING PLUS</b> 으로 <br>
                     귀사의 브랜드와 전문서비스를 접목한 <b>맞춤 항공서비스</b>를 시작하세요
                 </div>
                 <div class="engine-content">
@@ -97,7 +97,7 @@
                         <li><span class="dot">2</span><span>항공 타임테이블 조회와 선택 후 예약 요청</span></li>
                         <li><span class="dot">3</span><span>기업고객에게 출장비용 승인 기능과 비용 통계 제공</span></li>
                         <li><span class="dot">4</span><span>손쉬운 서비스 수수료 노출과 할인 관리</span></li>
-                        <li><span class="dot">5</span><span>오픈마켓 &middot; 메타 서치 연동 가능</span></li>
+                        <li><span class="dot">5</span><span>오픈마켓 &middot; 메타서치 연동 가능</span></li>
                         <li><span class="dot">6</span><span>기업 고객 내부 인트라넷에 연결 가능</span></li>
                         <li><span class="dot">7</span><span>직접 운영할 수 있는 API 제공 가능</span></li>
                     </ul>
@@ -173,6 +173,48 @@
         </div>
     </div>
 </div>
+<!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "6ad90db3-0e94-45f3-918b-149c795ee43f"
+  });
+</script>
+<!-- End Channel Plugin -->
 <script>
     var md = new MobileDetect(window.navigator.userAgent);
     if (md.mobile()) {

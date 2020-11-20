@@ -16,8 +16,8 @@
     <meta property="og:image" content="/img/logo-og.png" />
     <meta property="og:type" content="website">
     <meta property="og:title" content="쉐어밸류">
-    <meta property="og:description" content="여행사 업무자동화 시스템, 스마트비엠, 스마트부킹엔진">
-    <meta name="description" content="여행사 업무자동화 시스템, 스마트비엠, 스마트부킹엔진" />
+    <meta property="og:description" content="여행사 업무자동화 시스템, 스마트비엠, 스마트부킹플러스">
+    <meta name="description" content="여행사 업무자동화 시스템, 스마트비엠, 스마트부킹플러스" />
 
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -27,7 +27,7 @@
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
 
     <title>쉐어밸류</title>
-    ​
+
     <!-- <link href="css/styles.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="./css/landing_style.css">
@@ -43,7 +43,7 @@
         gtag('config', 'UA-149122103-2');
     </script>
 </head>
-​
+
 <body class="bm">
 <!-- Change this in 'webpack-config.js' or remove -->
 <div class="gnb">
@@ -59,12 +59,21 @@
             <ul class="top-menu">
                 <li><a href="./company.html">Company</a></li>
                 <li><a href="./bm.html">Smart Bm</a></li>
-                <li><a href="./engine.html">Smart Booking Engine</a></li>
+                <li><a href="./engine.html">Smart Booking Plus</a></li>
                 <li><a href="./contact.html">Contact Us</a></li>
             </ul>
         </div>
     </div>
 </div>
+
+<!--<section class="section" style="background-color: #6400FF;">-->
+<!--  <div class="container">-->
+<!--    <div style="padding: 1em; text-align: center">-->
+<!--      <a href="https://forms.gle/gR6yL6invJwcd6Eu9" target="_blank" style="color: #ffffff">2020년 10월 30일 스마트 부킹 플러스 상품 설명회가 진행됩니다. - <u>참가신청 바로가기</u></a>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
 <!-- section 1 -->
 <section class="section sc1">
   <div class="container">
@@ -258,6 +267,48 @@
         </div>
     </div>
 </div>
+    <!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "6ad90db3-0e94-45f3-918b-149c795ee43f"
+  });
+</script>
+<!-- End Channel Plugin -->
 <script>
     var md = new MobileDetect(window.navigator.userAgent);
     if(md.mobile()) {
