@@ -721,7 +721,7 @@ body, html {
 }
 
 .engine-desc {
-    width: 480px !important;
+    width: 400px !important;
     font-weight: 400;
     text-align: left;
     list-style: none;
@@ -803,6 +803,129 @@ body, html {
     background-position: center center;
     content: "\00a0 ";
     /*background: #ffffff;*/
+}
+
+.engine-service-list .engine-plus-title {
+    color: #0a3e81;
+    font-weight: 1000;
+    margin-bottom: 15px;
+    width: 100%;
+    text-align: center;
+}
+
+.engine-service-list .engine-plus-title:before {
+    width: 0;
+    height: 0;
+    padding: 0;
+    background-color: #ffffff;
+    background-image: none;
+}
+
+.engine-cost-table {
+    margin: auto;
+    width: 800px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 18px;
+}
+
+.engine-cost-table td,
+.engine-cost-table th {
+    padding: 10px 16px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #ebebeb;
+
+}
+
+.engine-cost-table thead {
+    background-color: #00b1ea;
+    color: #ffffff;
+    text-align: center;
+}
+
+.engine-cost-table thead td {
+
+}
+
+.engine-cost-table tbody td {
+    text-align: center;
+}
+
+.engine-cost-table .better-cost {
+    color: #00b1ea;
+    font-weight: 1000;
+}
+
+.brochure-input-area {
+    width: 600px;
+    margin: auto;
+}
+
+.brochure-input-area .brochure-sub-title {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+.brochure-input-area .brochure-input-company input,
+.brochure-input-area .brochure-input-name input,
+.brochure-input-area .brochure-input-email input {
+    width: 100%;
+    padding: 12px 25px;
+    margin-bottom: 10px;
+}
+
+.brochure-input-area ::-webkit-input-placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.brochure-input-area :-moz-placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.brochure-input-area ::-moz-placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.brochure-input-area :-ms-input-placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.brochure-input-area .brochure-input-company {
+}
+
+.brochure-input-area .brochure-input-name {
+
+}
+
+.brochure-input-area .brochure-input-email {
+
+}
+
+.brochure-input-area .brochure-agree-policy {
+    margin: 10px 0;
+}
+
+.brochure-input-area .brochure-agree-policy #agree_send_brochure {
+    width: 16px;
+    height: 16px;
+}
+
+.brochure-input-area .brochure-agree-policy label {
+    font-size: 13px;
+}
+
+.brochure-input-area .brochure-btn {
+    width: 100%;
+    background-color: #00b1ea;
+    color: #ffffff;
+    padding: 12px 25px;
+    cursor: pointer;
 }
 
 .agree-info {
