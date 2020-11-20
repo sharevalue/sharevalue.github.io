@@ -226,14 +226,23 @@ body, html {
 }
 
 .content .content-desc {
-    margin-bottom: 120px;
+    margin-bottom: 2.5em;
     font-size: 54px;
     line-height: 1.35;
     text-align: center;
     color: #333
 }
 
-.content .content-desc b {
+.content .content-title-desc {
+    margin: 2.5em 0;
+    font-size: 54px;
+    line-height: 1.35;
+    text-align: left;
+    color: #333
+}
+
+.content .content-desc b,
+.content .content-title-desc b {
     font-weight: 900
 }
 
@@ -546,7 +555,7 @@ body, html {
     background-image: url(./img/title-dot.png);
     background-position: 0;
     background-repeat: no-repeat;
-    height: 60px;
+    height: 120px;
     letter-spacing: 2.7px;
     text-align: left;
     color: #0a3e81;
@@ -855,6 +864,97 @@ body, html {
     background-position: center center;
     content: "\00a0 ";
     /*background: #ffffff;*/
+}
+
+.engine-cost-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    font-size: 38px;
+}
+
+.engine-cost-table td,
+.engine-cost-table th {
+    padding: 10px 16px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 2.5px solid #ebebeb;
+
+}
+
+.engine-cost-table thead {
+    background-color: #00b1ea;
+    color: #ffffff;
+    text-align: center;
+}
+
+.engine-cost-table tbody td {
+    text-align: center;
+}
+
+.engine-cost-table .better-cost {
+    color: #00b1ea;
+    font-weight: 1000;
+}
+
+.brochure-input-area {
+    width: 100%;
+    font-size: 40px;
+}
+
+.brochure-input-area .brochure-sub-title {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.brochure-input-area .brochure-input-company input,
+.brochure-input-area .brochure-input-name input,
+.brochure-input-area .brochure-input-email input {
+    width: 100%;
+    padding: 1em 2em;
+    margin-bottom: 1em;
+    border: 3px solid #666666;
+}
+
+.brochure-input-area ::-webkit-input-placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.brochure-input-area :-moz-placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.brochure-input-area ::-moz-placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.brochure-input-area :-ms-input-placeholder {
+    text-align: center;
+    color: #cccccc;
+}
+
+.brochure-input-area .brochure-agree-policy {
+    margin: 10px 0;
+}
+
+.brochure-input-area .brochure-agree-policy #agree_send_brochure {
+    width: 1.2em;
+    height: 1.2em;
+}
+
+.brochure-input-area .brochure-agree-policy label {
+    font-size: 0.7em;
+}
+
+.brochure-input-area .brochure-btn {
+    width: 100%;
+    background-color: #00b1ea;
+    color: #ffffff;
+    padding: 1em 2em;
+    cursor: pointer;
 }
 
 .process-list {
