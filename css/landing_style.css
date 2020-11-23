@@ -420,8 +420,7 @@ body, html {
 /* section1 */
 .sc1 {
   position: relative;
-  padding-top: 120px;
-  padding-bottom: 220px;
+  padding: 5em 0 10em 0;
   color: #fff;
   background-image: url('../img/landing/bg_1.png'), linear-gradient(to right, #0a3e81, #00b1ea);
 }
@@ -449,8 +448,7 @@ body, html {
 }
 /* section2 */
 .sc2 {
-  padding-top: 270px;
-  padding-bottom: 100px;
+  padding: 10em 0 5em 0;
 }
 .sc2 .feature {
   display: flex;
@@ -519,9 +517,9 @@ body, html {
 }
 .sc4 .container {
     max-width: 1030px;
+    text-align: center;
 }
 .sc4 .why {
-    text-align: center;
     margin: 1.5em auto;
     display: inline-block;
     font-size: 25px;
@@ -531,8 +529,7 @@ body, html {
 /* 나중에 테이블 전환 필요 */
 .sc4 .why li {
     text-align: left;
-    min-width: 400px;
-    display: inline-block;
+    display: block;
     font-size: 24px;
     line-height: 32px;
     /*border-bottom: 2px solid #1eaee7;*/
@@ -592,6 +589,16 @@ body, html {
     margin: 1.5em auto;
     font-size: 25px;
 }
+.sc6 .process-list {
+  text-align: center;
+}
+.sc6 .process-list li {
+  /* display: inline-block; */
+  width: 40%;
+  margin: 1.5em auto;
+}
+/* .sc6 .process-list li img{
+} */
 /* section7 */
 .sc7 {
   color: #fff;
@@ -689,6 +696,9 @@ body, html {
     padding-top: 10%;
     padding-bottom: 24%;
   }
+  .sc1 .title {
+    font-size: 5vw;
+  }
   .sc1:after {
     width: 64%;
     height: auto;
@@ -740,12 +750,15 @@ body, html {
   .sc5 .memo {
     font-size: 2vw;
   }
+  .sc6 .process-list li {
+    width: 60%;
+  }
   .sc7 .container {
     /*padding-top: 10%;*/
     /*padding-bottom: 10%;*/
   }
   .sc7 .container:before {
-    height: 40%;
+    height: 70%;
   }
   .sc7 h1 {
     font-size: 5vw;
@@ -769,6 +782,9 @@ body, html {
   }
   .sc1 {
     padding-top: 20%;
+  }
+  .sc1 .title {
+    font-size: 6.8vw;
   }
   .sc1 .title strong {
     display: block;
@@ -807,7 +823,8 @@ body, html {
   .sc5 .memo {
     font-size: 14px;
   }
-  .sc7 :before {
+  .sc6 .process-list li {
+    width: 80%;
   }
   .sc7 .container {
     padding-top: 16%;
