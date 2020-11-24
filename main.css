@@ -245,7 +245,7 @@ body, html {
 .content .content-title {
     font-family: NanumSquare;
     margin-bottom: 15px;
-    font-size: 23px;
+    font-size: 28px;
     line-height: 1.74;
     letter-spacing: 2.3px;
     text-align: center;
@@ -254,7 +254,7 @@ body, html {
 
 .content .content-desc {
     margin-bottom: 55px;
-    font-size: 27px;
+    font-size: 32px;
     line-height: 37px;
     text-align: center;
     color: #333
@@ -719,9 +719,12 @@ body, html {
     color: #fff;
     border: 0
 }
+.engine-why {
+    text-align: right;
+}
 
-.engine-desc {
-    width: 400px !important;
+.engine-why .engine-desc {
+    width: 100%;
     font-weight: 400;
     text-align: left;
     list-style: none;
@@ -730,8 +733,8 @@ body, html {
 }
 
 .engine-desc li {
-    width: 100%;
-    font-size: 18px;
+    width: 49%;
+    font-size: 24px;
     display: inline-block
 }
 
@@ -823,10 +826,10 @@ body, html {
 
 .engine-pricing-table {
     margin: auto;
-    width: 800px;
+    width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .engine-pricing-table td,
@@ -835,6 +838,8 @@ body, html {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 1px solid #ebebeb;
+    font-weight: bold;
+    font-size: 22px;
 
 }
 
