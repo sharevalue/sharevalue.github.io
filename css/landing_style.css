@@ -390,8 +390,20 @@ body, html {
   width: 40%;
   margin: 1.5em auto;
 }
-/* .sc6 .process-list li img{
-} */
+.sc6 .process-list li:first-child:before {
+    display: none
+}
+.sc6 .process-list li:before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 27px;
+    background-image: url(../img/smart-engine-process-arrow@2x.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100%;
+    margin: 20px auto
+}
 /* section7 */
 .sc7 {
   color: #fff;
@@ -431,7 +443,7 @@ body, html {
     margin-bottom: 0.5em;
     border-color: #ffffff;
 }
-.sc7 .brochure-area label {
+.sc7 .brochure-area brochure-agree-policy {
     padding-bottom: 0.5em;
     display: inline-block;
 }
@@ -441,7 +453,7 @@ body, html {
 .sc7 .brochure-area input[type=checkbox] {
     width: 1.2em;
     height: 1.2em;
-    margin: 0 0.3em 0 0.3em;
+    margin: 0 0.3em;
     background-color: #ffffff;
     color: #222222;
     border-radius: 0.3em;
@@ -456,9 +468,9 @@ body, html {
     margin-top: 0.5em;
     width: 100%;
     display: block;
-    max-width: 440px;
+    /*max-width: 440px;*/
   padding: 0.5em 0;
-    border-radius: 0.3em;
+    border-radius: .25rem;
   text-align: center;
     font-size: 25px;
   border: 1px solid #fff;
@@ -480,160 +492,3 @@ body, html {
 .sc7 .btnReverse:hover {
   color: #0056b3;
 }
-
-/* media queries */
-/*
-@media screen and (max-width: 1024px) {
-  .title {
-    font-size: 5vw;
-  }
-  .subTitle {
-    font-size: 3.2vw;
-  }
-  .title .subTitle:before {
-    border-width: 1px;
-  }
-  .sc1 {
-    padding-top: 10%;
-    padding-bottom: 24%;
-  }
-  .sc1 .title {
-    font-size: 5vw;
-  }
-  .sc1:after {
-    width: 64%;
-    height: auto;
-    margin-top: -26%;
-    margin-left: -32%;
-    padding-bottom: 52%;
-  }
-  .sc1 .name {
-    font-size: 3vw;
-  }
-  .sc2 {
-    padding-top: 24%;
-    padding-bottom: 10%;
-  }
-  .sc2 .feature dt {
-    font-size: 2.6vw;
-  }
-  .sc2 .feature dd {
-    font-size: 2vw;
-  }
-  .sc4 {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  .sc4 .header {
-      margin-bottom: 10px;
-  }
-  .sc4 .why {
-    margin-top: 6%;
-    font-size: 3vw;
-  }
-  .sc4 ul{
-     display: block;
-  }
-  .sc4 .why li {
-      margin: 50px 0px;
-  }
-  .sc4 .why li span {
-    font-size: 4vw;
-  }
-  .sc5 {
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  .sc5 .cost {
-    margin-top: 6%;
-    font-size: 20px;
-  }
-  .sc5 .memo {
-    font-size: 2vw;
-  }
-  .sc6 .process-list li {
-    width: 60%;
-  }
-  .sc7 .container {
-    !*padding-top: 10%;*!
-    !*padding-bottom: 10%;*!
-  }
-  .sc7 .container:before {
-    height: 70%;
-  }
-  .sc7 h1 {
-    font-size: 5vw;
-  }
-  .sc7 .btn {
-    padding: 15px 0;
-    font-size: 20px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .section {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  .title,
-  .sc7 h1 {
-    font-size: 6.8vw;
-  }
-  .subTitle {
-    font-size: 4vw;
-  }
-  .sc1 {
-    padding-top: 20%;
-  }
-  .sc1 .title {
-    font-size: 6.8vw;
-  }
-  .sc1 .title strong {
-    display: block;
-  }
-  .sc2 {
-    padding-bottom: calc(16% - 30px);
-  }
-  .sc2 .container {
-    text-align: center;
-  }
-  .sc2 .feature {
-    display: inline-block;
-    text-align: initial;
-  }
-  .sc2 .feature dt {
-    font-size: 20px;
-  }
-  .sc2 .feature dd {
-    font-size: 16px;
-  }
-  .sc4,
-  .sc5 {
-    padding-top: 16%;
-    padding-bottom: 16%;
-  }
-  .sc4 .why {
-    font-size: 16px;
-  }
-  .sc4 .why li {
-      width: 100%;
-      display: block;
-  }
-  .sc5 .cost {
-    font-size: 14px;
-  }
-  .sc5 .memo {
-    font-size: 14px;
-  }
-  .sc6 .process-list li {
-    width: 80%;
-  }
-  .sc7 .container {
-    padding-top: 16%;
-  }
-  .sc7 .container:before {
-      background: none;
-  }
-  .sc7 .btn {
-    font-size: 16px;
-  }
-}*/

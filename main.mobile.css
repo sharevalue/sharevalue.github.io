@@ -977,8 +977,8 @@ body, html {
 .process-list li:before {
     content: "";
     display: block;
-    width: 30px;
-    height: 18px;
+    width: 45px;
+    height: 27px;
     background-image: url(./img/smart-engine-process-arrow@2x.png);
     background-repeat: no-repeat;
     background-position: 50%;
