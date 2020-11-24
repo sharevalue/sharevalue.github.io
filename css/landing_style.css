@@ -118,8 +118,8 @@ input[type="password"] {
 /* common */
 body {
 	direction: ltr;
-  line-height: 1.2;
-  letter-spacing: -0.075em;
+    line-height: 1.2;
+    letter-spacing: -0.075em;
 	font-family: 'NanumSquare', sans-serif;
 	color: #333;
 	word-break: keep-all;
