@@ -407,16 +407,20 @@ body, html {
   bottom: 0;
   right: 0;
   width: 50%;
-  height: 450px;
+  height: 535px;
   background: url('../img/landing/obj_2.png') 100% 100% / contain no-repeat;
 }
 .sc7 h1 {
-  margin-bottom: 0.4em;
-  font-size: 45px;
+  margin: 0.5em 0;
+  font-size: 38px;
+    font-weight: bold;
+}
+.sc7 h2 {
+  margin-bottom: 0.5em;
+  font-size: 28px;
 }
 .sc7 .brochure-area {
-    /*width: 360px;*/
-    max-width: 395px;
+    max-width: 440px;
 }
 .sc7 .brochure-area input[type=text] {
     width: 100%;
@@ -428,9 +432,11 @@ body, html {
     border-color: #ffffff;
 }
 .sc7 .brochure-area label {
+    padding-bottom: 0.5em;
+    display: inline-block;
 }
 .sc7 .brochure-area .brochure-agree-policy div {
-    font-size: 10.5px;
+    font-size: 11.5px;
 }
 .sc7 .brochure-area input[type=checkbox] {
     width: 1.2em;
@@ -449,9 +455,10 @@ body, html {
 .sc7 .btn {
     margin-top: 0.5em;
     width: 100%;
-  display: block;
-    max-width: 395px;
+    display: block;
+    max-width: 440px;
   padding: 0.5em 0;
+    border-radius: 0.3em;
   text-align: center;
     font-size: 25px;
   border: 1px solid #fff;
