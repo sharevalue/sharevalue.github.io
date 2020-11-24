@@ -947,7 +947,11 @@ body, html {
 }
 
 .brochure-input-area .brochure-agree-policy label {
-    font-size: 0.7em;
+    font-size: 0.85em;
+}
+
+.brochure-input-area .brochure-agree-policy div {
+    font-size: 0.6em;
 }
 
 .brochure-input-area .brochure-btn {

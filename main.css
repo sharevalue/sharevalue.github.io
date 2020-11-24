@@ -902,7 +902,11 @@ body, html {
 }
 
 .brochure-input-area .brochure-agree-policy label {
-    font-size: 13px;
+    font-size: 16px;
+}
+
+.brochure-input-area .brochure-agree-policy div {
+    font-size: 14px;
 }
 
 .brochure-input-area .brochure-btn {
