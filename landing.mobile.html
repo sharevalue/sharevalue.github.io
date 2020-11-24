@@ -6,22 +6,15 @@
   <title>스마트부킹플러스</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
   <link rel="stylesheet" href="./css/landing_style.css">
+  <link rel="stylesheet" href="./index.mobile.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
     var md = new MobileDetect(window.navigator.userAgent);
-    if (md.mobile()) {
-      location.href = "landing.mobile.html";
+    if (!md.mobile()) {
+      location.href = "landing.html";
     }
   </script>
-  <style>
-    @media (min-width: 1px) {
-      .container {
-        max-width: 1110px;
-        min-width: 1110px
-      }
-    }
-  </style>
 </head>
 <body>
 <!--  <section class="section" style="background-color: #6400FF;">-->
@@ -174,10 +167,44 @@
       </h1>
     </div>
     <div class="process-sub-desc">
-      <img src="img/smart-engine-process.png"
-           srcset="img/smart-engine-process@2x.png 2x,
-                    img/smart-engine-process@3x.png 3x"
-           class="smart_engine_process">
+      <ul class="process-list">
+        <li>
+            <img src="img/smart-engine-process-1.png"
+                 srcset="img/smart-engine-process-1@2x.png 2x,
+        img/smart-engine-process-1@3x.png 3x"
+                 class="smart_engine_process_1">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-2.png"
+                 srcset="img/smart-engine-process-2@2x.png 2x,
+        img/smart-engine-process-2@3x.png 3x"
+                 class="smart_engine_process_2">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-3.png"
+                 srcset="img/smart-engine-process-3@2x.png 2x,
+        img/smart-engine-process-3@3x.png 3x"
+                 class="smart_engine_process_3">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-4.png"
+                 srcset="img/smart-engine-process-4@2x.png 2x,
+        img/smart-engine-process-4@3x.png 3x"
+                 class="smart_engine_process_4">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-5.png"
+                 srcset="img/smart-engine-process-5@2x.png 2x,
+        img/smart-engine-process-5@3x.png 3x"
+                 class="smart_engine_process_5">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-6.png"
+                 srcset="img/smart-engine-process-6@2x.png 2x,
+        img/smart-engine-process-6@3x.png 3x"
+                 class="smart_engine_process_6">
+        </li>
+      </ul>
     </div>
   </div>
 </section>
@@ -204,11 +231,9 @@
         </label>
         <div>(문의사항 처리를 위하여 성명, 이메일주소, 전화번호, 회사명을 수집 및 이용하며, 정보는 1년간 보관합니다.)</div>
       </div>
-      <div>
-        <button class="btn btnReverse brochure-btn">신청하기</button>
-        <div class="to-contact-area">
-          <a class="to-contact" href="./contact.html">상세문의하기</a>
-        </div>
+      <button class="btn btnReverse brochure-btn">신청하기</button>
+      <div class="to-contact-area">
+        <a class="to-contact" href="./contact.html">상세문의하기</a>
       </div>
     </div>
   </div>
