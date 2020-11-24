@@ -345,27 +345,27 @@ body, html {
     padding: 5em 0;
     background-color: #ffffff;
 }
-.sc5 .cost {
+.sc5 .pricing {
     width: 100%;
     margin: 1.5em auto;
     font-size: 25px;
     table-layout: fixed;
 }
-.sc5 .cost th,
-.sc5 .cost td {
+.sc5 .pricing th,
+.sc5 .pricing td {
   padding: 0.5em 1em;
   text-align: center;
   border: 2px solid #f5f5f5;
 }
-.sc5 .cost thead td {
+.sc5 .pricing thead td {
     color: #fff;
     background-color: #1eaee7;
 }
-.sc5 .cost th {
+.sc5 .pricing th {
     text-align: left;
     background-color: #fff;
 }
-.sc5 .cost td {
+.sc5 .pricing td {
   background-color: #fff;
 }
 .sc5 .memo {

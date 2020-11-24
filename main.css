@@ -821,7 +821,7 @@ body, html {
     background-image: none;
 }
 
-.engine-cost-table {
+.engine-pricing-table {
     margin: auto;
     width: 800px;
     table-layout: fixed;
@@ -829,8 +829,8 @@ body, html {
     font-size: 18px;
 }
 
-.engine-cost-table td,
-.engine-cost-table th {
+.engine-pricing-table td,
+.engine-pricing-table th {
     padding: 10px 16px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -838,21 +838,17 @@ body, html {
 
 }
 
-.engine-cost-table thead {
+.engine-pricing-table thead {
     background-color: #00b1ea;
     color: #ffffff;
     text-align: center;
 }
 
-.engine-cost-table thead td {
-
-}
-
-.engine-cost-table tbody td {
+.engine-pricing-table tbody td {
     text-align: center;
 }
 
-.engine-cost-table .better-cost {
+.engine-pricing-table .better-price {
     color: #00b1ea;
     font-weight: 1000;
 }

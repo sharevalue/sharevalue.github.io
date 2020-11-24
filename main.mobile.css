@@ -866,33 +866,34 @@ body, html {
     /*background: #ffffff;*/
 }
 
-.engine-cost-table {
+.engine-pricing-table {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
     font-size: 38px;
 }
 
-.engine-cost-table td,
-.engine-cost-table th {
+.engine-pricing-table td,
+.engine-pricing-table th {
     padding: 10px 16px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 2.5px solid #ebebeb;
+    font-weight: bold;
 
 }
 
-.engine-cost-table thead {
+.engine-pricing-table thead {
     background-color: #00b1ea;
     color: #ffffff;
     text-align: center;
 }
 
-.engine-cost-table tbody td {
+.engine-pricing-table tbody td {
     text-align: center;
 }
 
-.engine-cost-table .better-cost {
+.engine-pricing-table .better-price {
     color: #00b1ea;
     font-weight: 1000;
 }
