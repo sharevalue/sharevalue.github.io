@@ -9,18 +9,10 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
   <script>
     var md = new MobileDetect(window.navigator.userAgent);
-    if (md.mobile()) {
-      location.href = "landing.mobile.html";
+    if (!md.mobile()) {
+      location.href = "landing.html";
     }
   </script>
-  <style>
-    @media (min-width: 1px) {
-      .container {
-        max-width: 1110px;
-        min-width: 1110px
-      }
-    }
-  </style>
 </head>
 <body>
 <!--  <section class="section" style="background-color: #6400FF;">-->
@@ -173,10 +165,44 @@
       </h1>
     </div>
     <div class="process-sub-desc">
-      <img src="img/smart-engine-process.png"
-           srcset="img/smart-engine-process@2x.png 2x,
-                    img/smart-engine-process@3x.png 3x"
-           class="smart_engine_process">
+      <ul class="process-list">
+        <li>
+            <img src="img/smart-engine-process-1.png"
+                 srcset="img/smart-engine-process-1@2x.png 2x,
+        img/smart-engine-process-1@3x.png 3x"
+                 class="smart_engine_process_1">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-2.png"
+                 srcset="img/smart-engine-process-2@2x.png 2x,
+        img/smart-engine-process-2@3x.png 3x"
+                 class="smart_engine_process_2">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-3.png"
+                 srcset="img/smart-engine-process-3@2x.png 2x,
+        img/smart-engine-process-3@3x.png 3x"
+                 class="smart_engine_process_3">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-4.png"
+                 srcset="img/smart-engine-process-4@2x.png 2x,
+        img/smart-engine-process-4@3x.png 3x"
+                 class="smart_engine_process_4">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-5.png"
+                 srcset="img/smart-engine-process-5@2x.png 2x,
+        img/smart-engine-process-5@3x.png 3x"
+                 class="smart_engine_process_5">
+        </li>
+        <li>
+            <img src="img/smart-engine-process-6.png"
+                 srcset="img/smart-engine-process-6@2x.png 2x,
+        img/smart-engine-process-6@3x.png 3x"
+                 class="smart_engine_process_6">
+        </li>
+      </ul>
     </div>
   </div>
 </section>
