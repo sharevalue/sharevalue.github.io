@@ -866,16 +866,34 @@ body, html {
     /*background: #ffffff;*/
 }
 
+.c_blue {
+    color: #1eaee7;
+}
+
+.c_red {
+    color: #e55050;
+}
+
+.bm-pricing-table {
+    font-size: 30px;
+}
+
+.engine-pricing-table {
+    font-size: 38px;
+}
+
+.bm-pricing-table,
 .engine-pricing-table {
     width: 100%;
     table-layout: fixed;
     border-collapse: collapse;
-    font-size: 38px;
 }
 
+.bm-pricing-table td,
+.bm-pricing-table th,
 .engine-pricing-table td,
 .engine-pricing-table th {
-    padding: 10px 16px;
+    padding: 10px 12px;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     border: 2.5px solid #ebebeb;
@@ -883,19 +901,29 @@ body, html {
 
 }
 
+.bm-pricing-table thead,
 .engine-pricing-table thead {
     background-color: #00b1ea;
     color: #ffffff;
     text-align: center;
 }
 
+.bm-pricing-table tbody td,
 .engine-pricing-table tbody td {
     text-align: center;
 }
 
+.bm-pricing-table .better-price,
 .engine-pricing-table .better-price {
     color: #00b1ea;
     font-weight: 1000;
+}
+
+.bm-pricing-policy {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 10px 0;
+    color: #666666;
 }
 
 .brochure-input-area {
