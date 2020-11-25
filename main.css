@@ -582,9 +582,9 @@ body, html {
 }
 
 .bm-desc {
-    padding: 0 160px;
+    padding: 0 100px;
     margin: 0;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 .bm-desc li {
@@ -824,6 +824,15 @@ body, html {
     background-image: none;
 }
 
+.c_blue {
+    color: #1eaee7;
+}
+
+.c_red {
+    color: #e55050;
+}
+
+.bm-pricing-table,
 .engine-pricing-table {
     margin: auto;
     width: 100%;
@@ -832,6 +841,8 @@ body, html {
     font-size: 22px;
 }
 
+.bm-pricing-table td,
+.bm-pricing-table th,
 .engine-pricing-table td,
 .engine-pricing-table th {
     padding: 10px 16px;
@@ -843,19 +854,29 @@ body, html {
 
 }
 
+.bm-pricing-table thead,
 .engine-pricing-table thead {
     background-color: #00b1ea;
     color: #ffffff;
     text-align: center;
 }
 
+.bm-pricing-table tbody td,
 .engine-pricing-table tbody td {
     text-align: center;
 }
 
+.bm-pricing-table .better-price,
 .engine-pricing-table .better-price {
     color: #00b1ea;
     font-weight: 1000;
+}
+
+.bm-pricing-policy {
+    font-weight: 700;
+    font-size: 18px;
+    margin: 10px 0;
+    color: #666666;
 }
 
 .brochure-input-area {
