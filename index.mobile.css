@@ -189,11 +189,27 @@
     }
 
     .sc2 .feature {
-        padding: 0 1.5em;
+        padding: 0 7em;
+    }
+
+    .sc2 .feature dl {
+        width: 100%;
+        display: block;
+        padding: 3em 0  3em 7em;
+        flex-basis: initial !important;
+    }
+
+    .sc2 .feature dl:before {
+        width: 6em;
+        height: 6em;
+        line-height: 6em;
+        /*margin-top: -32px;*/
+
     }
 
     .sc2 .feature dt {
-        font-size: 3vw;
+        font-size: 3.5vw;
+        margin: 0;
     }
 
     .sc4,
@@ -209,10 +225,6 @@
     .sc4 .why {
         /*margin-top: 6%;*/
         /*font-size: 3vw;*/
-    }
-
-    .sc4 .why-info {
-        font-size: 4vw;
     }
 
     .sc4 .why li {
@@ -288,7 +300,7 @@
         font-size: 5vw;
     }
     .sc1 {
-        padding: 3em 0 8em 0;
+        padding: 7.2vw 0 30vw 0;
     }
     .sc1:after {
 
@@ -303,25 +315,38 @@
         font-size: 5vw;
     }
     .sc2 {
-        padding: 8em 0 2em 0;
+        padding: 30vw 0 5vw 0;
     }
     .sc2 .container {
         text-align: center;
     }
     .sc2 .feature {
+        padding: 0;
         display: inline-block;
         text-align: initial;
     }
-    .sc2 .feature dt {
-        margin: 2vw 0;
+    .sc2 .feature dl {
+        width: 100%;
+        display: block;
+        padding: 1.5em 0  1.5em 4.5em;
+        flex-basis: initial !important;
+    }
+
+    .sc2 .feature dl:before {
+        width: 4em;
+        height: 4em;
+        line-height: 4em;
+        margin-top: -32px;
+
     }
     .sc2 .feature dt {
-        font-size: 4.5vw;
+        margin: 2vw 0;
+        font-size: 5vw;
     }
     .sc4,
     .sc5,
     .sc6 {
-        padding: 2em 0;
+        padding: 5vw 0;
     }
     .sc4 .why {
         margin: 2vw auto;
