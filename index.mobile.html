@@ -276,6 +276,9 @@
             <div class="brochure-input-name">
                 <input type="text" id="brochure_name" placeholder="이름"/>
             </div>
+            <div class="brochure-input-tel">
+                <input type="text" id="brochure_tel" placeholder="전화번호"/>
+            </div>
             <div class="brochure-input-email">
                 <input type="text" id="brochure_email" placeholder="이메일주소"/>
             </div>
@@ -284,7 +287,7 @@
                     <input type="checkbox" id="agree_send_brochure"/>
                     개인정보 수집, 이용 정책에 동의합니다.
                 </label>
-                <div>(신청내역 처리를 위하여 성명, 이메일주소, 회사명을 수집 및 이용하며, 정보는 1년간 보관합니다.)</div>
+                <div>(신청내역 처리를 위하여 성명, 이메일주소, 전화번호, 회사명을 수집 및 이용하며, 정보는 1년간 보관합니다.)</div>
             </div>
             <button class="btn btnReverse brochure-btn">신청하기</button>
             <div class="to-contact-area">
@@ -366,18 +369,19 @@
             event.preventDefault();
             var name = $("#brochure_name").val();
             var company = $("#brochure_company").val();
+            var tel = $("#brochure_tel").val();
             var email = $("#brochure_email").val();
             var agree = $("input:checkbox[id='agree_send_brochure']").is(":checked") === true;
 
             var url = "https://4s1xlh5cp5.execute-api.ap-northeast-2.amazonaws.com/dev/sbm/inquiry";
-            if (name === '' || email === '' || !agree || company === '') {
-                alert("이름, 이메일, 회사, 개인정보 수집 정책 동의를 확인해주세요");
+            if (tel === '' || name === '' || email === '' || !agree || company === '') {
+                alert("이름, 이메일, 회사, 전화번호, 개인정보 수집 정책 동의를 확인해주세요");
             } else {
                 var data = {
                     name: name,
                     title: '스마트부킹플러스 소개서 신청',
                     content: '스마트부킹플러스 소개서 신청',
-                    tel: '',
+                    tel: tel,
                     email: email,
                     companyName: company
                 };
