@@ -241,7 +241,7 @@
             var message = $("#message").val();
             var agree = $("input:checkbox[id='agree']").is(":checked") === true;
 
-            var url = "https://4s1xlh5cp5.execute-api.ap-northeast-2.amazonaws.com/dev/sbm/inquiry";
+            var url = "https://9lvty403j0.execute-api.ap-northeast-2.amazonaws.com/production/sbm/inquiry";
             if (name === '' || email === '' || title === '' || message === '' || !agree || company === '' || tel === '') {
                 alert("이름, 이메일, 제목, 내용, 개인정보 수집 정책 동의를 확인해주세요");
             } else {

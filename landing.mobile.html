@@ -288,7 +288,7 @@
       var email = $("#brochure_email").val();
       var agree = $("input:checkbox[id='agree_send_brochure']").is(":checked") === true;
 
-      var url = "https://4s1xlh5cp5.execute-api.ap-northeast-2.amazonaws.com/dev/sbm/inquiry";
+      var url = "https://9lvty403j0.execute-api.ap-northeast-2.amazonaws.com/production/sbm/inquiry";
       if (tel === '' || name === '' || email === '' || !agree || company === '') {
         alert("이름, 이메일, 회사, 전화번호, 개인정보 수집 정책 동의를 확인해주세요");
       } else {
