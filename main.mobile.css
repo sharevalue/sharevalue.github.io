@@ -866,6 +866,10 @@ body, html {
     /*background: #ffffff;*/
 }
 
+#result_text {
+    margin-top: 10px;
+}
+
 .c_blue {
     color: #1eaee7;
 }
