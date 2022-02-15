@@ -824,6 +824,10 @@ body, html {
     background-image: none;
 }
 
+#result_text {
+  margin-top: 10px;
+}
+
 .c_blue {
     color: #1eaee7;
 }
