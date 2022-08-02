@@ -1,5 +1,11 @@
 @import url('https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
-    font-family: 'NanumBarunGothic';
+    font-family: 'NanumBarunGothic', sans-serif;
+}
+
+/* Quasimoda 폰트 대체 */
+strong {
+    font-family: 'Roboto', sans-serif;
 }
