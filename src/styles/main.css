@@ -19,3 +19,8 @@ strong {
 .fade-leave-to {
     opacity: 0;
 }
+
+.default-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}

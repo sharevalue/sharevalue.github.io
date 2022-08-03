@@ -8,7 +8,7 @@ const { emit } = useEventsBus()
   <footer
       class="md:rtl:pr-20 duration-700 w-full right-0 items-center justify-center md:justify-between  md:space-y-none md:h-16 md:flex-row">
     <div class="bg-secondary-500 text-white">
-      <div class="footer-company">
+      <div class="default-container footer-company">
         <div class="flex flex-row justify-between mb-6">
           <div class="footer-company-name">(주) 쉐어밸류</div>
           <div class="footer-company-sns">
@@ -85,8 +85,6 @@ const { emit } = useEventsBus()
 </template>
 <style scoped>
 .footer-company {
-  max-width: 1440px;
-  margin: 0 auto;
   padding:40px 30px 45px;
   box-sizing: border-box;
   color: inherit;
