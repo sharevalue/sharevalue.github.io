@@ -44,7 +44,7 @@ const inputId = computed(() => {
 const slots = useSlots()
 </script>
 <template>
-    <div class="text-left text-gray-500 border-0 rtl:text-right dark:text-gray-100 text-field--wrapper" :class="[variantClasses,block ? 'w-full' : 'w-max']">
+    <div class="text-left text-gray-500 border-0 rtl:text-right text-field--wrapper" :class="[variantClasses,block ? 'w-full' : 'w-max']">
 
         <slot name="label">
             <label :for="inputId" class="text-left rtl:text-right ">{{ label

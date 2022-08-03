@@ -8,7 +8,6 @@ declare module '@vue/runtime-core' {
     ComponentsDemo: typeof import('./components/app/ComponentsDemo.vue')['default']
     ComponentsDemoItem: typeof import('./components/app/ComponentsDemoItem.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
-    Footer: typeof import('./components/Footer.vue')['default']
     Playground: typeof import('./components/app/Playground.vue')['default']
     PropsDoc: typeof import('./components/app/PropsDoc.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
@@ -21,8 +20,8 @@ declare module '@vue/runtime-core' {
     VBtn: typeof import('./components/core/inputs/VBtn/VBtn.vue')['default']
     VBtnGroup: typeof import('./components/core/inputs/VBtnGroup/VBtnGroup.vue')['default']
     VCard: typeof import('./components/core/surface/VCard/VCard.vue')['default']
+    VFooter: typeof import('./components/app/layout/VFooter.vue')['default']
     VHeader: typeof import('./components/app/layout/VHeader.vue')['default']
-    VSidebar: typeof import('./components/app/layout/VSidebar.vue')['default']
     VTextField: typeof import('./components/core/inputs/VTextField/VTextField.vue')['default']
   }
 }

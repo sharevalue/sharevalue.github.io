@@ -20,7 +20,7 @@ const router = useRouter()
                 </span>
                 <slot name="item" :item="item">
                     <component :is="tag" class="inline"
-                        :class="{ 'text-primary-500 dark:text-primary-400': !item.disabled, 'cursor-pointer': item.link }"
+                        :class="{ 'text-primary-500': !item.disabled, 'cursor-pointer': item.link }"
                         @click="item.link && router.push(item.link)">{{ item.text }}</component>
                 </slot>
             </li>

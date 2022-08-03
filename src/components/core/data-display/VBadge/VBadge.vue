@@ -133,13 +133,13 @@ let classes = computed(() => [
     @apply bg-amber-500 text-white
 }
 .smooth.badge--warning::after {
-   @apply bg-amber-100 dark:bg-amber-800  text-amber-700 dark:text-amber-300 
+   @apply bg-amber-100  text-amber-700
 }
 
 .badge--error::after {
     @apply bg-red-500 text-white
 }
 .smooth.badge--error::after {
-   @apply bg-red-100 dark:bg-red-800  text-red-700 dark:text-red-300 
+   @apply bg-red-100  text-red-700
 }
 </style>

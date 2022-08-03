@@ -45,7 +45,7 @@ let propsNames = computed(() => {
 </template>
 <style scoped>
 .table.striped tr:nth-child(even) {
-    @apply bg-gray-100 dark:bg-gray-900
+    @apply bg-gray-100
 }
 
 
@@ -89,7 +89,7 @@ let propsNames = computed(() => {
         float: left;
         text-transform: uppercase;
         font-weight: bold;
-        @apply text-gray-700 dark:text-gray-200
+        @apply text-gray-700
     }
 }
 

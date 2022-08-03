@@ -13,7 +13,7 @@ const classes = computed(() => [
     'card',
 
     shapeClass.value,
-    props.outlined ? 'bg-transparent' : ' bg-gray-50  dark:bg-primary-900',
+    props.outlined ? 'bg-transparent' : ' bg-gray-50',
     props.block ? 'w-full' : 'max-w-lg',
     {
         'card--media-aside': props.mediaAside,
@@ -39,7 +39,7 @@ const classes = computed(() => [
 </template>
 <style scoped>
 .card {
-    @apply overflow-hidden rounded text-slate-500 dark:text-slate-100
+    @apply overflow-hidden rounded text-slate-500
 }
 
 .card--media-aside {

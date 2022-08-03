@@ -33,6 +33,6 @@ export function useElevation( props: {
    
 
     return {
-        shapeClass: computed(() => props.outlined.value? 'border border-slate-300 dark:border-slate-700':`${shadows[props.elevation.value]} shadow-slate-400 dark:shadow-primary-800`)
+        shapeClass: computed(() => props.outlined.value? 'border border-slate-300':`${shadows[props.elevation.value]} shadow-slate-400 dark:shadow-primary-800`)
     }
 }
