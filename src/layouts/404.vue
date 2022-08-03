@@ -9,9 +9,8 @@ const router = useRouter()
     </div>
     <RouterView />
     <div class="flex justify-center mt-4 text-center">
-      <VBtn variant="primary" @click="router.back()">
-        button.back
-      </VBtn>
+      <VBtn variant="primary"
+            @click="router.back()">돌아가기</VBtn>
     </div>
   </main>
 </template>
