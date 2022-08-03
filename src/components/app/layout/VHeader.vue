@@ -1,35 +1,64 @@
 <script setup lang="ts">
-import useEventsBus from '~/composables/core/eventBus';
+// import useEventsBus from '~/composables/core/eventBus';
+//
+// const { emit } = useEventsBus();
+const navigationLinks: Array<{ [key: string]: string }> = [{
+  title: '부킹엔진',
+  path: '/engine',
+}, {
+  title: '백오피스',
+  path: '/back-office',
+}, {
+  title: '부가서비스',
+  path: '/extra',
+}, {
+  title: '고객센터',
+  path: '/support',
+}];
 
-const { emit } = useEventsBus()
+const route = useRoute();
+
+const checkSelected = (path: string) => {
+  console.log('path : ', path);
+  return route.path === path;
+};
 </script>
+
 <template>
     <!-- header component -->
-
     <header
-        :class="`pl-md:pl-20 md:rtl:pr-20 pr-2 pl-2 transition-padding duration-700 w-full right-0 z-20 flex flex-col items-center justify-center md:justify-between  px-4 py-2 space-y-2 shadow-md  md:py-0 md:space-y-none md:h-16 md:flex-row bg-slate-100`">
-        <div>
-            <div class="relative"><span
-                    class="absolute inset-y-0 z-10 flex items-center pl-3 text-xl text-gray-500 i-carbon-search top-1/4 left-3">
-                </span>
-                <input type="text" placeholder="Type Something"
-                    class="w-full min-w-[300px] py-2 pl-10 pr-4 text-gray-700 bg-white border rounded-md dark:bg-primary-900 dark:text-gray-300 dark:border-gray-500 focus:border-blue-400 focus:ring-blue-300 focus:ring-opacity-40 dark:focus:border-blue-300 focus:outline-none focus:ring" />
-            </div>
-        </div>
-        <div class='flex items-center space-x-4 rtl:space-x-reverse text-slate-600 dark:text-white'>
-          <button
-                class="text-xl cursor-pointer i-carbon-notification hover:bg-slate-500 text-slate-600 dark:text-white" />
-
-            <div class="flex items-center cursor-pointer">
-                <img class="w-8 h-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt="" />
-
-            </div>
-        </div>
-
+        class="header py-5 bg-white pl-md:pl-20 md:rtl:pr-20 pr-2 pl-2 transition-padding duration-700 w-full right-0 z-20 flex flex-row items-center justify-center md:justify-between  px-4 space-y-2 shadow-md md:space-y-none md:h-16 md:flex-row">
+      <div>
+        <RouterLink to="/">
+          <img src="/image/logo/ci-sharevalue.png"
+               srcset=""
+               width="147"
+               height="31"
+               alt="쉐어밸류"
+               class=""/>
+        </RouterLink>
+      </div>
+      <div class="flex">
+        <nav>
+          <RouterLink
+              v-for="({ title, path }) in navigationLinks"
+              :key="`nav_${path}`"
+              :class="['decoration-none', checkSelected(path) ? 'selected' : '']"
+              :to="path">
+            <span>{{ title }}</span>
+          </RouterLink>
+        </nav>
+      </div>
+      <div>
+        <button>가입문의</button>
+      </div>
     </header>
-
 </template>
 <style scoped>
+
+.header {
+  width: 1200px;
+  margin: 0 auto;
+  box-shadow: 0 0 9px 1px rgba(4, 0, 0, 0.1);
+}
 </style>
