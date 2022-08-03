@@ -4,17 +4,11 @@ const router = useRouter()
 
 <template>
   <main p="x4 y10" class="flex flex-col items-center justify-center h-full ">
-    <div class="text-6xl text-amber-600">
-      <div i-carbon-warning inline-block />
-    </div>
     <RouterView />
     <div class="flex justify-center mt-4 text-center">
       <VBtn variant="primary"
+            rounded="lg"
             @click="router.back()">돌아가기</VBtn>
     </div>
   </main>
 </template>
-<route lang="yaml">
-meta:
-  layout: home
-</route>

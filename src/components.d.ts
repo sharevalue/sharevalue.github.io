@@ -5,16 +5,9 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    ComponentsDemo: typeof import('./components/app/ComponentsDemo.vue')['default']
-    ComponentsDemoItem: typeof import('./components/app/ComponentsDemoItem.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
-    Playground: typeof import('./components/app/Playground.vue')['default']
-    PropsDoc: typeof import('./components/app/PropsDoc.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    VAlert: typeof import('./components/core/data-display/VAlert/VAlert.vue')['default']
-    VAvatar: typeof import('./components/core/data-display/VAvatar/VAvatar.vue')['default']
-    VAvatarGroup: typeof import('./components/core/data-display/VAvatar/VAvatarGroup.vue')['default']
     VBadge: typeof import('./components/core/data-display/VBadge/VBadge.vue')['default']
     VBreadcrumb: typeof import('./components/core/navigation/VBreadcrumb/VBreadcrumb.vue')['default']
     VBtn: typeof import('./components/core/inputs/VBtn/VBtn.vue')['default']

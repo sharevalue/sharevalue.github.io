@@ -2,10 +2,19 @@
 </script>
 
 <template>
-  <div class="text-5xl font-bold uppercase text-amber-600">
-    not-found
+  <div class="text-5xl font-bold text-primary-600 letter-spacing m-3">
+    다시 돌아가주세요.
+  </div>
+  <div class="text-3xl text-secondary-800 m-3">
+    요청하신 페이지를 찾을 수 없습니다 :(
   </div>
 </template>
+
+<style scoped>
+.title {
+  letter-spacing: -.5px;
+}
+</style>
 
 <route lang="yaml">
 meta:
