@@ -62,12 +62,17 @@ onMounted(() => {
   </div>
   <!--공지사항-->
   <div class="support-notice">
-    <div class="support-title mb-17.5">공지사항</div>
+    <div class="default-container">
+      <div class="support-title mb-17.5">공지사항</div>
+      <Notice/>
+    </div>
   </div>
   <!--자주하는 질문-->
   <div class="support-faq">
-    <div class="support-title mb-17.5">자주하는 질문</div>
-
+    <div class="default-container">
+      <div class="support-title mb-17.5">자주하는 질문</div>
+      <Faq/>
+    </div>
   </div>
   <!--CONTACT US-->
   <div id="contact_us"
