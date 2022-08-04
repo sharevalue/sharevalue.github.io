@@ -54,7 +54,7 @@ function moveToPageWithTargetId(path: string, targetId: string) {
         <div>
           <button type="button"
                   class="bg-primary-500 c-white contact-btn"
-                  @click="moveToPageWithTargetId('/support', 'contact_us')">가입문의</button>
+                  @click="moveToPageWithTargetId('/support', 'inquiry')">가입문의</button>
         </div>
       </div>
     </header>
