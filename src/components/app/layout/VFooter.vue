@@ -14,7 +14,7 @@ const { emit } = useEventsBus()
           <div class="footer-company-sns">
             <a href="https://blog.naver.com/sharevaluecorp"
                class="inline-block px-2">
-              <img src="image/logo/dark_blog.webp"
+              <img src="/image/logo/dark_blog.webp"
                    width="35"
                    height="32"
                    class="pt-0.2"
@@ -22,7 +22,7 @@ const { emit } = useEventsBus()
             </a>
             <a href="https://www.youtube.com/channel/UC7oNi16xzMz4b043bucT5ww"
                class="inline-block px-2">
-              <img src="image/logo/dark_youtube.webp"
+              <img src="/image/logo/dark_youtube.webp"
                    width="35"
                    height="25"
                    class="pt-0.5 pb-1.5"
@@ -30,7 +30,7 @@ const { emit } = useEventsBus()
             </a>
             <a href="https://www.facebook.com/sharevaluecorp/"
                class="inline-block px-2">
-              <img src="image/logo/dark_facebook.webp"
+              <img src="/image/logo/dark_facebook.webp"
                    width="35"
                    height="35"
                    alt="facebook"/>
@@ -47,7 +47,7 @@ const { emit } = useEventsBus()
     <div class="bg-white">
       <div class="footer-record flex flex-row justify-between items-center text-center">
         <div class="items-center text-center">
-          <img src="image/logo/klbo.webp"
+          <img src="/image/logo/klbo.webp"
                width="119"
                height="30"
                alt="로고"
@@ -55,7 +55,7 @@ const { emit } = useEventsBus()
           <div>기술벤처인증기업</div>
         </div>
         <div class="items-center text-center">
-          <img src="image/logo/koita.webp"
+          <img src="/image/logo/koita.webp"
                width="51"
                height="30"
                alt="로고"
@@ -63,7 +63,7 @@ const { emit } = useEventsBus()
           <div>기업부설연구소 인증기업</div>
         </div>
         <div class="items-center text-center">
-          <img src="image/logo/startup.webp"
+          <img src="/image/logo/startup.webp"
                width="29"
                height="30"
                alt="로고"
@@ -71,7 +71,7 @@ const { emit } = useEventsBus()
           <div>초기관광벤처기업</div>
         </div>
         <div class="items-center text-center">
-          <img src="image/logo/iata.webp"
+          <img src="/image/logo/iata.webp"
                width="47"
                height="30"
                alt="로고"
