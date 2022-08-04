@@ -4,6 +4,13 @@ import axios from 'axios';
 import { onMounted, ref, reactive, computed } from 'vue'
 import {IFAQ} from "~/types";
 
+const props = defineProps({
+  faqType: {
+    type: String,
+    default: '',
+  }
+});
+
 const faqResponse = reactive({
   faqList: [] as Array<IFAQ>,
   totalCount: 0,
@@ -18,8 +25,6 @@ function updatePage(val: number) {
 }
 
 async function search() {
-  console.log('CALL!!! FAQ');
-
   await axios.get(`https://api-dev.smartbookingplus.com/faq/list?page=${(page.value - 1)}&pageSize=${pageSize}&query=&siteId=43`).then((res) => {
     const {
       statusCode,
@@ -29,9 +34,6 @@ async function search() {
     if (statusCode !== 200) {
       throw new Error();
     }
-
-    console.log('data : ', data);
-
     Object.assign(faqResponse, data);
   }).catch((e) => {
     Object.assign(faqResponse, {
@@ -110,7 +112,6 @@ details[open] .faq-title-area:after {
   top: 25px;
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
-
 }
 
 .faq-title-area .faq-title {

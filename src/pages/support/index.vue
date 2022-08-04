@@ -4,28 +4,32 @@
 import { onMounted } from 'vue'
 
 function initNaverMap() {
-  //  @ts-ignore
-  const map = new naver.maps.Map('map');
-  //  @ts-ignore
-  const point = new naver.maps.Point(126.978976, 37.567271);
-
-  // 검색된 좌표로 지도 이동
-  map.setCenter(point);
-
-  const icon = {
-    url: '/image/common/map-pin.png',
+  try {
     //  @ts-ignore
-    size: new naver.maps.Size(104, 85),
+    const map = new naver.maps.Map('map');
     //  @ts-ignore
-    anchor: new naver.maps.Point(52, 85)
-  };
+    const point = new naver.maps.Point(126.978976, 37.567271);
 
-  //  @ts-ignore
-  const marker = new naver.maps.Marker({
-    position: point,
-    map,
-    icon,
-  });
+    // 검색된 좌표로 지도 이동
+    map.setCenter(point);
+
+    const icon = {
+      url: '/image/common/map-pin.png',
+      //  @ts-ignore
+      size: new naver.maps.Size(104, 85),
+      //  @ts-ignore
+      anchor: new naver.maps.Point(52, 85)
+    };
+
+    //  @ts-ignore
+    const marker = new naver.maps.Marker({
+      position: point,
+      map,
+      icon,
+    });
+  } catch (e) {
+    console.error('네이버 지도 로딩 실패 : ', e.message);
+  }
 }
 
 const route = useRoute();
