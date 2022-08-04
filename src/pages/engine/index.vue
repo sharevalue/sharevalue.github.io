@@ -95,7 +95,12 @@ const engineSpecList: Array<IProductSpec> = [{
     </div>
   </div>
   <div></div>
-  <div></div>
+  <div class="engine-faq">
+    <div class="default-container">
+      <div class="support-title mb-17.5">자주하는 질문</div>
+      <Faq/>
+    </div>
+  </div>
 </template>
 
 <style scoped>
@@ -105,5 +110,11 @@ const engineSpecList: Array<IProductSpec> = [{
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
+.engine-faq {
+  padding: 150px 20px;
+  background-color: #ffffff;
+}
+
 
 </style>

@@ -2,7 +2,7 @@
 <script setup lang="ts">
 import {IProductSpec} from "~/types";
 
-const engineSpecList: Array<IProductSpec> = [{
+const backOfficeSpecList: Array<IProductSpec> = [{
   icon: 'ico_black_customer.webp',
   title: '고객 관리',
   specList: ['고객 통합 검색', '온라인 개인 회원', '온라인 거래처 회원', '기존 고객 / 거래처'],
@@ -41,28 +41,37 @@ const engineSpecList: Array<IProductSpec> = [{
   <div></div>
   <div></div>
   <div class="px-5 py-37.5">
-    <div class="default-container engine-spec-list">
-      <ProductSpec v-for="(engineSpec, index) in engineSpecList"
-                   :key="`engine_spec_${index}`"
-                   :icon="engineSpec.icon">
-        <template v-slot:title>{{ engineSpec.title }}</template>
+    <div class="default-container back-office-spec-list">
+      <ProductSpec v-for="(backOfficeSpec, index) in backOfficeSpecList"
+                   :key="`back_office_spec_${index}`"
+                   :icon="backOfficeSpec.icon">
+        <template v-slot:title>{{ backOfficeSpec.title }}</template>
         <template v-slot:list>
-          <li v-for="(spec, specIndex) in engineSpec.specList"
-              :key="`engine_spec_${index}_${specIndex}`">{{ spec }}</li>
+          <li v-for="(spec, specIndex) in backOfficeSpec.specList"
+              :key="`back_office_spec_${index}_${specIndex}`">{{ spec }}</li>
         </template>
       </ProductSpec>
     </div>
   </div>
   <div></div>
-  <div></div>
+  <div class="back-office-faq">
+    <div class="default-container">
+      <div class="support-title mb-17.5">자주하는 질문</div>
+      <Faq/>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-.engine-spec-list {
+.back-office-spec-list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
 }
 
+.back-office-faq {
+  padding: 150px 20px;
+  background-color: #ffffff;
+}
 </style>
