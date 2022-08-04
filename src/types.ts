@@ -10,3 +10,9 @@ export interface IInquiryForm {
   companyName: string;
   content: string;
 }
+
+export interface IProductSpec {
+  title: string;
+  icon: string;
+  specList: string[];
+}
