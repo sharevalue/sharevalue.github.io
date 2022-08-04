@@ -5,17 +5,18 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    Counter: typeof import('./components/Counter.vue')['default']
+    Faq: typeof import('./components/app/support/faq.vue')['default']
+    Inquiry: typeof import('./components/app/support/inquiry.vue')['default']
+    Notice: typeof import('./components/app/support/notice.vue')['default']
+    Pagination: typeof import('./components/core/Pagination.vue')['default']
+    ProductSpec: typeof import('./components/app/ProductSpec.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     VBadge: typeof import('./components/core/data-display/VBadge/VBadge.vue')['default']
     VBreadcrumb: typeof import('./components/core/navigation/VBreadcrumb/VBreadcrumb.vue')['default']
-    VBtn: typeof import('./components/core/inputs/VBtn/VBtn.vue')['default']
-    VBtnGroup: typeof import('./components/core/inputs/VBtnGroup/VBtnGroup.vue')['default']
     VCard: typeof import('./components/core/surface/VCard/VCard.vue')['default']
     VFooter: typeof import('./components/app/layout/VFooter.vue')['default']
     VHeader: typeof import('./components/app/layout/VHeader.vue')['default']
-    VTextField: typeof import('./components/core/inputs/VTextField/VTextField.vue')['default']
   }
 }
 
