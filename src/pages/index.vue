@@ -107,7 +107,40 @@
   </div>
 </template>
 
-<style>
+<style scoped>
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein { /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein { /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .scroll-sections {
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
@@ -142,6 +175,12 @@
   font-style: normal;
   line-height: 1.44;
   letter-spacing: -1.13px;
+
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+
   /*text-shadow: 1px 1px 2px #cccccc;*/
 }
 
@@ -160,6 +199,11 @@
   line-height: 1.83;
   letter-spacing: -0.45px;
   color: #ffffff;
+
+  animation: fadein 2.5s;
+  -moz-animation: fadein 2.5s; /* Firefox */
+  -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+  -o-animation: fadein 2.5s; /* Opera */
 }
 
 .section-2 {

@@ -38,11 +38,29 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 </script>
 
 <template>
-  <div class="section-1 use-full-bg-image">
-    <div></div>
-    <div></div>
+  <div class="section-1 use-full-bg-image c-white">
+    <div class="px-5 default-container">
+      <div class="title">
+        <div>SMART</div>
+        <div>BUSINESS</div>
+        <div>MANAGEMENT</div>
+      </div>
+      <div class="description">
+        <div>스마트 비엠은 고객의 <b>예약, 결제, 변경요청, 문의</b>에 대한 온라인 업무 처리와</div>
+        <div>여행사의 <b>상품 판매 및 미수, 수익, 정산</b>을 한번에 관리할 수 있는 전문 백오피스입니다.</div>
+        <div class="sub-description">* 고객 관리부터 예약, 판매 정산까지 올인원 솔루션으로 언제 어디서나 비대면 업무처리가 가능합니다. </div>
+      </div>
+    </div>
   </div>
-  <div></div>
+  <div class="section-2 bg-secondary-500 c-white">
+    <div class="default-container px-15 flex flex-row items-center">
+      <div class="mr-5 title">소중한 고객 정보를 관리하고, 카카오톡 채널의 친구추가 및 알림이 자유롭고, 업무의 생산성 및 효율성 증대로 비용 절감과 업무 리스크 관리가 가능합니다.</div>
+      <img src="/image/icon/ico_white_worker.webp"
+           width="67"
+           height="70"
+           alt="icon"/>
+    </div>
+  </div>
   <div class="px-5 py-37.5">
     <div class="default-container back-office-spec-list">
       <ProductSpec v-for="(backOfficeSpec, index) in backOfficeSpecList"
@@ -67,9 +85,50 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 
 <style scoped>
 .section-1 {
+  height: calc(100vh - 90px);
   background-color: #154999;
   background-image: url(/image/common/erp.webp);
   position: relative;
+  text-align: left;
+}
+
+.section-1 .title {
+  @apply roboto;
+  position: absolute;
+  top: 25.2%;
+  font-size: 80px;
+  font-weight: 800;
+  line-height: 90px;
+  letter-spacing: normal;
+}
+
+.section-1 .description {
+  position: absolute;
+  top: 62.5%;
+  font-size: 18px;
+  line-height: 33px;
+  letter-spacing: -0.45px;
+  text-align: left;
+}
+
+.section-1 .description .sub-description {
+  font-size: 16px;
+  letter-spacing: -0.4px;
+}
+
+.section-1 .description b {
+  font-weight: 800;
+}
+
+.section-2 {
+  padding: 15px 0;
+}
+
+.section-2 .title {
+  font-size: 21px;
+  line-height: 70px;
+  letter-spacing: -0.53px;
+  text-align: left;
 }
 
 .back-office-spec-list {

@@ -130,7 +130,7 @@ onMounted(() => {
 }
 
 .support-cs .support-cs-number {
-  font-family: 'Roboto';
+  @apply roboto;
   font-size: 48px;
   line-height: 65px;
 }
@@ -141,7 +141,7 @@ onMounted(() => {
   letter-spacing: -0.45px;
 }
 .support-cs .support-cs-info .hours-of-operation {
-  font-family: 'Roboto';
+  @apply roboto;
   letter-spacing: 0.45px;
 }
 
