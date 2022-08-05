@@ -74,7 +74,55 @@ const backOfficeSpecList: Array<IProductSpec> = [{
       </ProductSpec>
     </div>
   </div>
-  <div></div>
+  <div class="section-4">
+    <div class="px-5 default-container">
+      <div class="price-table-title mb-17.5">사용료</div>
+      <div>
+        <table class="price-table">
+          <thead>
+          <tr>
+            <th></th>
+            <th>홈페이지 미연동</th>
+            <th>홈페이지 연동</th>
+            <th>타 판매채널 연동</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <th>유지 관리</th>
+            <td><div class="icon-checked"/></td>
+            <td rowspan="7">문의</td>
+            <td rowspan="7">문의</td>
+          </tr>
+          <tr>
+            <th>카카오 알림톡</th>
+            <td><div class="icon-checked"/></td>
+          </tr>
+          <tr>
+            <th>웹 호스팅</th>
+            <td>문의</td>
+          </tr>
+          <tr>
+            <th>PG 카드결제 연동</th>
+            <td>문의</td>
+          </tr>
+          <tr>
+            <th>PG 가상계좌 결제 연동</th>
+            <td>문의</td>
+          </tr>
+          <tr>
+            <th>고객용 다국어 지원</th>
+            <td>문의</td>
+          </tr>
+          <tr>
+            <th>월 사용 수수료</th>
+            <td>문의</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
   <div class="back-office-faq">
     <div class="default-container">
       <div class="support-title mb-17.5">자주하는 질문</div>
@@ -94,13 +142,16 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 
 .section-1 .title {
   font-family: Raleway;
-
   position: absolute;
   top: 25.2%;
   font-size: 80px;
   font-weight: 800;
   line-height: 85px;
   letter-spacing: normal;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
 }
 
 .section-1 .description {
@@ -110,6 +161,11 @@ const backOfficeSpecList: Array<IProductSpec> = [{
   line-height: 33px;
   letter-spacing: -0.45px;
   text-align: left;
+
+  animation: fadein 2.5s;
+  -moz-animation: fadein 2.5s; /* Firefox */
+  -webkit-animation: fadein 2.5s; /* Safari and Chrome */
+  -o-animation: fadein 2.5s; /* Opera */
 }
 
 .section-1 .description .sub-description {
@@ -127,9 +183,15 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 
 .section-2 .title {
   font-size: 21px;
-  line-height: 70px;
+  line-height: 35px;
   letter-spacing: -0.53px;
   text-align: left;
+  word-break: keep-all;
+}
+
+.section-4 {
+  background-color: #f8f9fb;
+  padding: 200px;
 }
 
 .back-office-spec-list {
