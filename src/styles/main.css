@@ -77,3 +77,16 @@ body {
 
     @apply bg-secondary-500;
 }
+
+.use-full-bg-image {
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-position: 25% 50%;
+    background-position: 35% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    min-height: 600px;
+}

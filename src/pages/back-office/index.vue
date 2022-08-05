@@ -38,7 +38,10 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 </script>
 
 <template>
-  <div></div>
+  <div class="section-1 use-full-bg-image">
+    <div></div>
+    <div></div>
+  </div>
   <div></div>
   <div class="px-5 py-37.5">
     <div class="default-container back-office-spec-list">
@@ -63,6 +66,12 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 </template>
 
 <style scoped>
+.section-1 {
+  background-color: #154999;
+  background-image: url(/image/common/erp.webp);
+  position: relative;
+}
+
 .back-office-spec-list {
   display: flex;
   flex-direction: row;
