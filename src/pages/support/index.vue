@@ -81,7 +81,7 @@ onMounted(() => {
   <!--CONTACT US-->
   <div id="contact_us"
        class="shadow-md">
-    <div class="support-title roboto normal-letter-spacing mb-17.5">CONTACT US</div>
+    <div class="support-title normal-letter-spacing mb-17.5">CONTACT US</div>
     <div class="flex flex-row justify-between">
       <div class="contact-us-map">
         <div>
@@ -130,7 +130,7 @@ onMounted(() => {
 }
 
 .support-cs .support-cs-number {
-  @apply roboto;
+  font-weight: 300;
   font-size: 48px;
   line-height: 65px;
 }
@@ -141,7 +141,7 @@ onMounted(() => {
   letter-spacing: -0.45px;
 }
 .support-cs .support-cs-info .hours-of-operation {
-  @apply roboto;
+  font-weight: 300;
   letter-spacing: 0.45px;
 }
 
@@ -156,6 +156,10 @@ onMounted(() => {
   padding-top: 150px;
   background-color: #f8f9fb;
   box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.2);
+}
+
+#contact_us .support-title {
+  font-family: Raleway;
 }
 
 #contact_us >div {

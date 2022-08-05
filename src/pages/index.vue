@@ -33,7 +33,7 @@
           <div class="icon-title">개발</div>
           <div class="icon-description">Development</div>
         </div>
-        <div class="roboto plus-icon">+</div>
+        <div class="plus-icon">+</div>
         <div class="icon-block bg-primary-500 c-white">
           <div class="mb-6">
             <img src="/image/icon/ico_white_map-home.webp"
@@ -44,7 +44,7 @@
           <div class="icon-title">인프라</div>
           <div class="icon-description">Infrastructure</div>
         </div>
-        <div class="roboto plus-icon">+</div>
+        <div class="plus-icon">+</div>
         <div class="icon-block bg-primary-500 c-white">
           <div class="mb-6">
             <img src="/image/icon/ico_white_engineer.webp"
@@ -270,8 +270,7 @@
 }
 
 .section-2 .icon-block .icon-description {
-  @apply roboto;
-
+  font-family: Raleway;
   font-size: 16px;
   font-weight: normal;
 }
@@ -296,8 +295,9 @@
 }
 
 .section-3 .content .slogans {
-  @apply roboto c-secondary-500;
+  @apply c-secondary-500;
 
+  font-family: Raleway;
   font-size: 36px;
   font-weight: 200;
   font-stretch: normal;
@@ -323,8 +323,9 @@
 }
 
 .section-3 .content .roadmap-stage {
-  @apply roboto flex flex-col justify-center items-center;
+  @apply flex flex-col justify-center items-center;
 
+  font-family: Raleway;
   width: 200px;
   height: 200px;
   border-radius: 50%;

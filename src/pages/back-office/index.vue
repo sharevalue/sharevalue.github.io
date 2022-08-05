@@ -93,12 +93,13 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 }
 
 .section-1 .title {
-  @apply roboto;
+  font-family: Raleway;
+
   position: absolute;
   top: 25.2%;
   font-size: 80px;
   font-weight: 800;
-  line-height: 90px;
+  line-height: 85px;
   letter-spacing: normal;
 }
 

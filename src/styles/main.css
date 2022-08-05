@@ -1,5 +1,5 @@
 /* Quasimoda 폰트 대체 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,300,700');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
 
 @font-face {
     font-family: 'NanumBarunGothic';
@@ -53,10 +53,6 @@ body {
     font-weight: bold;
     letter-spacing: -0.9px;
     text-align: center;
-}
-
-.roboto {
-    font-family: Roboto;
 }
 
 .normal-letter-spacing {
