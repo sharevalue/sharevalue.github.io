@@ -35,11 +35,8 @@ function requestInquiry() {
   }
 
   axios.post(
-      'https://api.smartbm.co.kr/sbm/inquirys',
+      'https://api.smartbm.co.kr/sbm/inquiry',
       JSON.stringify(inquiryForm),
-      {
-
-      }
   ).then(() => {
     alert("정상적으로 접수하였습니다.");
     window.location.reload();
@@ -58,7 +55,8 @@ function requestInquiry() {
         <span>하시면 확인 후 신속하게 연락드리겠습니다.</span>
       </div>
     </div>
-    <div class="inquiry-content text-left">
+    <form class="inquiry-content text-left"
+          @submit.prevent="requestInquiry">
       <div class="flex flex-row inquiry-input-area">
         <div>
           <div class="inquiry-input-title">
@@ -139,12 +137,11 @@ function requestInquiry() {
           <div class="ml-11">동의 시 자사의 서비스 안내 및 마케팅 정보 수신에 동의함을 의미합니다.</div>
         </div>
         <div class="text-right">
-          <button type="button"
-                  class="bg-primary-500 c-white inquiry-btn"
-                  @click="requestInquiry">문의 신청하기</button>
+          <button type="submit"
+                  class="bg-primary-500 c-white inquiry-btn">문의 신청하기</button>
         </div>
       </div>
-    </div>
+    </form>
   </div>
 </template>
 
