@@ -306,6 +306,7 @@
   font-style: normal;
   line-height: 30px;
   display: flex;
+  z-index: 1;
 }
 .section-3 .content .roadmap-stage .stage-description {
   font-size: 16px;
