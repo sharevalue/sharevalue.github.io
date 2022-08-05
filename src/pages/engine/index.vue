@@ -1,6 +1,7 @@
 
 <script setup lang="ts">
 import {IProductSpec} from "~/types";
+import { ref, onUnmounted } from 'vue'
 
 const engineSpecList: Array<IProductSpec> = [{
   icon: 'ico_black_tickets.webp',
@@ -76,11 +77,70 @@ const engineSpecList: Array<IProductSpec> = [{
   title: '운영 대행',
   specList: ['사이트 운영 대행', '예약 관리', '고객 문의 관리', '고객 요청 관리', '발권 서비스'],
 }];
+
+const engineProcessStages = [
+  '협약서 체결',
+  'GDS 웹 계정 생성<br/>및 승인',
+  '항공전용 사이트 설정',
+  '백오피스 설정',
+  '서비스 오픈 테스트',
+  '관리자(사용자) 교육',
+  '서비스 오픈',
+];
+
+const scrollYPosition = ref(0);
+
+const engineProcessStageStyleList = computed(() => {
+  const foundTarget = document.getElementById('engine_process');
+
+  if (scrollYPosition.value > 0 && foundTarget) {
+    const { top } = foundTarget.getBoundingClientRect();
+    const paddingTopSize = 450;
+    const startPosition = top - window.innerHeight + paddingTopSize;
+
+    if (startPosition < 0) {
+      const endPosition = top - (window.innerHeight / 2) + paddingTopSize;
+      const stageSize = Math.ceil((endPosition - startPosition) / engineProcessStages.length);
+      const absStartPosition = Math.abs(startPosition);
+
+      return engineProcessStages.map((stage, index) => {
+        const stageStartPosition = (index * stageSize);
+
+        if (absStartPosition - stageStartPosition > 0) {
+          const result = (absStartPosition - stageStartPosition);
+          return result >= stageSize ? 'opacity: 1' : `opacity: ${result / stageSize}`;
+        }
+
+        return 'opacity: 0';
+      });
+    }
+  }
+
+  return engineProcessStages.map(() => 'opacity: 0');
+});
+
+function getScrollYPosition(e: any) {
+  scrollYPosition.value = (window.pageYOffset || 0);
+}
+
+window.addEventListener('scroll', getScrollYPosition);
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', getScrollYPosition);
+});
 </script>
 
 <template>
   <div></div>
-  <div></div>
+  <div class="engine-sub-description">
+    <div class="default-container px-35 flex flex-row items-center">
+      <div class="mr-5 title">개인 항공권, 단체 항공권, 전세기 항공권, 저비용 항공사 전용 항공권까지~! 세상의 모든 항공권 상품을 24시간 고객에게 제공하세요!</div>
+      <img src="/image/icon/ico_white_airplane.webp"
+           width="72"
+           height="70"
+           alt="icon"/>
+    </div>
+  </div>
   <div class="px-5 py-37.5">
     <div class="default-container engine-spec-list">
       <ProductSpec v-for="(engineSpec, index) in engineSpecList"
@@ -94,7 +154,141 @@ const engineSpecList: Array<IProductSpec> = [{
       </ProductSpec>
     </div>
   </div>
-  <div></div>
+  <div id="engine_process"
+       ref="el"
+       class="engine-process">
+    <div class="px-5 default-container">
+      <div class="engine-process-title mb-17.5">서비스 계약 및 진행 절차</div>
+      <div class="engine-process-content">
+        <div class="flex flex-row justify-evenly">
+          <div v-for="(stage, index) in engineProcessStages"
+               :key="`engine_process_${index}`"
+               :style="engineProcessStageStyleList[index]">
+            <div class="engine-process-stage">{{ `0${index + 1}` }}</div>
+            <div class="engine-process-stage-bar">
+              <span class="dot"/>
+            </div>
+            <div class="engine-process-stage-title"
+                 v-html="stage"/>
+          </div>
+        </div>
+        <div class="engine-process-line"/>
+      </div>
+    </div>
+  </div>
+  <div class="engine-price-table">
+    <div class="px-5 default-container">
+      <div class="price-table-title mb-17.5">PLAN</div>
+      <table class="price-table">
+        <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>EASY</th>
+          <th>WITH</th>
+          <th>PRO</th>
+          <th>PMS</th>
+          <th>API</th>
+          <th>CUSTOMIZING</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th colspan="2">대상</th>
+          <td>ATR</td>
+          <td>BSP</td>
+          <td>BSP</td>
+          <td>ALL</td>
+          <td>ALL</td>
+          <td>ALL</td>
+        </tr>
+        <tr>
+          <th colspan="2">GDS 웹서비스 PCC</th>
+          <td><div class="icon-checked"/></td>
+          <td><div class="icon-checked"/></td>
+          <td><div class="icon-checked"/></td>
+          <td rowspan="13">문의</td>
+          <td rowspan="13">문의</td>
+          <td rowspan="13">문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">웹 호스팅</th>
+          <td><div class="icon-checked"/></td>
+          <td><div class="icon-checked"/></td>
+          <td><div class="icon-checked"/></td>
+        </tr>
+        <tr>
+          <th colspan="2">유지관리</th>
+          <td><div class="icon-checked"/></td>
+          <td><div class="icon-checked"/></td>
+          <td><div class="icon-checked"/></td>
+        </tr>
+        <tr>
+          <th colspan="2">카카오알림톡 연동</th>
+          <td><div class="icon-checked"/></td>
+          <td><div class="icon-checked"/></td>
+          <td><div class="icon-checked"/></td>
+        </tr>
+        <tr>
+          <th colspan="2">판매 사이트 추가</th>
+          <td><div class="icon-dashed"/></td>
+          <td><div class="icon-dashed"/></td>
+          <td><div class="icon-checked"/></td>
+        </tr>
+        <tr>
+          <th colspan="2">자동 발권</th>
+          <td>문의</td>
+          <td>문의</td>
+          <td>문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">전세기, 단체항공 서비스</th>
+          <td>문의</td>
+          <td>문의</td>
+          <td>문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">항공사 API 연동</th>
+          <td>문의</td>
+          <td>문의</td>
+          <td>문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">PG 카드결제 연동</th>
+          <td>문의</td>
+          <td>문의</td>
+          <td>문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">PG 가상계좌 결제 연동</th>
+          <td>문의</td>
+          <td>문의</td>
+          <td>문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">고객용 다국어 지원</th>
+          <td>문의</td>
+          <td>문의</td>
+          <td>문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">고객 DB이동 및 로그인 연동</th>
+          <td>문의</td>
+          <td>문의</td>
+          <td>문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">월 사용 수수료</th>
+          <td>10만원</td>
+          <td>20만원</td>
+          <td>
+            <div class="percentage">0.8% - 0.5%</div>
+            <div class="percentage-description">(판매금액대비)</div>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
   <div class="engine-faq">
     <div class="default-container">
       <div class="support-title mb-17.5">자주하는 질문</div>
@@ -104,6 +298,19 @@ const engineSpecList: Array<IProductSpec> = [{
 </template>
 
 <style scoped>
+.engine-sub-description {
+  @apply bg-primary-500 c-white;
+  padding: 15px 0;
+}
+
+.engine-sub-description .title {
+  font-size: 21px;
+  line-height: 35px;
+  letter-spacing: -0.53px;
+  text-align: left;
+  word-break: keep-all;
+}
+
 .engine-spec-list {
   display: flex;
   flex-direction: row;
@@ -111,10 +318,113 @@ const engineSpecList: Array<IProductSpec> = [{
   flex-wrap: wrap;
 }
 
+.engine-process {
+  padding: 200px 0;
+  box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.07);
+}
+
+.engine-process .engine-process-content {
+  position: relative;
+}
+
+.engine-process .engine-process-content .engine-process-stage {
+  font-size: 30px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2e2d33;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.engine-process .engine-process-content .engine-process-stage-bar {
+  width: 150px;
+  height: 2px;
+  background-color: #00264b;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 30px;
+  z-index: 1;
+}
+
+.engine-process .engine-process-content .engine-process-stage-bar .dot {
+  @apply bg-primary-500;
+
+  width: 13px;
+  height: 13px;
+  box-sizing: initial;
+  border-radius: 50%;
+  position: absolute;
+  border: 3px solid #00264b;
+  top: -8.5px;
+  left: calc(50% - 8.5px);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.engine-process .engine-process-content .engine-process-stage-bar:after {
+  content: '';
+  border: solid #00264b;
+  display: inline-block;
+  padding: 7px;
+  right: 3px;
+  position: absolute;
+  top: -7px;
+  border-width: 0 2px 0 0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.engine-process .engine-process-content .engine-process-stage-title {
+  font-size: 21px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 30px;
+  letter-spacing: -0.53px;
+  text-align: center;
+  color: #2e2d33;
+}
+
+.engine-process .engine-process-content .engine-process-line {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  border: 1px solid #c4d2dd;
+  z-index: -1;
+}
+
+.engine-price-table {
+  background-color: #f8f9fb;
+  padding: 200px 0;
+}
+
+.engine-price-table .price-table-title,
+.engine-price-table table thead th {
+  font-family: Raleway;
+}
+
+.engine-price-table .percentage {
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  color: #2e2d33;
+}
+
+.engine-price-table .percentage-description {
+  font-weight: 300;
+  letter-spacing: -0.4px;
+  line-height: normal;
+}
+
 .engine-faq {
   padding: 150px 20px;
   background-color: #ffffff;
 }
-
-
 </style>

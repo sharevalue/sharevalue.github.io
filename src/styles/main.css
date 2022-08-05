@@ -70,6 +70,7 @@ body {
     margin: 0 auto;
 }
 
+.engine-process-title,
 .price-table-title,
 .support-title {
     font-size: 36px;
@@ -154,11 +155,19 @@ body {
     border-right-width: 0;
 }
 
-.icon-checked:before {
+.icon-checked:before,
+.icon-dashed:before {
     display: inline-block;
-    content: 'v';
     font-size: 18px;
     font-weight: normal;
     font-family: Raleway;
     color: #2e2d33;
+}
+
+.icon-checked:before {
+    content: 'v';
+}
+
+.icon-dashed:before {
+    content: '-';
 }
