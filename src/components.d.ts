@@ -12,9 +12,6 @@ declare module '@vue/runtime-core' {
     ProductSpec: typeof import('./components/app/ProductSpec.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    VBadge: typeof import('./components/core/data-display/VBadge/VBadge.vue')['default']
-    VBreadcrumb: typeof import('./components/core/navigation/VBreadcrumb/VBreadcrumb.vue')['default']
-    VCard: typeof import('./components/core/surface/VCard/VCard.vue')['default']
     VFooter: typeof import('./components/app/layout/VFooter.vue')['default']
     VHeader: typeof import('./components/app/layout/VHeader.vue')['default']
   }

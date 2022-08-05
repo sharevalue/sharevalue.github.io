@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import useEventsBus from '~/composables/core/eventBus';
-
-const { emit } = useEventsBus()
 </script>
+
 <template>
   <!-- footer component -->
   <footer
