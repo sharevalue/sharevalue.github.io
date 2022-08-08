@@ -11,6 +11,13 @@ export interface IInquiryForm {
   content: string;
 }
 
+export interface IEngineMainBg {
+  title: string;
+  content: string;
+  video: string;
+  playTime: string;
+}
+
 export interface IProductSpec {
   title: string;
   icon: string;

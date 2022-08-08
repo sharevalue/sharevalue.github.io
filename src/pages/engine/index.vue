@@ -1,7 +1,16 @@
 
 <script setup lang="ts">
-import {IProductSpec} from "~/types";
+import {IEngineMainBg, IProductSpec} from "~/types";
 import { ref, onUnmounted } from 'vue'
+
+let engineMainBgIndex = ref(0);
+
+const engineMainBgList: Array<IEngineMainBg> = [{
+  title: 'SMART<br/>BOOKING<br/>PLUS',
+  content: '스마트 부킹 플러스는 모든 고객이 직접 <b>검색, 예약, 결제, 발권</b>까지 가능한 항공 부킹 엔진입니다.',
+  video: 'engine_booking.mp4',
+  playTime: '35.5s',
+}];
 
 const engineSpecList: Array<IProductSpec> = [{
   icon: 'ico_black_tickets.webp',
@@ -90,6 +99,18 @@ const engineProcessStages = [
 
 const scrollYPosition = ref(0);
 
+const selectedEngineMainBg = computed(() => {
+  if (engineMainBgIndex.value !== -1) {
+    return engineMainBgList[engineMainBgIndex.value];
+  } else {
+    return undefined;
+  }
+});
+
+const engineBgOrderText = computed(() => {
+  return `${engineMainBgIndex.value + 1} / ${engineMainBgList.length}`;
+});
+
 const engineProcessStageStyleList = computed(() => {
   const foundTarget = document.getElementById('engine_process');
 
@@ -119,6 +140,31 @@ const engineProcessStageStyleList = computed(() => {
   return engineProcessStages.map(() => 'opacity: 0');
 });
 
+function moveEngineMainBgIndex(index: number) {
+  const result: number = engineMainBgIndex.value + index;
+
+  if (index > 0) {
+    const isMaximum = result >= engineMainBgList.length;
+    engineMainBgIndex.value = isMaximum ? result - engineMainBgList.length : result;
+  } else {
+    const isMinimum = result < 0;
+    engineMainBgIndex.value = isMinimum ? result + engineMainBgList.length : result;
+  }
+
+  restartEngineProgressBarTrigger();
+}
+
+function restartEngineProgressBarTrigger() {
+  const foundElement = document.getElementById('progress_bar_trigger');
+
+  if (foundElement) {
+    foundElement.classList.remove('trigger-animation');
+    setTimeout(() => {
+      foundElement.classList.add('trigger-animation');
+    }, 10);
+  }
+}
+
 function getScrollYPosition(e: any) {
   scrollYPosition.value = (window.pageYOffset || 0);
 }
@@ -131,7 +177,35 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div></div>
+  <div class="engine-main">
+    <div class="engine-main-bg-video-area">
+      <video :src="`/video/${ selectedEngineMainBg.video }`"
+             autoplay loop playsinline muted/>
+    </div>
+    <div class="engine-main-content-area">
+      <div class=" default-container text-left c-secondary-500">
+        <div class="engine-bg-order">{{ engineBgOrderText }}</div>
+        <div v-if="selectedEngineMainBg.title"
+             class="engine-main-content-title"
+             v-html="selectedEngineMainBg.title"/>
+        <div v-if="selectedEngineMainBg.content"
+             class="engine-main-content engine-main-content-text"
+             v-html="selectedEngineMainBg.content"/>
+        <div class="engine-main-content engine-main-bg-nav">
+          <button class="nav-left-btn"
+                  @click="moveEngineMainBgIndex(-1)"/>
+          <button class="nav-right-btn"
+                  @click="moveEngineMainBgIndex(1)"/>
+        </div>
+        <div v-if="selectedEngineMainBg.playTime"
+             class="engine-bg-progress-bar">
+          <div id="progress_bar_trigger"
+               class="engine-bg-progress-bar-trigger trigger-animation"
+               :style="{'animation-duration': selectedEngineMainBg.playTime}"/>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="engine-sub-description">
     <div class="default-container px-35 flex flex-row items-center">
       <div class="mr-5 title">개인 항공권, 단체 항공권, 전세기 항공권, 저비용 항공사 전용 항공권까지~! 세상의 모든 항공권 상품을 24시간 고객에게 제공하세요!</div>
@@ -141,7 +215,7 @@ onUnmounted(() => {
            alt="icon"/>
     </div>
   </div>
-  <div class="px-5 py-37.5">
+  <div class="px-5 py-37.5 bg-white">
     <div class="default-container engine-spec-list">
       <ProductSpec v-for="(engineSpec, index) in engineSpecList"
                    :key="`engine_spec_${index}`"
@@ -296,6 +370,12 @@ onUnmounted(() => {
     </div>
   </div>
 </template>
+
+<style>
+.engine-main-content-text b {
+  @apply c-primary-500;
+}
+</style>
 
 <style scoped>
 @import '/src/styles/engine.css';
