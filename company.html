@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1fdx00k4dv&submodules=geocoder"></script>
+
+    <meta name="description" content="개발과 운영 인프라 없는 부킹솔루션 제공">
+
+    <meta property="og:title" content="쉐어밸류">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sharevaluecorp.com/">
+    <meta property="og:image" content="/img/logo-og.png"/>
+    <meta property="og:description" content="범용 온라인항공예약 솔루션, 예약 API, 여행상품 백오피스">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:url" content="https://www.sharevaluecorp.com/">
+    <meta name="twitter:image" content="/img/logo-og.png"/>
+    <meta name="twitter:description" content="범용 온라인항공예약 솔루션, 예약 API, 여행상품 백오피스">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+    <title>회사소개 - 쉐어밸류</title>
+
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <link href="main.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149122103-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-149122103-2');
+    </script>
+</head>
+
+<body class="company">
+<!-- Change this in 'webpack-config.js' or remove -->
+<div class="gnb sticky">
+    <div class="container">
+        <div class="gnb-ci">
+            <a href="./index.html">
+                <img src="./img/ci-sharevalue.png"
+                     srcset="./img/ci-sharevalue@2x.png 2x, ./img/ci-sharevalue@3x.png 3x"
+                     class="ci_sharevalue">
+            </a>
+        </div>
+        <div>
+            <ul class="top-menu">
+                <li><a href="./company.html" class="active">Company</a></li>
+                <li><a href="./bm.html">Smart Bm</a></li>
+                <li><a href="./engine.html">Smart Booking Plus</a></li>
+                <li><a href="./contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="content-box">
+                <h1 class="title">COMPANY</h1>
+                <div id="carouselBanner" class="carousel slide carousel-fade" data-interval="4000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselBanner" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselBanner" data-slide-to="1"></li>
+                        <li data-target="#carouselBanner" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="left-box">
+                                <img src="./img/small-1.png"
+                                     srcset="./img/small-1@2x.png 2x,
+                              ./img/small-1@3x.png 3x"
+                                     class="small-1">
+                            </div>
+                            <div class="center-box">
+                                <h2>01</h2>
+                                <div class="title">성공 경영을 위한<br><b><span class="normal">스마트</span>비엠</b></div>
+                                <div class="desc">Business management<br>system</div>
+                            </div>
+                            <div class="right-box">
+                                <img src="./img/big-1.png"
+                                     srcset="./img/big-1@2x.png 2x,
+                              ./img/big-1@3x.png 3x"
+                                     class="big-1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="left-box">
+                                <img src="./img/small-2.png"
+                                     srcset="./img/small-2@2x.png 2x,
+                              ./img/small-2@3x.png 3x"
+                                     class="small-1">
+                            </div>
+                            <div class="center-box">
+                                <h2>02</h2>
+                                <div class="title">지속 성장을 위한<br><span class="normal">스마트</span><br><b>부킹플러스</b></div>
+                                <div class="desc">Smart Booking Plus</div>
+                            </div>
+                            <div class="right-box">
+                                <img src="./img/big-2.png"
+                                     srcset="./img/big-2@2x.png 2x,
+                              ./img/big-2@3x.png 3x"
+                                     class="big-1">
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="left-box">
+                                <img src="./img/small-3.png"
+                                     srcset="./img/small-3@2x.png 2x,
+                              ./img/small-3@3x.png 3x"
+                                     class="small-1">
+                            </div>
+                            <div class="center-box">
+                                <h2>03</h2>
+                                <div class="title">전문인재양성,<br>정보공유<br><b><span class="normal">스마트</span>에듀</b></div>
+                                <div class="desc">Smart Education</div>
+                            </div>
+                            <div class="right-box">
+                                <img src="./img/big-3.png"
+                                     srcset="./img/big-3@2x.png 2x,
+                              ./img/big-3@3x.png 3x"
+                                     class="big-1">
+                            </div>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselBanner" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselBanner" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-title">VISION</div>
+                <div class="content-desc">온라인 부킹엔진, 업무 프로그램, 판매채널, 전문인재 <b>SHARE,<br>VALUE</b> UP TRAVEL SERVICE</div>
+                <div class="For-your-success-travel-business">For your success<br><span class="text-style-1">travel business</span>
+                </div>
+                <div class="diagram">
+                    <img src="./img/diagram.png"
+                         srcset="./img/diagram@2x.png 2x,
+                        ./img/diagram@3x.png 3x"
+                         class="diagram">
+                </div>
+            </div>
+            <div class="content-box">
+                <div class="content-title">WHO & WHAT</div>
+                <div class="content-desc">
+                    “30년 여행사 경력의 축적된 온.오프라인 서비스 운영 노하우와 <br>
+                    여행 솔루션 고급 개발경력” 을 바탕으로<br>
+                    <b>시스템, 판매채널, 전문인재, 맞춤정보 플랫폼 개발 제공</b>
+                </div>
+                <div class="icons row no-gutters">
+                    <div class="management col-3">
+                        <img src="./img/ico-business-management.png"
+                             srcset="./img/ico-business-management@2x.png 2x,
+                          ./img/ico-business-management@3x.png 3x"
+                             class="ico_business_management">
+                        <div class="txt">
+                            <div class="title">Business management</div>
+                            <div class="kor">경영관리 시스템</div>
+                        </div>
+                    </div>
+                    <div class="customer col-3">
+                        <img src="./img/ico-online-service.png"
+                             srcset="./img/ico-online-service@2x.png 2x,
+                          ./img/ico-online-service@3x.png 3x"
+                             class="ico_business_management">
+                        <div class="txt">
+                            <div class="title">ONLINE SERVICE</div>
+                            <div class="kor">판매채널</div>
+                        </div>
+                    </div>
+                    <div class="human col-3">
+                        <img src="./img/ico-human-resources.png"
+                             srcset="./img/ico-human-resources@2x.png 2x,
+                          ./img/ico-human-resources@3x.png 3x"
+                             class="ico_business_management">
+                        <div class="txt">
+                            <div class="title">Human Resources</div>
+                            <div class="kor">우수한 전문인재</div>
+                        </div>
+                    </div>
+                    <div class="expertise col-3">
+                        <img src="./img/ico-expertise-information.png"
+                             srcset="./img/ico-expertise-information@2x.png 2x,
+                          ./img/ico-expertise-information@3x.png 3x"
+                             class="ico_business_management">
+                        <div class="txt">
+                            <div class="title">Expertise information</div>
+                            <div class="kor">맞춤 전문정보</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-content-box">
+        <div class="content-box">
+            <div class="footer-logo">
+                <img src="./img/logo-vertical.png"
+                     width="84" height="52"
+                     srcset="./img/logo-vertical@2x.png 2x,
+                    ./img/logo-vertical@3x.png 3x"
+                     class="logo-vertical">
+            </div>
+            <div class="footer-content">
+                ㈜쉐어밸류<br>
+                대표이사 조미숙 <span class="bar"></span> 사업자등록번호 750-86-00899<br>
+                서울특별시 중구 무교로15, 남강건설회관빌딩 1805호<br>
+                전화. 02-364-5400 <span class="bar"></span> 팩스. 02-364-9800 <span class="bar"></span> 이메일. help@sharevaluecorp.com <br>
+                Copyright © 2020 Sharevalue Co., Ltd. All rights reserved.
+            </div>
+            <div class="btn-top">TOP
+                <img src="./img/ico-up.png"
+                     srcset="./img/ico-up@2x.png 2x,
+                    ./img/ico-up@3x.png 3x"
+                     class="ico-up">
+            </div>
+        </div>
+    </div>
+    <div class="footer-content-box footer-icon-box">
+        <div class="content-box">
+            <!--인증 아이콘 수정 필요-->
+            <ul>
+                <li class="footer-icon">
+                    <img src="./img/ico-kibo.png"
+                         width="98" height="25"
+                         srcset="./img/ico-kibo@2x.png 2x,
+                            ./img/ico-kibo@3x.png 3x"
+                         class="ico-kibo">
+                    <br><span>기술벤처 인증기업</span>
+                </li>
+                <li class="footer-icon">
+                    <img src="./img/ico-koita.png"
+                         width="59" height="35"
+                         srcset="./img/ico-koita@2x.png 2x,
+                            ./img/ico-koita@3x.png 3x"
+                         class="ico-koita">
+                    <br><span>기업부설연구소 인증기업</span>
+                </li>
+                <li class="footer-icon">
+                    <img src="./img/ico-tour-venture.png"
+                         width="34" height="35"
+                         srcset="./img/ico-tour-venture@2x.png 2x,
+                            ./img/ico-tour-venture@3x.png 3x"
+                         class="ico-tour-venture">
+                    <br><span>초기관광벤처기업</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Channel Plugin Scripts -->
+<script>
+  (function() {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+    }
+    var ch = function() {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function(args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
+      }
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "6ad90db3-0e94-45f3-918b-149c795ee43f"
+  });
+</script>
+<!-- End Channel Plugin -->
+<script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    if (md.mobile()) {
+        location.href = "company.mobile.html";
+    }
+    // button top event
+    $('.btn-top').on('click', function () {
+        window.scrollTo(0, 0)
+    });
+
+    $('#carouselBanner').carousel('cycle');
+
+    // gnb sticky
+    var navbarHeight = $('.gnb').outerHeight();
+    $(window).scroll(function() {
+        if (window.pageYOffset > navbarHeight) {
+            $('.gnb, .header').addClass('sticky')
+        } else {
+            $('.gnb, .header').removeClass('sticky')
+        }
+    });
+</script>
+<script type="text/javascript" src="app.bundle.js"></script>
+</body>
+</html>

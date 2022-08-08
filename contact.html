@@ -18,7 +18,7 @@
     <script type="text/javascript"
             src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1fdx00k4dv&submodules=geocoder"></script>
 
-    <meta name="description" content="B2C, B2B 범용 항공예약솔루션, BTMS, 전세기항공, 공동구매항공">
+    <meta name="description" content="항공서비스 연동 바로 문의">
 
     <meta property="og:title" content="쉐어밸류">
     <meta property="og:type" content="website">
@@ -39,7 +39,7 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico">
     <meta name="msapplication-config" content="/favicon/browserconfig.xml">
 
-    <title>스마트부킹플러스 - 쉐어밸류</title>
+    <title>문의하기 - 쉐어밸류</title>
 
     <!-- <link href="css/styles.css" rel="stylesheet" /> -->
     <link href="main.css" rel="stylesheet">
@@ -56,7 +56,7 @@
     </script>
 </head>
 
-<body class="engine">
+<body class="contact">
 <!-- Change this in 'webpack-config.js' or remove -->
 <div class="gnb sticky">
     <div class="container">
@@ -71,8 +71,8 @@
             <ul class="top-menu">
                 <li><a href="./company.html">Company</a></li>
                 <li><a href="./bm.html">Smart Bm</a></li>
-                <li><a href="./engine.html" class="active">Smart Booking Plus</a></li>
-                <li><a href="./contact.html">Contact Us</a></li>
+                <li><a href="./engine.html">Smart Booking Plus</a></li>
+                <li><a href="./contact.html" class="active">Contact Us</a></li>
             </ul>
         </div>
     </div>
@@ -80,144 +80,53 @@
 <div class="content">
     <div class="container">
         <div class="row no-gutters">
-            <!--서비스 설명-->
-            <div class="content-box">
-                <h1 class="title">SMART BOOKING PLUS <span style="color: #00b1ea">스마트부킹플러스</span></h1>
-                <div class="content-desc">
-                    고비용 개발과 운영 부담이 없는 <b style="color: #0a3e81">임대형 항공 예약 시스템</b><br>
-                    24/7 연중무휴 고객과 온택트하세요
+            <div class="content-box map-area">
+                <h1 class="title">CONTACT US</h1>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="input-row">
+                            <div class="input-container left">
+                                <div class="input"><input type="text" id="name" placeholder="이름"/></div>
+                            </div>
+                            <div class="input-container right">
+                                <div class="input"><input type="text" id="tel" placeholder="전화번호"/></div>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-container left">
+                                <div class="input"><input type="text" id="company" placeholder="회사명"/></div>
+                            </div>
+                            <div class="input-container right">
+                                <div class="input"><input type="text" id="email" placeholder="이메일"/></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input title"><input type="text" id="title" placeholder="제목"/></div>
+                        </div>
+                        <div>
+                            <textarea id="message" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" id="agree"> 개인정보 수집, 이용 정책에 동의합니다.<br>
+                                <span class="agree-info">(문의사항 처리를 위하여 성명, 이메일주소, 전화번호, 회사명을 수집 및 이용하며, 정보는 1년간 보관합니다.)</span>
+                            </label>
+                        </div>
+                        <div class="btn-area">
+                            <button class="btn-send">보내기</button>
+                            <div id="result_text"></div>
+                        </div>
+                    </form>
                 </div>
-                <div class="engine-content">
-                    <img src="img/smart-engine-desktop.png"
-                         srcset="img/smart-engine-desktop@2x.png 2x,
-                            img/smart-engine-desktop@3x.png 3x"
-                         class="smart-engine-desktop engine-content-img">
-                    <ul class="engine-service-list">
-                        <li class="engine-plus-title">+ PLUS</li>
-                        <li>기업 전용 출장승인과 비용 통계</li>
-                        <li>B2B 판매 내역과 정산</li>
-                        <li>B2C와 B2B 복합 서비스</li>
-                        <li>오프라인예약의 온라인연동</li>
-                    </ul>
+                <div style="height:30px;width:100%;">&nbsp;</div>
+                <div class="content-title">CALL US</div>
+                <div class="content-address">02-364-5400</div>
+                <div class="content-title">EMAIL US</div>
+                <div class="content-address">help@sharevaluecorp.com</div>
+                <div id="map" class="map">
                 </div>
-            </div>
-            <!--서비스 사용이유-->
-            <div class="content-box">
-                <div class="content-sub-desc">
-                    <div class="content-title">WHY</div>
-                    <div class="content-desc"><b>왜 스마트부킹플러스</b>이어야 할까요?</div>
-                    <ul class="engine-desc">
-                        <li><span class="dot">1</span><span>개발과 운영비 ZERO</span></li>
-                        <li><span class="dot">2</span><span>지속적인 기능 업그레이드</span></li>
-                        <li><span class="dot">3</span><span>빠르고 안정적인 호스팅</span></li>
-                        <li><span class="dot">4</span><span>TASF 및 할인 관리</span></li>
-                        <li><span class="dot">5</span><span>업무 자동화 백오피스 무상 제공</span></li>
-                        <li><span class="dot">6</span><span>기업체 내부 인트라넷 연동 가능</span></li>
-                        <li><span class="dot">7</span><span>오픈마켓 &middot; 메타서치 연동 가능</span></li>
-                        <li><span class="dot">8</span><span>직접 운영할 수 있는 API 제공 가능</span></li>
-                    </ul>
-                </div>
-            </div>
-            <!--서비스 비용-->
-            <div class="content-box">
-                <div class="content-sub-desc">
-                    <div class="content-title">PRICING</div>
-                    <div class="content-desc"><b>스마트부킹플러스</b>이용료</div>
-                    <table class="engine-pricing-table">
-                        <thead>
-                            <tr>
-                                <td>항목</td>
-                                <td>임대형 상품<br/>(화이트라벨)</td>
-                                <td>API 제공 상품<br/>(자체 운영)</td>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th>웹서비스 & 라이선스</th>
-                                <td>무료</td>
-                                <td>무료</td>
-                            </tr>
-                            <tr>
-                                <th>인프라</th>
-                                <td>무료</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <th>구축비용(1회)</th>
-                                <td>무료</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <th>설치비</th>
-                                <td>무료</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <th>운영 유지보수</th>
-                                <td>무료</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <th>교육비</th>
-                                <td>무료</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <th rowspan="2">수수료</th>
-                                <td>최저 10만원</td>
-                                <td rowspan="2">문의</td>
-                            </tr>
-                            <tr>
-                                <td>0.8-0.6% (판매금액대비)</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <!--서비스 진행절차-->
-            <div class="content-box">
-                <div class="content-title">PROCESS</div>
-                <div class="content-desc"><b>서비스</b> 진행절차</div>
-                <div class="content-sub-desc">
-                    <img src="img/smart-engine-process.png"
-                         srcset="img/smart-engine-process@2x.png 2x,
-                    img/smart-engine-process@3x.png 3x"
-                         class="smart_engine_process">
-                </div>
-            </div>
-            <!--서비스 문의하기-->
-            <div class="content-box">
-                <div class="content-title">BROCHURE</div>
-                <div class="content-desc"><b>스마트부킹플러스</b> 소개서</div>
-                <div class="brochure-input-area">
-                    <div class="brochure-sub-title">
-                        <span>이메일 주소를 입력해주세요.</span><br/>
-                        <span>입력하신 이메일 주소로 상품 소개서가 발송됩니다.</span>
-                    </div>
-                    <div class="brochure-input-company">
-                        <input type="text" id="brochure_company" placeholder="회사명"/>
-                    </div>
-                    <div class="brochure-input-name">
-                        <input type="text" id="brochure_name" placeholder="이름"/>
-                    </div>
-                    <div class="brochure-input-tel">
-                        <input type="text" id="brochure_tel" placeholder="전화번호"/>
-                    </div>
-                    <div class="brochure-input-email">
-                        <input type="text" id="brochure_email" placeholder="이메일주소"/>
-                    </div>
-                    <div class="brochure-agree-policy">
-                        <label>
-                            <input type="checkbox" id="agree_send_brochure"/>
-                            개인정보 수집, 이용 정책에 동의합니다.<br/>
-                        </label>
-                        <div>(신청내역 처리를 위하여 성명, 이메일주소, 전화번호, 회사명을 수집 및 이용하며, 정보는 1년간 보관합니다.)</div>
-                    </div>
-                    <div>
-                        <button class="brochure-btn">신청하기</button>
-                        <div id="result_text"></div>
-                    </div>
-                </div>
+                <div class="content-title">ADDRESS</div>
+                <div class="content-address">서울특별시 중구 무교동 15, 남강건설회관빌딩 1805호</div>
             </div>
         </div>
     </div>
@@ -324,33 +233,34 @@
 <script>
     var md = new MobileDetect(window.navigator.userAgent);
     if (md.mobile()) {
-        location.href = "engine.mobile.html";
+        location.href = "contact.mobile.html";
     }
     // button top event
     $('.btn-top').on('click', function () {
         window.scrollTo(0, 0)
-    })
+    });
 
     $('#carouselBanner').carousel('cycle');
 
-    //  make request to send brochure
     $(document).ready(function () {
-        $(".brochure-btn").click(function () {
+        $(".btn-send").click(function () {
             event.preventDefault();
-            var name = $("#brochure_name").val();
-            var company = $("#brochure_company").val();
-            var tel = $("#brochure_tel").val();
-            var email = $("#brochure_email").val();
-            var agree = $("input:checkbox[id='agree_send_brochure']").is(":checked") === true;
+            var name = $("#name").val();
+            var tel = $("#tel").val();
+            var company = $("#company").val();
+            var email = $("#email").val();
+            var title = $("#title").val();
+            var message = $("#message").val();
+            var agree = $("input:checkbox[id='agree']").is(":checked") === true;
 
             var url = "https://api.smartbm.co.kr/sbm/inquiry";
-            if (tel === '' || name === '' || email === '' || !agree || company === '') {
-                alert("이름, 이메일, 회사, 전화번호, 개인정보 수집 정책 동의를 확인해주세요");
+            if (name === '' || email === '' || title === '' || message === '' || !agree || company === '' || tel === '') {
+                alert("이름, 이메일, 제목, 내용, 개인정보 수집 정책 동의를 확인해주세요");
             } else {
                 var data = {
                     name: name,
-                    title: '스마트부킹플러스 소개서 신청',
-                    content: '스마트부킹플러스 소개서 신청',
+                    title: title,
+                    content: message,
                     tel: tel,
                     email: email,
                     companyName: company
@@ -370,6 +280,20 @@
                 })
             }
         })
+    });
+
+    var map = new naver.maps.Map('map');
+    var myaddr = new naver.maps.Point(126.978976, 37.567271);
+    map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+
+    var marker = new naver.maps.Marker({
+        position: myaddr,
+        map: map,
+        icon: {
+            url: './img/map-pin.png',
+            size: new naver.maps.Size(104, 85),
+            anchor: new naver.maps.Point(52, 85)
+        }
     });
 
     // gnb sticky

@@ -1,0 +1,407 @@
+.gnb {
+    position: relative
+}
+
+.gnb .top-menu {
+    list-style: none;
+    background-color: #fff;
+    padding: 0;
+    margin: 0
+}
+
+.gnb .top-menu a {
+    font-family: NanumSquare;
+    font-weight: 700;
+    font-size: 3.6vw;
+    display: block;
+    padding: 0.9vw 6.75vw;
+    text-transform: uppercase;
+    color: #333;
+    border-bottom: 1px solid #e6ebec
+}
+
+.gnb .top-menu a.active {
+    color: #00b1ea
+}
+
+.gnb {
+    width: 100%;
+    height: 13.5vw;
+    line-height: 13.5vw;
+    background-color: #fff;
+    border-bottom: 1px solid #ebebeb;
+    z-index: 999;
+    top: 0
+}
+
+.gnb img {
+    width: 30%
+}
+
+.gnb.sticky {
+    position: fixed
+}
+
+.gnb .ci_sharevalue {
+    vertical-align: middle;
+    margin-left: 6.7vw;
+}
+
+.menu-burger {
+    float: right;
+    margin-top: 5vw;
+    margin-right: 6.7vw;
+}
+
+.menu-burger div {
+    width: 3.1vw;
+    height: 0.4vw;
+    background-color: #0a3e81;
+    margin: 0.5vw 0
+}
+
+.footer {
+    border-top: 3px solid #ebebeb;
+    width: 100%;
+    /*min-width: 1110px*/
+}
+
+.footer-content-box {
+    border-bottom: 2px solid #ebebeb;
+    width: 100%;
+}
+
+.footer-content-box .company-info {
+    padding: 4vw 7vw 2vw 7vw !important;
+}
+
+.footer .content-box {
+    width: 100%;
+    margin: 0 auto;
+    padding: 4vw 0 2vw 0;
+    position: relative
+}
+
+.footer .footer-logo {
+    display: inline-block;
+    width: 15rem;
+    vertical-align: top
+}
+
+.footer .footer-logo img {
+    /*width: 160%*/
+}
+
+.footer .bar {
+    width: 1px;
+    height: 11px;
+    opacity: .3;
+    background-color: #fff;
+    display: inline-block;
+    margin: 2px 1px;
+    top: 3px;
+    position: relative
+}
+
+.footer .footer-content {
+    line-height: 1.53;
+    text-align: left
+}
+
+.footer .btn-top, .footer .footer-content {
+    display: inline-block;
+    font-family: NanumSquare;
+    font-size: 3vw;
+    color: #333333;
+}
+
+.footer .btn-top {
+    vertical-align: top;
+    position: absolute;
+    right: 5vw;
+    cursor: pointer;
+}
+
+.footer-icon-box {
+    margin: 2vw 0 3vw 0;
+    border: 0 !important;
+}
+
+.footer-icon-box .content-box {
+    padding: 0;
+}
+
+.footer-icon-box ul {
+    padding: 0;
+    text-align: center;
+}
+
+.footer-icon-box li {
+    display: inline-block;
+    padding: 0;
+    margin: 0 2vw;
+    text-align: center;
+}
+
+.footer-icon-box .footer-icon span {
+    font-family: NanumSquare;
+    font-size: 3.1vw;
+    color: #666666;
+    line-height: 4.95vw;
+}
+
+.footer-icon-box .footer-icon img {
+    box-sizing: content-box;
+}
+
+/* media queries */
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: 5vw;
+    }
+
+    .subTitle {
+        font-size: 4vw;
+    }
+
+    .title .subTitle:before {
+        border-width: 1px;
+    }
+    .sc1 {
+        padding: 8em 0 18em 0;
+    }
+    .sc1:after {
+        width: 64%;
+        height: auto;
+        margin-top: -24%;
+        margin-left: -32%;
+        padding-bottom: 52%;
+    }
+    .sc1 .title {
+        font-size: 4vw;
+    }
+    .sc1 .name {
+        font-size: 3vw;
+    }
+
+    .sc2 {
+        padding: 20em 0 8em 0;
+    }
+
+    .sc2 .feature {
+        padding: 0 7em;
+    }
+
+    .sc2 .feature dl {
+        width: 100%;
+        display: block;
+        padding: 3em 0  3em 7em;
+        flex-basis: initial !important;
+    }
+
+    .sc2 .feature dl:before {
+        width: 6em;
+        height: 6em;
+        line-height: 6em;
+        /*margin-top: -32px;*/
+
+    }
+
+    .sc2 .feature dt {
+        font-size: 3.5vw;
+        margin: 0;
+    }
+
+    .sc4,
+    .sc5,
+    .sc6 {
+        padding: 8em 0;
+    }
+
+    .sc4 .header {
+        margin-bottom: 10px;
+    }
+
+    .sc4 .why {
+        /*margin-top: 6%;*/
+        /*font-size: 3vw;*/
+    }
+
+    .sc4 .why li {
+        margin: 2em 0px;
+    }
+
+    .sc4 .why li:last-child {
+        margin-bottom: 0;
+    }
+
+    .sc4 .why li .dot {
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .sc4 .why li span {
+        font-size: 3.5vw;
+    }
+
+    .sc5 .pricing {
+        font-size: 3.5vw;
+    }
+
+    .sc6 .process-list li {
+        width: 65%;
+    }
+
+    .sc6 .process-list li img {
+        max-width: inherit;
+        width: 100%;
+    }
+
+    .sc7 .container:before {
+        background-image: none;
+        height: 0px;
+    }
+    .sc7 h1 {
+        font-size: 4vw;
+    }
+
+    .sc7 h2 {
+        font-size: 3.5vw;
+    }
+
+    .sc7 .brochure-area {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .sc7 .brochure-area input[type=text] {
+        font-size: 2.5vw;
+    }
+
+    .sc7 .brochure-area .brochure-agree-policy {
+        font-size: 2vw;
+        margin: 1em 0 1.5em 0;
+    }
+
+    .sc7 .brochure-area .brochure-agree-policy div {
+        margin-top: 1vw;
+        font-size: 2vw;
+    }
+    .sc7 .btn {
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 767px) {
+    .title {
+        font-size: 6.25vw;
+    }
+    .subTitle {
+        font-size: 5vw;
+    }
+    .sc1 {
+        padding: 7.2vw 0 30vw 0;
+    }
+    .sc1:after {
+
+    }
+    .sc1 .title strong {
+        display: block;
+    }
+    .sc1 .title {
+        font-size: 6.25vw;
+    }
+    .sc1 .name {
+        font-size: 5vw;
+    }
+    .sc2 {
+        padding: 30vw 0 5vw 0;
+    }
+    .sc2 .container {
+        text-align: center;
+    }
+    .sc2 .feature {
+        padding: 0;
+        display: inline-block;
+        text-align: initial;
+    }
+    .sc2 .feature dl {
+        width: 100%;
+        display: block;
+        padding: 1.5em 0  1.5em 4.5em;
+        flex-basis: initial !important;
+    }
+
+    .sc2 .feature dl:before {
+        width: 4em;
+        height: 4em;
+        line-height: 4em;
+        margin-top: -32px;
+
+    }
+    .sc2 .feature dt {
+        margin: 2vw 0;
+        font-size: 5vw;
+    }
+    .sc4,
+    .sc5,
+    .sc6 {
+        padding: 5vw 0;
+    }
+    .sc4 .why {
+        margin: 2vw auto;
+    }
+    .sc4 .why li {
+        width: 100%;
+        display: block;
+        margin: 2vw 0;
+    }
+    .sc4 .why li span {
+        font-size: 5vw;
+    }
+    .sc4 .why li .dot {
+        margin-bottom: 2vw;
+    }
+    .sc5 .pricing {
+        font-size: 4.5vw;
+    }
+    .sc6 .process-list li {
+        margin: 0 auto;
+        width: 75%;
+    }
+    .sc6 .process-list li:before {
+        margin: 5vw auto;
+    }
+    .sc7 {
+        padding: 5vw;
+    }
+    .sc7 .container {
+        padding: 2em 0px;
+    }
+    .sc7 .container:before {
+        background-image: none;
+    }
+    .sc7 h1 {
+        font-size: 6vw;
+    }
+    .sc7 h2 {
+        font-size: 5vw;
+    }
+    .sc7 .brochure-area input[type=text] {
+        font-size: 4vw;
+    }
+    .sc7 .brochure-area .brochure-agree-policy {
+        font-size: 3.5vw;
+        margin: 1em 0 1.5em 0;
+    }
+    .sc7 .brochure-area .brochure-agree-policy div {
+        font-size: 3vw;
+    }
+    .sc7 .brochure-area input[type=checkbox] {
+        width: 1.5em;
+        height: 1.5em;
+    }
+    .sc7 .btn {
+        font-size: 5vw;
+    }
+}
