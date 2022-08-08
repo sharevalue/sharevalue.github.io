@@ -20,16 +20,16 @@ const backOfficeSpecList: Array<IProductSpec> = [{
   specList: ['예약 관리', '판매 / 환불 관리', '변경요청 관리', '고객문의 및 답변', '항공예약 요청 관리'],
 }, {
   icon: 'ico_black_schedule.webp',
-  title: '전세기 및 단체 항공권 판매',
-  specList: ['스케줄 생성 관리', '거래처 블록 생성 관리', '상품별 탑승자 목록 관리', '규정 생성', '수수료 생성', '운임 생성'],
+  title: '전세기 및 단체항공권',
+  specList: ['항공스케줄 생성', '거래처 블록 생성', '판매 탑승자목록', '판매 정산 목록', '운임/규정 생성', '수수료 생성'],
 }, {
   icon: 'ico_black_documents.webp',
   title: '항공 BSP 관리',
-  specList: ['발권 DSR', '환불 DSR', 'BSP 빌링 관리', 'BSP 증빙 관리', 'ADM / ACM 관리', '발권 통계'],
+  specList: ['발권 DSR', '환불 DSR', 'BSP 빌링 관리', 'BSP 증빙 관리', 'ADM / ACM 관리', '발권 / 환불 통계'],
 }, {
   icon: 'ico_black_flight.webp',
   title: '여행상품 판매 관리',
-  specList: ['여행 상품 판매 관리', '인보이스, 일정표 발송관리', '여행자 보험 가입 관리', '항공 예약 관리', '정산 관리', '정산 마감 관리'],
+  specList: ['여행 상품 판매 관리', '인보이스, 일정표 발송관리', '여행자 보험 가입 관리', '항공 예약 관리', '정산 / 마감 관리', '정산서 생성 / 출력'],
 }, {
   icon: 'ico_black_commission.webp',
   title: 'PG 결제 및 입출금 관리',

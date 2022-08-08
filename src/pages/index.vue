@@ -19,8 +19,7 @@
     <div class="px-5 default-container">
       <div class="title">Our Solution = 클라우드서비스 + @운영지원</div>
       <div class="description">
-        <div>30년 여행사에서의 업무 노하우를 바탕으로 모든 여행사업 부문에 맞춤 서비스를 제공합니다.</div>
-        <div>고비용 개발과 운영 인프라, IT인력 없이 전문 사이트 구축 및 판매와 관리 인력이 부족하다면 운영 업무도 지원해 드립니다.</div>
+        <div>30년 여행사에서의 업무 노하우를 바탕으로 모든 고객의 니즈에 맞는 맞춤 솔루션을 비용과 시간을 절약할 수 있는 클라우드서비스로 제공하며 운영 업무도 지원합니다.</div>
       </div>
       <div class="content flex flex-row justify-evenly items-center">
         <div class="icon-block bg-primary-500 c-white">
@@ -72,8 +71,8 @@
   <div class="section-3">
     <div class="px-5 default-container">
       <div class="title">
-        <div>(주)쉐어밸류는 다양한 여행상품 판매 솔루션 개발과 고객사별 맞춤</div>
-        <div>기능 및 운영 서비스를 제공하여 디지털 서비스 공유를 추구합니다.</div>
+        <div>(주)쉐어밸류는 다양한 고객 및 파트너와</div>
+        <div>여행 디지털 서비스의 가치를 공유합니다.</div>
       </div>
       <div class="content flex justify-between items-center">
         <div class="slogans text-left">

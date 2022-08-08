@@ -42,12 +42,13 @@ const engineSpecList: Array<IProductSpec> = [{
   ],
 }, {
   icon: 'ico_black_checklist.webp',
-  title: '기업고객 전용(BTMS)',
+  title: '기업고객 (BTMS)',
   specList: [
-    '기업체 관리자 전용페이지',
-    '예약목록, 정산 목록, 통계항공 비용 승인 프로세스',
+    '기업체 관리자 페이지',
+    '예약/정산 목록, 통계',
+    '비용 승인 처리',
     '임직원 관리',
-    '기업체 별 전용 사이트',
+    '기업체별 전용 사이트',
   ],
 }, {
   icon: 'ico_black_management.webp',
@@ -69,14 +70,14 @@ const engineSpecList: Array<IProductSpec> = [{
     '할인 & 할증 관리',
     '서비스 수수료 관리',
     '발권 & 환불 DSR',
-    'BSP 정산 금액 관리',
+    'BSP 빌링/금액 관리',
   ],
 }, {
   icon: 'ico_black_payment.webp',
   title: '특화 기능',
   specList: [
-    'PG 카드인증 결제 모듈 연동',
-    'PG 가상계좌 입금화 모듈 연동',
+    'PG 카드결제 연동',
+    'PG 가상계좌 연동',
     '카카오 알림톡 연동',
     '로그인 연동',
     '다국어 고객용 사이트'
@@ -354,10 +355,7 @@ onUnmounted(() => {
           <th colspan="2">월 사용 수수료</th>
           <td>10만원</td>
           <td>20만원</td>
-          <td>
-            <div class="percentage">0.8% - 0.5%</div>
-            <div class="percentage-description">(판매금액대비)</div>
-          </td>
+          <td>문의</td>
         </tr>
         </tbody>
       </table>

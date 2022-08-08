@@ -62,10 +62,10 @@ function closeModal() {
 <template>
   <div class="default-container px-5">
     <div class="inquiry-title">
-      <div>전문 여행 솔루션과 운영 서비스를 제공하는 쉐어밸류입니다.</div>
+      <div>전문 여행 솔루션과 운영지원 서비스를 제공하는 쉐어밸류입니다.</div>
       <div>
-        <span class="c-primary-600">상품 소개서 요청, 서비스 연동 및 제휴 관련 문의</span>
-        <span>하시면 확인 후 신속하게 연락드리겠습니다.</span>
+        <span class="c-primary-600">상품소개서 및 서비스 연동, 제휴 문의</span>
+        <span>를 남겨 주시면 신속히 연락드리겠습니다.</span>
       </div>
     </div>
     <form class="inquiry-content text-left"
