@@ -215,6 +215,7 @@ onMounted(() => {
 
 .address-content >div {
   margin-bottom: 24px;
+  word-break: keep-all;
 }
 
 .address-content >div >div {

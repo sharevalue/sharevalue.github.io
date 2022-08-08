@@ -1,9 +1,13 @@
 
 <script setup lang="ts">
 import axios from 'axios';
+import { ref } from 'vue'
 import {IInquiryForm} from "~/types";
 
 let agreement: boolean = false;
+let visibleModal = ref(false);
+let isSuccessfulRequest = ref(false);
+
 const inquiryForm: IInquiryForm = {
   name: '',
   tel: '',
@@ -38,11 +42,17 @@ function requestInquiry() {
       'https://api.smartbm.co.kr/sbm/inquiry',
       JSON.stringify(inquiryForm),
   ).then(() => {
-    alert("정상적으로 접수하였습니다.");
-    window.location.reload();
+    isSuccessfulRequest.value = true;
   }).catch((e) => {
-    alert("요청을 실패했습니다. 채널톡이나 02-364-5400으로 재문의 부탁드립니다.");
+    isSuccessfulRequest.value = false;
+  }).finally(() => {
+    visibleModal.value = true;
   });
+}
+
+function closeModal() {
+  visibleModal.value = false;
+  // window.location.reload();
 }
 </script>
 
@@ -143,9 +153,34 @@ function requestInquiry() {
       </div>
     </form>
   </div>
+  <teleport to="body">
+    <div v-show="visibleModal"
+         class="modal-backdrop">
+      <div class="modal">
+        <div class="modal-title">{{ `신청 ${isSuccessfulRequest ? '성공' : '실패'}` }}</div>
+        <div class="modal-content">
+          <template v-if="isSuccessfulRequest">
+            <div>문의가 신청 되었습니다.</div>
+            <div>담당자가 확인 후 연락 드리겠습니다.</div>
+          </template>
+          <template v-else>
+            <div>잠시 후 다시 시도해주세요.</div>
+            <div>동일한 현상이 계속 발생하면 전화(<a href='tel:02-364-5400'>02-364-5400</a>)나 채널톡으로 문의 부탁드립니다.</div>
+          </template>
+        </div>
+        <div class="modal-btn-area">
+          <button type="button"
+                  class="btn modal-btn"
+                  @click="closeModal">확인</button>
+        </div>
+      </div>
+    </div>
+  </teleport>
 </template>
 
 <style scoped>
+@import '/src/styles/modal.css';
+
 .inquiry-title {
   text-align: left;
   color: #152038;

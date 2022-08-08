@@ -1,0 +1,52 @@
+.modal-backdrop {
+    @apply flex justify-center items-center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    will-change: transform;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal {
+    background: #FFFFFF;
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+    overscroll-behavior: none;
+    display: flex;
+    flex-direction: column;
+    z-index: 15;
+    max-height: 80vh;
+    border-radius: 25px;
+}
+
+.modal .modal-title {
+    /*color: #e55050;*/
+    padding: 25px 25px 10px 25px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.modal .modal-content {
+    position: relative;
+    padding: 0 50px 25px 50px;
+}
+
+.modal .modal-content a {
+    text-decoration: underline;
+}
+
+.modal .modal-btn-area {
+    padding: 0 25px 25px 25px;
+    text-align: center;
+}
+
+.modal .modal-btn-area .modal-btn {
+    background-color: #000000;
+    color: #FFFFFF;
+    width: 150px;
+    height: 45px;
+}
