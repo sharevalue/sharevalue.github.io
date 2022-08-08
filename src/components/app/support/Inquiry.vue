@@ -7,6 +7,7 @@ import {IInquiryForm} from "~/types";
 let agreement: boolean = false;
 let visibleModal = ref(false);
 let isSuccessfulRequest = ref(false);
+let loadingRequest = ref(false);
 
 const inquiryForm: IInquiryForm = {
   name: '',
@@ -38,6 +39,7 @@ function requestInquiry() {
     return;
   }
 
+  loadingRequest.value = true;
   axios.post(
       'https://api.smartbm.co.kr/sbm/inquiry',
       JSON.stringify(inquiryForm),
@@ -47,6 +49,7 @@ function requestInquiry() {
     isSuccessfulRequest.value = false;
   }).finally(() => {
     visibleModal.value = true;
+    loadingRequest.value = false;
   });
 }
 
@@ -149,7 +152,12 @@ function closeModal() {
         <div class="text-right">
           <button type="submit"
                   id="inquiry_form"
-                  class="bg-primary-500 c-white inquiry-btn">문의 신청하기</button>
+                  :disabled="loadingRequest"
+                  class="bg-primary-500 c-white inquiry-btn">
+            <div v-if="loadingRequest"
+                 class="loading-spinner"/>
+            <span v-else>문의 신청하기</span>
+          </button>
         </div>
       </div>
     </form>
@@ -248,7 +256,7 @@ function closeModal() {
 
 .inquiry-btn {
   border-radius: 10px;
-  line-height: 70px;
+  line-height: 16px;
   height: 70px;
   width: 300px;
   font-size: 16px;
@@ -257,5 +265,43 @@ function closeModal() {
 
 .inquiry-btn:hover {
   opacity: 0.75;
+}
+
+.loading-spinner {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: transparent;
+  display: inline-block;
+  animation: spin 1s infinite linear;
+  border: 0.3rem solid #FFFFFF;
+  border-top: 0.3rem solid #dddddd;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@-ms-keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 </style>
