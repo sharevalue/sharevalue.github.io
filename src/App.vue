@@ -17,7 +17,6 @@ useHead({
       async: true,
       src: 'https://www.google-analytics.com/analytics.js',
     },
-    { async: true, src: 'https://www.googletagmanager.com/gtag/js?id=UA-149122103-2' }
   ],
   meta: [
     { name: 'naver-site-verification', content: '27fd3c598969d5356a9b3d3b2d3829b834b9a24a' },
