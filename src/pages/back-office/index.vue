@@ -133,7 +133,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 
 <style scoped>
 .section-1 {
-  height: calc(100vh - 90px);
+  height: calc(100vh - 90px - 100px);
   background-color: #154999;
   background-image: url(/image/common/erp.webp);
   position: relative;
