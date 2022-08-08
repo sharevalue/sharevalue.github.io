@@ -6,9 +6,9 @@ const navigationLinks: Array<{ [key: string]: string }> = [{
   title: '백오피스',
   path: '/back-office',
 }, {
-  title: '부가서비스',
-  path: '/extra',
-}, {
+//   title: '부가서비스',
+//   path: '/extra',
+// }, {
   title: '고객센터',
   path: '/support',
 }];
@@ -54,7 +54,7 @@ function moveToPageWithTargetId(path: string, targetId: string) {
         <div>
           <button type="button"
                   class="bg-primary-500 c-white contact-btn"
-                  @click="moveToPageWithTargetId('/support', 'inquiry')">가입문의</button>
+                  @click="moveToPageWithTargetId('/support', 'inquiry_form')">가입문의</button>
         </div>
       </div>
     </header>

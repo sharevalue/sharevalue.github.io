@@ -148,6 +148,7 @@ function closeModal() {
         </div>
         <div class="text-right">
           <button type="submit"
+                  id="inquiry_form"
                   class="bg-primary-500 c-white inquiry-btn">문의 신청하기</button>
         </div>
       </div>
