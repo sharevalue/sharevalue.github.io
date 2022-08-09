@@ -1,0 +1,173 @@
+/* Quasimoda 폰트 대체 */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;0,800;1,300&display=swap');
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 400;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 700;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf') format('truetype')
+}
+
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//cdn.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+    font-family: 'NanumBarunGothic', sans-serif;
+    font-weight: 300;
+    scroll-behavior: smooth;
+}
+
+.default-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.engine-process-title,
+.price-table-title,
+.support-title {
+    font-size: 36px;
+    line-height: 48px;
+    color: #152038;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: -0.9px;
+    text-align: center;
+}
+
+.normal-letter-spacing {
+    letter-spacing: normal;
+}
+
+.btn {
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: 0.75;
+}
+
+.support-header {
+    width: 100%;
+    height: 10px;
+
+    @apply bg-secondary-500;
+}
+
+.use-full-bg-image {
+    width: 100%;
+    height: calc(100vh - 90px);
+    background-position: 35% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    image-rendering: -webkit-optimize-contrast;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    min-height: 600px;
+}
+
+.price-table {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: -0.45px;
+    text-align: left;
+    color: #2e2d33;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+.price-table th,
+.price-table td {
+    padding: 25px 20px;
+}
+
+.price-table thead th {
+    @apply bg-secondary-500 c-white;
+    text-align: center;
+    font-weight: 300;
+}
+
+.price-table tbody th {
+    border: 1px solid #c4d2dd;
+    text-align: left;
+    font-size: 18px;
+    font-weight: normal;
+    border-left-width: 0;
+}
+
+.price-table tbody td {
+    border: 1px solid #c4d2dd;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: -0.4px;
+}
+
+.price-table tbody tr td:last-child {
+    border-right-width: 0;
+}
+
+.icon-checked:before,
+.icon-dashed:before {
+    display: inline-block;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: Raleway;
+    color: #2e2d33;
+}
+
+.icon-checked:before {
+    content: 'v';
+}
+
+.icon-dashed:before {
+    content: '-';
+}

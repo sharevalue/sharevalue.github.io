@@ -1,0 +1,102 @@
+
+<script setup lang="ts">
+import axios from 'axios';
+import { onMounted, ref, reactive, computed } from 'vue'
+import {INotice} from "~/types";
+
+const noticeResponse = reactive({
+  noticeList: [] as Array<INotice>,
+  totalCount: 0,
+});
+
+let page = ref(1);
+const pageSize = 6;
+
+function updatePage(val: number) {
+  page.value = val;
+  search();
+}
+
+async function search() {
+  await axios.get(`https://api.smartbookingplus.com/notice/list?page=${(page.value - 1)}&pageSize=${pageSize}&siteId=129`).then((res) => {
+    const {
+      statusCode,
+      data
+    } = res.data;
+
+    if (statusCode !== 200) {
+      throw new Error();
+    }
+
+    Object.assign(noticeResponse, data);
+  }).catch((e) => {
+    Object.assign(noticeResponse, {
+      noticeList: [],
+      totalCount: 0,
+    });
+  });
+
+}
+
+function formatDate(date: string) {
+  return new Date(date).toLocaleDateString();
+}
+
+const notices = computed(() => noticeResponse.noticeList);
+
+onMounted(() => {
+  search();
+});
+</script>
+
+<template>
+  <div class="support-header"></div>
+  <div class="mb-12.5">
+    <div v-for="(notice, index) in notices"
+         :key="`notice_${index}`">
+      <details>
+        <summary class="notice-title-area flex flex-row">
+          <div class="mr-12.5">공지사항</div>
+          <div class="notice-title">{{ notice.title }}</div>
+          <div>{{ formatDate(notice.createdDateTime) }}</div>
+        </summary>
+        <div class="notice-content"
+             v-html="notice.content"/>
+      </details>
+    </div>
+  </div>
+  <Pagination :total-count="noticeResponse.totalCount"
+              :page="page"
+              :page-size="pageSize"
+              @update="updatePage"/>
+</template>
+
+<style scoped>
+details {
+  border-bottom: 1px solid #c4d2dd;
+  text-align: left;
+}
+
+.notice-title-area {
+  padding: 20px 20px 20px 28px;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: -0.35px;
+  color: #2e2d33;
+}
+
+.notice-title-area .notice-title {
+  flex: 1;
+  font-size: 18px;
+  letter-spacing: -0.45px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.notice-content {
+  background-color: #f8f9fb;
+  padding: 28px 28px 40px 28px;
+  line-height: 30px;
+  letter-spacing: -0.45px;
+}
+</style>
