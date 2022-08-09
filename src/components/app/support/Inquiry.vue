@@ -131,7 +131,7 @@ function closeModal() {
           <div>
             <input type="text"
                    v-model="inquiryForm.content"
-                   placeholder="문의내용을 입력하세요."/>
+                   placeholder="문의 내용을 입력하세요."/>
           </div>
         </div>
       </div>
