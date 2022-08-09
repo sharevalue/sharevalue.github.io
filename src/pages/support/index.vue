@@ -64,6 +64,10 @@ onMounted(() => {
       </div>
     </div>
   </div>
+  <!--INQUIRY-->
+  <div id="inquiry">
+    <Inquiry/>
+  </div>
   <!--공지사항-->
   <div class="support-notice">
     <div class="default-container">
@@ -115,10 +119,6 @@ onMounted(() => {
         </div>
       </div>
     </div>
-  </div>
-  <!--INQUIRY-->
-  <div id="inquiry">
-    <Inquiry/>
   </div>
 </template>
 
