@@ -4,13 +4,6 @@ import axios from 'axios';
 import { onMounted, ref, reactive, computed } from 'vue'
 import {INotice} from "~/types";
 
-const props = defineProps({
-  noticeType: {
-    type: String,
-    default: '',
-  }
-});
-
 const noticeResponse = reactive({
   noticeList: [] as Array<INotice>,
   totalCount: 0,
@@ -25,7 +18,7 @@ function updatePage(val: number) {
 }
 
 async function search() {
-  await axios.get(`https://api-dev.smartbookingplus.com/notice/list?page=${(page.value - 1)}&pageSize=${pageSize}&query=&siteId=43`).then((res) => {
+  await axios.get(`https://api.smartbookingplus.com/notice/list?page=${(page.value - 1)}&pageSize=${pageSize}&siteId=129`).then((res) => {
     const {
       statusCode,
       data
