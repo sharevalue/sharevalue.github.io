@@ -126,7 +126,7 @@ function closeModal() {
         </div>
         <div>
           <div class="inquiry-input-title">
-            <span>문의내용</span>
+            <span>문의 내용</span>
           </div>
           <div>
             <input type="text"

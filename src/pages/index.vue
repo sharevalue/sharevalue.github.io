@@ -6,18 +6,18 @@
   <div class="section-1 use-full-bg-image">
     <div class="px-5 default-container">
       <div class="title">
-        <div>부킹엔진으로 쉽고 빠른 상품판매와</div>
-        <div><b>실시간 전자결제</b>까지 한번에!</div>
+        <div>부킹 엔진으로 쉽고 빠른 상품 판매와</div>
+        <div><b>실시간 전자결제</b>까지 한 번에!</div>
       </div>
       <div class="description">
-        <div>개인(B2C)및 기업체(B2B) 모든 잠재 고객에게 예약, 결제서비스를 제공하고</div>
+        <div>개인(B2C) 및 기업체(B2B) 모든 잠재 고객에게 예약, 결제서비스를 제공하고</div>
         <div>판매 정산과 고객관리만 하세요.</div>
       </div>
     </div>
   </div>
   <div class="section-2">
     <div class="px-5 default-container">
-      <div class="title">Our Solution = 클라우드서비스 + @운영지원</div>
+      <div class="title">Our Solution = 클라우드서비스 +@ 운영지원</div>
       <div class="description">
         <div>30년 여행사에서의 업무 노하우를 바탕으로 모든 고객의 니즈에 맞는 맞춤 솔루션을 비용과 시간을 절약할 수 있는 클라우드서비스로 제공하며 운영 업무도 지원합니다.</div>
       </div>
@@ -62,7 +62,7 @@
                  height="50"
                  alt="운영 지원"/>
           </div>
-          <div class="icon-title">운영 지원</div>
+          <div class="icon-title">운영지원</div>
           <div class="icon-description">Operation</div>
         </div>
       </div>
@@ -78,7 +78,7 @@
         <div class="slogans text-left">
           <div>TO BE AND WE DO</div>
           <div>ANY TIME</div>
-          <div>ANY PEODUCTS</div>
+          <div>ANY PRODUCTS</div>
           <div>ANY PARTNER</div>
           <div>ANY FUNCTION</div>
           <div>ANY CUSTOMIZATION</div>

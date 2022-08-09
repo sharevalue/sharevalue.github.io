@@ -59,7 +59,7 @@ onMounted(() => {
            class="inline-block">02.364.5400</a>
       </div>
       <div class="support-cs-info">
-        <span>상담가능 시간 | 평일 </span>
+        <span>상담 가능 시간 | 평일 </span>
         <span class="hours-of-operation">9:30 ~ 18:30</span>
       </div>
     </div>
@@ -99,7 +99,7 @@ onMounted(() => {
                    alt="address"
                    class="address-icon"/>
               <div class="mr-7">Address</div>
-              <div>서울특별시 중구 무교로 15 남강건설회관빌딩 1805호</div>
+              <div>서울특별시 중구 무교로 15, 남강건설회관빌딩 1805호</div>
             </div>
             <div class="flex flex-low items-center">
               <img src="/image/icon/ico_white_mail.webp"
@@ -111,7 +111,7 @@ onMounted(() => {
               <div>sales@sharevaluecorp.com</div>
             </div>
           </div>
-          <div class="address-caution">* 궁금한 점이 있으면 언제든 연락주세요.</div>
+          <div class="address-caution">* 궁금한 점이 있으면 언제든 연락해주세요.</div>
         </div>
       </div>
     </div>

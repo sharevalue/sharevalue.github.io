@@ -13,23 +13,23 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 }, {
   icon: 'ico_black_management-sms.webp',
   title: '운임 및 메시지 설정',
-  specList: ['운임 할인, 할증 설정', '발권수수료 설정', '사용자 계정 설정', '카카오 알림톡 템플릿', '메시지 템플릿', '이메일 템플릿'],
+  specList: ['운임 할인 / 할증 설정', '발권 수수료 설정', '사용자 계정 설정', '카카오 알림톡 템플릿', '메시지 템플릿', '이메일 템플릿'],
 }, {
   icon: 'ico_black_laptop-with-customer.webp',
   title: '예약・판매관리',
-  specList: ['예약 관리', '판매 / 환불 관리', '변경요청 관리', '고객문의 및 답변', '항공예약 요청 관리'],
+  specList: ['예약 관리', '판매 / 환불 관리', '변경요청 관리', '고객문의 및 답변', '항공 예약 요청 관리'],
 }, {
   icon: 'ico_black_schedule.webp',
   title: '전세기 및 단체항공권',
-  specList: ['항공스케줄 생성', '거래처 블록 생성', '판매 탑승자목록', '판매 정산 목록', '운임/규정 생성', '수수료 생성'],
+  specList: ['항공 스케줄 생성', '거래처 블록 생성', '판매 탑승자목록', '판매 정산 목록', '운임/규정 생성', '수수료 생성'],
 }, {
   icon: 'ico_black_documents.webp',
   title: '항공 BSP 관리',
   specList: ['발권 DSR', '환불 DSR', 'BSP 빌링 관리', 'BSP 증빙 관리', 'ADM / ACM 관리', '발권 / 환불 통계'],
 }, {
   icon: 'ico_black_flight.webp',
-  title: '여행상품 판매 관리',
-  specList: ['여행 상품 판매 관리', '인보이스, 일정표 발송관리', '여행자 보험 가입 관리', '항공 예약 관리', '정산 / 마감 관리', '정산서 생성 / 출력'],
+  title: '여행상품 판매관리',
+  specList: ['여행상품 판매관리', '인보이스, 일정표 발송관리', '여행자 보험 가입 관리', '항공 예약 관리', '정산 / 마감 관리', '정산서 생성 / 출력'],
 }, {
   icon: 'ico_black_commission.webp',
   title: 'PG 결제 및 입출금 관리',
@@ -47,7 +47,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
       </div>
       <div class="description">
         <div>스마트 비엠은 고객의 <b>예약, 결제, 변경요청, 문의</b>에 대한 온라인 업무 처리와</div>
-        <div>여행사의 <b>상품 판매 및 미수, 수익, 정산</b>을 한번에 관리할 수 있는 전문 백오피스입니다.</div>
+        <div>여행사의 <b>상품 판매 및 미수, 수익, 정산</b>을 한 번에 관리할 수 있는 전문 백오피스입니다.</div>
         <div class="sub-description">* 고객 관리부터 예약, 판매 정산까지 올인원 솔루션으로 언제 어디서나 비대면 업무처리가 가능합니다. </div>
       </div>
     </div>
@@ -116,7 +116,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
           </tr>
           <tr>
             <th>월 사용 수수료</th>
-            <td>문의</td>
+            <td>5만 원</td>
           </tr>
           </tbody>
         </table>

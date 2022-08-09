@@ -37,7 +37,7 @@ const engineSpecList: Array<IProductSpec> = [{
   specList: [
     'PC',
     '모바일',
-    '테블릿',
+    '태블릿',
     '모든 기기 사용',
   ],
 }, {
@@ -54,8 +54,8 @@ const engineSpecList: Array<IProductSpec> = [{
   icon: 'ico_black_management.webp',
   title: '자율 운영 기능',
   specList: [
-    '거래처 별 운임 설정',
-    '사이트 별 운임 설정',
+    '거래처별 운임 설정',
+    '사이트별 운임 설정',
     '배너 설정',
     '팝업 설정',
     '공지사항 설정',
@@ -80,7 +80,7 @@ const engineSpecList: Array<IProductSpec> = [{
     'PG 가상계좌 연동',
     '카카오 알림톡 연동',
     '로그인 연동',
-    '다국어 고객용 사이트'
+    '고객용 다국어 사이트'
   ],
 }, {
   icon: 'ico_black_worker-with-gear.webp',
@@ -298,7 +298,7 @@ onUnmounted(() => {
           <td><div class="icon-checked"/></td>
         </tr>
         <tr>
-          <th colspan="2">카카오알림톡 연동</th>
+          <th colspan="2">카카오 알림톡 연동</th>
           <td><div class="icon-checked"/></td>
           <td><div class="icon-checked"/></td>
           <td><div class="icon-checked"/></td>
@@ -353,8 +353,8 @@ onUnmounted(() => {
         </tr>
         <tr>
           <th colspan="2">월 사용 수수료</th>
-          <td>10만원</td>
-          <td>20만원</td>
+          <td>10만 원</td>
+          <td>20만 원</td>
           <td>문의</td>
         </tr>
         </tbody>
