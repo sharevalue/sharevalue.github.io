@@ -126,7 +126,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
   <div class="back-office-faq">
     <div class="default-container">
       <div class="support-title mb-17.5">자주하는 질문</div>
-      <Faq/>
+      <Faq faq-type="SBM"/>
     </div>
   </div>
 </template>

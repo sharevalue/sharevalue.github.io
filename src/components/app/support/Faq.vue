@@ -25,7 +25,13 @@ function updatePage(val: number) {
 }
 
 async function search() {
-  await axios.get(`https://api-dev.smartbookingplus.com/faq/list?page=${(page.value - 1)}&pageSize=${pageSize}&query=&siteId=43`).then((res) => {
+  let requestUrl = `https://api.smartbookingplus.com/faq/list?page=${(page.value - 1)}&pageSize=${pageSize}&siteId=129`;
+
+  if (props.faqType) {
+    requestUrl += `&product=${props.faqType}`;
+  }
+
+  await axios.get(requestUrl).then((res) => {
     const {
       statusCode,
       data
