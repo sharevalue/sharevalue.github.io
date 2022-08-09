@@ -188,7 +188,7 @@
     font-family: Raleway;
     position: absolute;
     left: 20px;
-    top: 53%;
+    top: calc(81.5% - 240px);
     opacity: 0.9;
     font-size: 80px;
     font-weight: 800;
@@ -203,7 +203,7 @@
 .engine-main-content-area .engine-main-content-text,
 .engine-main-content-area .engine-main-bg-nav {
     position: absolute;
-    top: 87.4%;
+    top: calc(93.7% - 50px);
 }
 
 .engine-main-content-area .engine-main-content-text {
@@ -212,7 +212,7 @@
     font-size: 18px;
     font-weight: normal;
     font-stretch: normal;
-    line-height: 33px;
+    line-height: 50px;
     letter-spacing: -0.45px;
 
     animation: fadein 2.5s;

@@ -143,7 +143,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 .section-1 .title {
   font-family: Raleway;
   position: absolute;
-  top: 25.2%;
+  top: calc(55.9% - 240px);
   font-size: 80px;
   font-weight: 800;
   line-height: 85px;
@@ -156,7 +156,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 
 .section-1 .description {
   position: absolute;
-  top: 62.5%;
+  top: calc(73.6% - 84px);
   font-size: 18px;
   line-height: 33px;
   letter-spacing: -0.45px;
