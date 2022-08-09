@@ -151,7 +151,6 @@ function closeModal() {
         </div>
         <div class="text-right">
           <button type="submit"
-                  id="inquiry_form"
                   :disabled="loadingRequest"
                   class="bg-primary-500 c-white inquiry-btn">
             <div v-if="loadingRequest"
