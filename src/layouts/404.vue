@@ -1,5 +1,13 @@
 <script setup lang="ts">
-const router = useRouter()
+const router = useRouter();
+
+function moveToIndex() {
+  if (router) {
+    router.push('/');
+  } else {
+    history.go(-1);
+  }
+}
 </script>
 
 <template>
@@ -8,7 +16,7 @@ const router = useRouter()
       <RouterView />
       <div class="pb-12 flex justify-center mt-4 text-center">
         <button class="btn bg-primary-500 c-white"
-                @click="router.back()">
+                @click="moveToIndex">
           돌아가기
         </button>
       </div>
