@@ -1,12 +1,7 @@
 <script setup lang="ts">
-const router = useRouter();
-
 function moveToIndex() {
-  if (router) {
-    router.push('/');
-  } else {
-    history.go(-1);
-  }
+  //  Vueuse useRouter() static 에서 정상적으로 리디렉션 안됨, location api 사용
+  location.href = 'https://www.sharevaluecorp.com/';
 }
 </script>
 
