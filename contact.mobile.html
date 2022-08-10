@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mobile-detect/1.4.3/mobile-detect.min.js"></script>
+
+    <script type="text/javascript"
+            src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=1fdx00k4dv&submodules=geocoder"></script>
+
+    <meta name="description" content="항공서비스 연동 바로 문의">
+
+    <meta property="og:title" content="쉐어밸류">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sharevaluecorp.com/">
+    <meta property="og:image" content="/img/logo-og.png"/>
+    <meta property="og:description" content="범용 온라인항공예약 솔루션, 예약 API, 여행상품 백오피스">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:url" content="https://www.sharevaluecorp.com/">
+    <meta name="twitter:image" content="/img/logo-og.png"/>
+    <meta name="twitter:description" content="범용 온라인항공예약 솔루션, 예약 API, 여행상품 백오피스">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/manifest.json">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#ffffff">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+
+    <title>문의하기 - 쉐어밸류</title>
+
+    <!-- <link href="css/styles.css" rel="stylesheet" /> -->
+    <link href="main.mobile.css" rel="stylesheet">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149122103-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+        gtag('config', 'UA-149122103-2');
+    </script>
+</head>
+
+<body class="contact">
+<!-- Change this in 'webpack-config.js' or remove -->
+<div class="gnb">
+    <div class="container">
+        <div class="gnb-ci">
+            <a href="./index.mobile.html">
+                <img src="./img/ci-sharevalue.png"
+                     srcset="./img/ci-sharevalue@2x.png 2x, ./img/ci-sharevalue@3x.png 3x"
+                     class="ci_sharevalue">
+            </a>
+            <a id="btn_menu_toggle" href="" class="menu-burger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </a>
+        </div>
+        <div id="top_menu" style="display: none">
+            <ul class="top-menu">
+                <li><a href="./company.mobile.html">Company</a></li>
+                <li><a href="./bm.mobile.html">Smart Bm</a></li>
+                <li><a href="./engine.mobile.html">Smart Booking Plus</a></li>
+                <li><a href="./contact.mobile.html" class="active">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="content">
+    <div class="container">
+        <div class="row no-gutters">
+            <div class="content-box">
+                <h1 class="title">CONTACT US</h1>
+                <div class="contact-form">
+                    <form>
+                        <div class="input-row">
+                            <div class="input-container left">
+                                <div class="input"><input id="name" type="text" placeholder="이름"/></div>
+                            </div>
+                            <div class="input-container right">
+                                <div class="input"><input id="tel" type="text" placeholder="전화번호"/></div>
+                            </div>
+                        </div>
+                        <div class="input-row">
+                            <div class="input-container left">
+                                <div class="input"><input id="company" type="text" placeholder="회사명"/></div>
+                            </div>
+                            <div class="input-container right">
+                                <div class="input"><input id="email" type="text" placeholder="이메일"/></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="input title"><input id="title" type="text" placeholder="제목"/></div>
+                        </div>
+                        <div>
+                            <textarea id="message" rows="10"></textarea>
+                        </div>
+                        <div>
+                            <label>
+                                <input type="checkbox" id="agree"> 개인정보 수집, 이용 정책에 동의합니다.<br>
+                                <span class="agree-info">(문의사항 처리를 위하여 성명, 이메일주소, 전화번호, 회사명을 수집 및 이용하며, 정보는 1년간 보관합니다.)</span>
+                            </label>
+                        </div>
+                        <div class="btn-area">
+                            <button class="btn-send">보내기</button>
+                            <div id="result_text"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="content-title">CALL US</div>
+                <div class="content-address">02-364-5400</div>
+                <div class="content-title">EMAIL US</div>
+                <div class="content-address">help@sharevaluecorp.com</div>
+                <div class="map-area">
+                    <div id="map" class="map">
+                    </div>
+                </div>
+                <div class="content-title">ADDRESS</div>
+                <div class="content-address">서울특별시 중구 무교동 15,<br>남강건설회관빌딩 1805호</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-content-box">
+        <div class="content-box">
+            <div class="footer-content">
+                ㈜쉐어밸류<br>
+                대표이사 조미숙 <span class="bar"></span> 사업자등록번호 750-86-00899<br>
+                서울특별시 중구 무교로15, 남강건설회관빌딩 1805호<br>
+                전화. 02-364-5400 <span class="bar"></span> 팩스. 02-364-9800 <span class="bar"></span> <br> 이메일. help@sharevaluecorp.com <br>
+                Copyright © 2020 Sharevalue Co., Ltd. All rights reserved.
+            </div>
+            <div class="btn-top">TOP
+                <img src="./img/ico-up.png"
+                     srcset="./img/ico-up@2x.png 2x,
+                    ./img/ico-up@3x.png 3x"
+                     class="ico-up">
+            </div>
+        </div>
+    </div>
+    <div class="footer-content-box footer-icon-box">
+        <div class="content-box">
+            <!--인증 아이콘 수정 필요-->
+            <ul>
+                <li class="footer-icon">
+                    <img src="./img/ico-kibo@2x.png"
+                         width="196" height="50"
+                         srcset="./img/ico-kibo@2x.png 2x,
+                            ./img/ico-kibo@3x.png 3x"
+                         class="ico-kibo">
+                    <br><span>기술벤처 인증기업</span>
+                </li>
+                <li class="footer-icon">
+                    <img src="./img/ico-koita@2x.png"
+                         width="117" height="70"
+                         srcset="./img/ico-koita@2x.png 2x,
+                            ./img/ico-koita@3x.png 3x"
+                         class="ico-koita">
+                    <br><span>기업부설연구소 인증기업</span>
+                </li>
+                <li class="footer-icon">
+                    <img src="./img/ico-tour-venture@2x.png"
+                         width="67" height="70"
+                         srcset="./img/ico-tour-venture@2x.png 2x,
+                            ./img/ico-tour-venture@3x.png 3x"
+                         class="ico-tour-venture">
+                    <br><span>초기관광벤처기업</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    if (!md.mobile()) {
+        location.href = "contact.html";
+    }
+    $(document).ready(function () {
+        $(".btn-send").click(function () {
+            event.preventDefault();
+            var name = $("#name").val();
+            var tel = $("#tel").val();
+            var company = $("#company").val();
+            var email = $("#email").val();
+            var title = $("#title").val();
+            var message = $("#message").val();
+            var agree = $("input:checkbox[id='agree']").is(":checked") === true;
+
+            var url = "https://api.smartbm.co.kr/sbm/inquiry";
+            if (name === '' || email === '' || title === '' || message === '' || !agree || company === '' || tel === '') {
+                alert("이름, 이메일, 제목, 내용, 개인정보 수집 정책 동의를 확인해주세요");
+            } else {
+                var data = {
+                    name: name,
+                    title: title,
+                    content: message,
+                    tel: tel,
+                    email: email,
+                    companyName: company
+                };
+                $.ajax({
+                    type: 'post',
+                    data: JSON.stringify(data),
+                    url: url,
+                    dataType: 'json',
+                    success: function () {
+                        alert('정상적으로 접수하였습니다.');
+                        window.location.reload();
+                    },
+                    error: function() {
+                        $("#result_text").html("<span class='c_red'>요청을 실패했습니다. 채널톡이나 <a href='tel:02-364-5400'>02-364-5400</a>으로 재문의 부탁드립니다.</span>");
+                    }
+                })
+            }
+        })
+    });
+
+
+    //모바일 메뉴 토글
+    $('#btn_menu_toggle').on('click', function (event) {
+        $('#top_menu').toggle();
+        return false;
+    });
+
+    // button top event
+    $('.btn-top').on('click', function () {
+        window.scrollTo(0, 0)
+    });
+
+    $('#carouselBanner').carousel('cycle');
+
+    // gnb sticky
+    var navbarHeight = $('.gnb').outerHeight();
+    $(window).scroll(function () {
+        if (window.pageYOffset > navbarHeight) {
+            $('.gnb, .header').addClass('sticky')
+        } else {
+            $('.gnb, .header').removeClass('sticky')
+        }
+    });
+
+    var map = new naver.maps.Map('map');
+    var myaddr = new naver.maps.Point(126.978976, 37.567271);
+    map.setCenter(myaddr); // 검색된 좌표로 지도 이동
+
+    var marker = new naver.maps.Marker({
+        position: myaddr,
+        map: map,
+        icon: {
+            url: './img/map-pin.png',
+            size: new naver.maps.Size(104, 85),
+            anchor: new naver.maps.Point(52, 85)
+        }
+    });
+
+</script>
+<script type="text/javascript" src="app.bundle.js"></script>
+</body>
+</html>
