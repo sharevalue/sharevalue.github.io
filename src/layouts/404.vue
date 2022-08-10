@@ -2,7 +2,7 @@
   <main p="x4 y10" class="block h-100vh">
     <div class="flex flex-col items-center justify-center h-full">
       <RouterView />
-      <div class="pb-12 flex justify-center mt-4 text-center">
+      <div class="flex justify-center mt-55 md:mt-4 text-center">
         <button class="btn bg-primary-500 c-white"
                 onclick="location.href = 'https://www.sharevaluecorp.com/'">돌아가기</button>
       </div>
