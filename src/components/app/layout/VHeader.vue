@@ -129,6 +129,8 @@ function turnVisibleMenuModal() {
   font-family: inherit;
   line-height: 50px;
   font-size: 45px;
+  color: #2e2d33;
+  font-weight: normal;
 }
 
 .menu-modal {
