@@ -14,11 +14,11 @@ cd dist
 
 git init
 # gh-pages 브랜치 기준
-git checkout -b gh-pages
+git checkout -b master
 git add -A
 git commit -m 'deploy gh-pages'
 
 # sharevaluecorp.github.io 에 배포, gh-pages 브랜치 기준
-git push origin gh-pages
+git push origin master
 
 cd -
