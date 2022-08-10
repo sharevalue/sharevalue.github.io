@@ -1,0 +1,165 @@
+@media (min-width: 1px) {
+  .container {
+    max-width: 1110px;
+    min-width: 1110px
+  }
+}
+
+.gnb {
+  width: 100%;
+  min-width: 1110px;
+  height: 79px;
+  line-height: 79px;
+  background-color: #fff;
+  border-bottom: 1px solid #ebebeb;
+  text-align: center;
+  z-index: 999;
+  top: 0
+}
+
+.gnb.sticky {
+  position: fixed
+}
+
+.gnb .container {
+  max-width: 970px;
+  min-width: 970px;
+  padding: 0
+}
+
+.gnb .gnb-ci {
+  float: left;
+  height: 79px
+}
+
+.gnb .ci_sharevalue {
+  vertical-align: middle
+}
+
+.gnb .top-menu {
+  float: right;
+  margin: 0;
+  padding: 0
+}
+
+.gnb .top-menu a {
+  font-family: NanumSquare;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 1.6px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333;
+  margin: 19px 0 0 40px
+}
+
+.gnb .top-menu a.active {
+  color: #00b1ea
+}
+
+.gnb .top-menu li {
+  display: inline-block
+}
+
+.first-header.sticky {
+  margin-top: 80px
+}
+
+.content {
+  margin-top: 120px;
+  font-family: NanumSquare
+}
+
+.content .content-box {
+  width: 970px;
+  margin: 0 auto 116px
+}
+
+.footer {
+  font-family: NanumSquare;
+  border-top: 3px solid #ebebeb;
+  width: 100%;
+  min-width: 1110px;
+  height: 250px
+}
+
+.footer-content-box {
+  border-bottom: 1px solid #ebebeb;
+  width: 100%;
+}
+
+.footer .content-box {
+  width: 970px;
+  margin: 0 auto;
+  padding: 40px 0 20px 0;
+  position: relative
+}
+
+.footer .footer-logo {
+  display: inline-block;
+  width: 15rem;
+  vertical-align: top
+}
+
+.footer .bar {
+  width: 1px;
+  height: 11px;
+  opacity: .3;
+  background-color: #fff;
+  display: inline-block;
+  margin: 2px 1px;
+  top: 3px;
+  position: relative
+}
+
+.footer .footer-content {
+  line-height: 1.53;
+  text-align: left
+}
+
+.footer .btn-top, .footer .footer-content {
+  display: inline-block;
+  font-family: NanumSquare;
+  font-size: 13px;
+  color: #333333;
+}
+
+.footer .btn-top {
+  vertical-align: top;
+  position: absolute;
+  right: 0;
+  cursor: pointer
+}
+
+.footer-icon-box {
+  margin: 20px 0 30px 0;
+  border: 0 !important;
+}
+
+.footer-icon-box .content-box {
+  padding: 0 0 0 15rem;
+}
+
+.footer-icon-box ul {
+  padding: 0;
+}
+
+.footer-icon-box li {
+  display: inline-block;
+  padding: 0;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.footer-icon-box li:first-child {
+  margin-left: 0 !important;
+}
+
+.footer-icon-box .footer-icon span {
+  font-size: 12px;
+  font-family: NanumSquare;
+  color: #666666;
+  line-height: 24px;
+}
