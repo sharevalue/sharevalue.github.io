@@ -40,7 +40,7 @@ function turnVisibleMenuModal() {
 <template>
     <!-- header component -->
     <header
-        class="py-5 bg-white pl-md:pl-20 transition-padding duration-700 w-full right-0 z-20 space-y-none shadow-md md:flex-row">
+        class="py-5 bg-white pl-md:pl-20 transition-padding duration-700 w-full right-0 z-20 space-y-none shadow-md md:flex-row fixed">
       <div class="default-container flex flex-row items-center justify-between px-7.5">
         <div class="py-2">
           <RouterLink to="/">
@@ -69,14 +69,14 @@ function turnVisibleMenuModal() {
                   @click="moveToPageWithTargetId('/support', 'inquiry')">가입문의</button>
           <!--ONLY VISIBLE UNDER 768px-->
           <button type="button"
-                  class="inline-block md:hidden bg-white visible-btn"
+                  class="inline-block md:hidden visible-btn"
                   @click="turnVisibleMenuModal">&equiv;</button>
         </div>
       </div>
 
       <!--ONLY VISIBLE UNDER 768px-->
       <div v-show="visibleMenuModal"
-           class="inline-block md:hidden menu-modal text-left shadow-lg"
+           class="inline-block md:hidden text-left shadow-lg bg-white menu-modal"
            @click="turnVisibleMenuModal">
         <div class="navigation-area">
           <nav class="flex flex-col">
@@ -137,7 +137,6 @@ function turnVisibleMenuModal() {
   left: 0;
   top: 87px;
   width: 100%;
-  background-color: #FFFFFF;
   position: absolute;
   z-index: 500;
   font-size: 20px;
