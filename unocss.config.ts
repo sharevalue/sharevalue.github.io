@@ -10,6 +10,13 @@ import {
 } from 'unocss'
 
 
+//  USE DEFAULT RESPONSIVE DISPLAY SETTING
+//  sm	640px
+//  md	768px
+//  lg	1024px
+//  xl	1280px
+//  2xl	1536px
+
 export default defineConfig({
   shortcuts: [
     //{'btn': 'px-4 py-1 rounded inline-block bg-teal-600 text-white cursor-pointer hover:bg-teal-700 disabled:cursor-default disabled:bg-gray-600 disabled:opacity-50'},
