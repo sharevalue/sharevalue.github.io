@@ -147,7 +147,7 @@ function closeModal() {
               <span> 마케팅 수신 동의</span>
             </label>
           </div>
-          <div class="text-xs md:text-base md:ml-11">동의 시 자사의 서비스 안내 및 마케팅 정보 수신에 동의함을 의미합니다.</div>
+          <div class="text-xs md:text-base md:ml-11 md:whitespace-nowrap">동의 시 자사의 서비스 안내 및 마케팅 정보 수신에 동의함을 의미합니다.</div>
         </div>
         <div class="text-center w-full mt-15 md:text-right md:mt-0">
           <button type="submit"
