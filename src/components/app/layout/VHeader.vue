@@ -24,6 +24,11 @@ const navigationLinks: Array<{ [key: string]: string }> = [{
 const route = useRoute();
 const router = useRouter();
 
+//  페이지 이동 시마다, 강제로 상단으로 이동
+router.beforeEach(() => {
+  window.scrollTo(0, 0);
+});
+
 function checkSelected(path: string) {
   return route.path === path;
 }
