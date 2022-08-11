@@ -85,7 +85,7 @@ function turnVisibleMenuModal() {
                 :key="`nav_${path}`"
                 :class="['decoration-none', 'px-7.5', checkSelected(path) ? 'c-primary-500 font-bold' : '']"
                 :to="path">
-              <div class="flex flex-low items-center h-full">
+              <div class="flex flex-row items-center h-full">
                 <img v-if="icon"
                      :src="`/image/icon/${icon}`"
                      width="25"

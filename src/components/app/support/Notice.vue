@@ -51,14 +51,19 @@ onMounted(() => {
 
 <template>
   <div class="support-header"></div>
-  <div class="mb-12.5">
+  <div class="mb-8 md:mb-12.5">
     <div v-for="(notice, index) in notices"
          :key="`notice_${index}`">
       <details>
-        <summary class="notice-title-area flex flex-row">
-          <div class="mr-12.5">공지사항</div>
-          <div class="notice-title">{{ notice.title }}</div>
-          <div>{{ formatDate(notice.createdDateTime) }}</div>
+        <summary class="notice-title-area flex flex-col md:flex-row ">
+          <div class="flex flex-row justify-between w-full">
+            <div class="mr-12.5">공지사항</div>
+            <div class="hidden md:block notice-title">{{ notice.title }}</div>
+            <div>{{ formatDate(notice.createdDateTime) }}</div>
+          </div>
+          <div class="block md:hidden">
+            <div class="notice-title">{{ notice.title }}</div>
+          </div>
         </summary>
         <div class="notice-content"
              v-html="notice.content"/>
@@ -94,8 +99,9 @@ details {
 }
 
 .notice-content {
+  @apply py-8 px-5 md:pt-7 md:pb-10 md:px-7;
+
   background-color: #f8f9fb;
-  padding: 28px 28px 40px 28px;
   line-height: 30px;
   letter-spacing: -0.45px;
 }

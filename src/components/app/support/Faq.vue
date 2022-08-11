@@ -62,7 +62,7 @@ onMounted(() => {
 
 <template>
   <div class="support-header"></div>
-  <div class="mb-12.5">
+  <div class="mb-8 md:mb-12.5">
     <div v-for="(faq, index) in faqs"
          :key="`faq_${index}`">
       <details>
@@ -91,7 +91,9 @@ details[open] .faq-title-area .faq-title {
 }
 
 .faq-title-area {
-  padding: 20px 20px 20px 28px;
+  @apply py-6 md:pl-5 md:pr-7.5 md:py-5 md:pl-7 md:pr-10;
+
+  padding: 20px 40px 20px 28px;
   font-size: 14px;
   line-height: 30px;
   letter-spacing: -0.35px;
@@ -121,16 +123,16 @@ details[open] .faq-title-area:after {
 }
 
 .faq-title-area .faq-title {
+  @apply text-base md:text-lg;
   flex: 1;
-  font-size: 18px;
   letter-spacing: -0.45px;
   font-weight: bold;
   cursor: pointer;
 }
 
 .faq-content {
+  @apply py-8 px-5 md:pt-7 md:pb-10 md:px-7;
   background-color: #f8f9fb;
-  padding: 28px 28px 40px 28px;
   line-height: 30px;
   letter-spacing: -0.45px;
 }

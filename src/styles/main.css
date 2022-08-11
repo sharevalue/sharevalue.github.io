@@ -76,7 +76,7 @@ body {
 .engine-process-title,
 .price-table-title,
 .support-title {
-    font-size: 36px;
+    @apply text-2xl md:text-4xl;
     line-height: 48px;
     color: #152038;
     font-weight: bold;

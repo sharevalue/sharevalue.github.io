@@ -61,16 +61,16 @@ function closeModal() {
 
 <template>
   <div class="default-container px-5">
-    <div class="inquiry-title">
+    <div class="text-2xl mb-8.5 text-center md:text-3xl md:mb-17.5 md:text-left inquiry-title">
       <div>전문 여행 솔루션과 운영지원 서비스를 제공하는 쉐어밸류입니다.</div>
       <div>
         <span class="c-primary-600">상품소개서 및 서비스 연동, 제휴 문의</span>
         <span>를 남겨 주시면 신속히 연락드리겠습니다.</span>
       </div>
     </div>
-    <form class="inquiry-content text-left"
+    <form class="pt-8.5 pb-6.5 px-4 rounded-xl md:pt-22.5 md:pb-17.5 md:px-12.5 md:rounded-3xl text-left inquiry-content"
           @submit.prevent="requestInquiry">
-      <div class="flex flex-row inquiry-input-area">
+      <div class="flex flex-col md:flex-row inquiry-input-area">
         <div>
           <div class="inquiry-input-title">
             <span class="c-primary-500 pr-1">*</span>
@@ -135,8 +135,8 @@ function closeModal() {
           </div>
         </div>
       </div>
-      <div class="flex flex-row justify-between items-center">
-        <div class="flex flex-col inquiry-checkbox-area text-left">
+      <div class="flex flex-col md:flex-row justify-start md:justify-between md:items-center">
+        <div class="flex flex-col inquiry-checkbox-area text-left pl-2 md:pl-0">
           <div class="mb-3">
             <label class="flex flex-row items-center font-bold">
               <input type="checkbox"
@@ -147,9 +147,9 @@ function closeModal() {
               <span> 마케팅 수신 동의</span>
             </label>
           </div>
-          <div class="ml-11">동의 시 자사의 서비스 안내 및 마케팅 정보 수신에 동의함을 의미합니다.</div>
+          <div class="text-xs md:text-base md:ml-11">동의 시 자사의 서비스 안내 및 마케팅 정보 수신에 동의함을 의미합니다.</div>
         </div>
-        <div class="text-right">
+        <div class="text-center w-full mt-15 md:text-right md:mt-0">
           <button type="submit"
                   :disabled="loadingRequest"
                   class="bg-primary-500 c-white inquiry-btn">
@@ -190,18 +190,12 @@ function closeModal() {
 @import '/src/styles/modal.css';
 
 .inquiry-title {
-  text-align: left;
   color: #152038;
-  font-size: 30px;
   font-weight: 800;
-  line-height: 48px;
   letter-spacing: -0.75px;
-  margin-bottom: 70px;
 }
 
 .inquiry-content {
-  padding: 90px 50px 70px 50px;
-  border-radius: 30px;
   background-color: #f4fbff;
   box-shadow: -6.3px -7.8px 15px 0 rgba(255, 255, 255, 0.5), 5.4px 8.4px 20px 0 rgba(94, 116, 156, 0.2);
   color: #152038;
@@ -215,24 +209,24 @@ function closeModal() {
 }
 
 .inquiry-content .inquiry-input-area >div {
-  width: calc(50% - 10px) !important;
+  @apply w-full mb-6 md:w-49/100 md:mb-8.5;
   max-width: 620px;
-  margin-bottom: 30px;
 }
 
 .inquiry-content .inquiry-input-area >div .inquiry-input-title {
-  font-size: 21px;
+  @apply text-base leading-8 md:text-xl md:mb-0 md:leading-12;
   letter-spacing: -0.53px;
+  font-weight: normal;
 }
 
 .inquiry-content input[type=text] {
+  @apply px-3 py-4 text-sm md:px-7 md:py-6.5 md:text-lg;
   width: 100%;
   box-sizing: border-box;
   background-color: #e2e9f2;
   border-radius: 10px;
-  padding: 11px 28px;
-  font-size: 18px;
   letter-spacing: -0.45px;
+  line-height: 1;
 }
 
 .inquiry-content input[type=text]::placeholder {
@@ -240,6 +234,7 @@ function closeModal() {
 }
 
 .inquiry-checkbox-area {
+  @apply text-sm md:text-base;
   letter-spacing: -0.4px;
   line-height: 20px;
 }
@@ -254,11 +249,9 @@ function closeModal() {
 }
 
 .inquiry-btn {
-  border-radius: 10px;
-  line-height: 16px;
-  height: 70px;
-  width: 300px;
-  font-size: 16px;
+  @apply w-7/10 text-sm rounded-xl h-58px md:text-base md:rounded-3xl md:h-70px;
+  line-height: 1;
+  max-width: 300px;
   font-weight: normal;
 }
 

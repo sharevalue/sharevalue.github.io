@@ -47,46 +47,47 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="support-cs bg-primary-500 c-white">
-    <div class="default-container flex flex-row justify-between">
+  <div class="px-7.5 py-4 md:py-8 support-cs bg-primary-500 c-white">
+    <div class="default-container flex text-center flex-col md:text-left md:flex-row justify-between">
       <div class="support-cs-number">
         <img src="/image/icon/ico_white_cs.webp"
              width="70"
              height="42"
              alt="cs"
-             class="inline-block mr-6"/>
+             class="inline-block mr-4 md:mr-6"/>
         <a href="tel:02-364-5400"
-           class="inline-block">02.364.5400</a>
+           class="font-bold text-4xl md:font-light md:text-5xl inline-block">02.364.5400</a>
       </div>
-      <div class="support-cs-info">
+      <div class="text-base leading-8 md:text-lg md:leading-16 support-cs-info">
         <span>상담 가능 시간 | 평일 </span>
         <span class="hours-of-operation">9:30 ~ 18:30</span>
       </div>
     </div>
   </div>
   <!--INQUIRY-->
-  <div id="inquiry">
+  <div id="inquiry"
+       class="pt-20.5 pb-12.5 md:py-37.5">
     <Inquiry/>
   </div>
   <!--공지사항-->
-  <div class="support-notice">
+  <div class="support-notice py-16 md:px-5 md:py-37.5">
     <div class="default-container">
-      <div class="support-title mb-17.5">공지사항</div>
+      <div class="support-title mb-8 md:mb-17.5">공지사항</div>
       <Notice/>
     </div>
   </div>
   <!--자주하는 질문-->
-  <div class="support-faq">
+  <div class="support-faq py-16 md:px-5 md:py-37.5">
     <div class="default-container">
-      <div class="support-title mb-17.5">자주하는 질문</div>
+      <div class="support-title mb-8 md:mb-17.5">자주하는 질문</div>
       <Faq/>
     </div>
   </div>
   <!--CONTACT US-->
   <div id="contact_us"
        class="shadow-md">
-    <div class="support-title normal-letter-spacing mb-17.5">CONTACT US</div>
-    <div class="flex flex-row justify-between">
+    <div class="support-title normal-letter-spacing mb-8 md:mb-17.5">CONTACT US</div>
+    <div class="flex flex-col md:flex-row justify-between">
       <div class="contact-us-map">
         <div>
           <div id="map" class="map"/>
@@ -95,27 +96,31 @@ onMounted(() => {
       <div class="contact-us-address">
         <div>
           <div class="address-title">오시는 길</div>
-          <div class="address-content flex flex-col">
-            <div class="flex flex-low items-center pl-0.5 ">
-              <img src="/image/icon/ico_white_map.webp"
-                   width="25"
-                   height="30"
-                   alt="address"
-                   class="address-icon"/>
-              <div class="mr-7">Address</div>
-              <div>서울특별시 중구 무교로 15, 남강건설회관빌딩 1805호</div>
+          <div class="address-content flex flex-col text-left">
+            <div class="flex flex-col md:flex-row md:items-center pl-0.5 ">
+              <div class="flex flex-row">
+                <img src="/image/icon/ico_white_map.webp"
+                     width="25"
+                     height="30"
+                     alt="address"
+                     class="address-icon"/>
+                <div class="text-base md:text-lg">Address</div>
+              </div>
+              <div class="text-sm ml-10 md:text-lg md:ml-7">서울특별시 중구 무교로 15, 남강건설회관빌딩 1805호</div>
             </div>
-            <div class="flex flex-low items-center">
-              <img src="/image/icon/ico_white_mail.webp"
-                   width="30"
-                   height="23"
-                   alt="email"
-                   class="email-icon"/>
-              <div class="mr-10">E-Mail</div>
-              <div>sales@sharevaluecorp.com</div>
+            <div class="flex flex-col md:flex-row md:items-center">
+              <div class="flex flex-row">
+                <img src="/image/icon/ico_white_mail.webp"
+                     width="30"
+                     height="23"
+                     alt="email"
+                     class="email-icon"/>
+                <div class="text-base md:text-lg">E-Mail</div>
+              </div>
+              <div class="text-sm ml-10 md:text-lg">sales@sharevaluecorp.com</div>
             </div>
           </div>
-          <div class="address-caution">* 궁금한 점이 있으면 언제든 연락해주세요.</div>
+          <div class="hidden md:block address-caution">* 궁금한 점이 있으면 언제든 연락해주세요.</div>
         </div>
       </div>
     </div>
@@ -124,7 +129,6 @@ onMounted(() => {
 
 <style scoped>
 .support-cs {
-  padding: 32px 30px;
   box-sizing: border-box;
   font-weight: 300;
 }
@@ -132,12 +136,10 @@ onMounted(() => {
 .support-cs .support-cs-number {
   font-weight: 300;
   font-size: 48px;
-  line-height: 65px;
+  line-height: 1.35;
 }
 
 .support-cs .support-cs-info {
-  font-size: 18px;
-  line-height: 65px;
   letter-spacing: -0.45px;
 }
 .support-cs .support-cs-info .hours-of-operation {
@@ -147,13 +149,12 @@ onMounted(() => {
 
 .support-notice,
 .support-faq {
-  padding: 150px 20px;
   box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.07);
   background-color: #ffffff;
 }
 
 #contact_us {
-  padding-top: 150px;
+  @apply pt-12.5 md:pt-37.5;
   background-color: #f8f9fb;
   box-shadow: 0 0 18px 2px rgba(0, 0, 0, 0.2);
 }
@@ -184,33 +185,29 @@ onMounted(() => {
 }
 
 #contact_us .contact-us-map >div {
-  padding: 50px 60px 50px 0;
+  @apply py-6 px-5 md:py-12.5 md:pr-15 md:pl-0;
 }
 
 #contact_us .contact-us-address >div {
-  padding: 89px 0 19px 60px;
+  @apply py-12.5 px-5 md:pt-22.5 md:pr-0 md:pb-5 md:pl-15;
 }
 
 .map {
-  width: 32.23vw;
+  @apply w-full h-180px md:w-32.23vw md:min-w-500px md:h-300px;
+  /*width: 32.23vw;*/
   max-width: 659px;
-  min-width: 500px;
-  height: 300px;
   display: block;
   position: relative;
 }
 
 .address-title {
-  margin-bottom: 46px;
-  font-size: 24px;
+  @apply c-primary-500 font-bold mb-8 text-xl md:mb-11.5 md:text-2xl;
   line-height: 30px;
   letter-spacing: -.6px;
-  @apply c-primary-500  font-bold;
-
 }
 
 .address-content {
-  margin-bottom: 60px;
+  @apply md:mb-15;
 }
 
 .address-content >div {
@@ -220,17 +217,16 @@ onMounted(() => {
 
 .address-content >div >div {
   letter-spacing: -0.45px;
-  font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
 }
 
 .address-content .address-icon {
-  margin-right: 31.5px;
+  @apply mr-4 md:mr-8;
   height: 30px;
 }
 
 .address-content .email-icon {
-  margin-right: 30px;
+  @apply mr-2.5 md:mr-7.5;
   height: 23px;
 }
 
@@ -244,7 +240,6 @@ onMounted(() => {
 }
 
 #inquiry {
-  padding: 150px 0;
   background-color: #e0e8f3;
 }
 </style>
