@@ -40,8 +40,8 @@ function turnVisibleMenuModal() {
 <template>
     <!-- header component -->
     <header
-        class="py-5 bg-white pl-md:pl-20 transition-padding duration-700 w-full right-0 z-20 space-y-none shadow-md md:flex-row fixed">
-      <div class="default-container flex flex-row items-center justify-between px-7.5">
+        class="text-xs md:text-xl py-0.75em md:py-5 bg-white transition-padding duration-700 w-full right-0 z-20 space-y-none shadow-md md:flex-row fixed">
+      <div class="default-container flex flex-row items-center justify-between px-1em md:px-7.5">
         <div class="py-2">
           <RouterLink to="/">
             <img src="/image/logo/ci-sharevalue.png"
@@ -65,7 +65,7 @@ function turnVisibleMenuModal() {
         </div>
         <div>
           <button type="button"
-                  class="hidden md:inline-block bg-primary-500 c-white contact-btn"
+                  class="hidden md:inline-block bg-primary-500 c-white btn contact-btn"
                   @click="moveToPageWithTargetId('/support', 'inquiry')">가입문의</button>
           <!--ONLY VISIBLE UNDER 768px-->
           <button type="button"
@@ -91,7 +91,7 @@ function turnVisibleMenuModal() {
                      width="25"
                      height="30"
                      alt="icon"
-                     class="mr-5"/>
+                     class="mr-3"/>
                 <span>{{ title }}</span>
               </div>
             </RouterLink>
@@ -99,7 +99,7 @@ function turnVisibleMenuModal() {
         </div>
         <div class="flex flex-col menu-modal-btn-area">
           <button type="button"
-                  class="bg-primary-500 c-white h-70px"
+                  class="bg-primary-500 c-white h-60px"
                   @click="moveToPageWithTargetId('/support', 'inquiry')">가입문의</button>
         </div>
       </div>
@@ -107,18 +107,15 @@ function turnVisibleMenuModal() {
 </template>
 <style scoped>
 .contact-btn {
-  border-radius: 10px;
   width: 150px;
   height: 50px;
   line-height: 50px;
-}
-
-.contact-btn:hover {
-  opacity: 0.75;
+  font-size: 16px;
 }
 
 .navigation-area {
   color: #152038;
+  font-size: 16px;
 }
 
 .navigation-area a:hover {
@@ -127,27 +124,28 @@ function turnVisibleMenuModal() {
 
 .visible-btn {
   font-family: inherit;
-  line-height: 50px;
-  font-size: 45px;
+  line-height: 1.3;
+  font-size: 3em;
   color: #2e2d33;
   font-weight: normal;
 }
 
 .menu-modal {
   left: 0;
-  top: 87px;
+  top: 65px;
   width: 100%;
   position: absolute;
   z-index: 500;
-  font-size: 20px;
 }
 
 .menu-modal .navigation-area nav >a {
   border-top: 1px solid #eff3f7;
-  height: 70px;
+  height: 60px;
+  font-size: 14px;
 }
 
 .menu-modal .menu-modal-btn-area {
   border-top: 1px solid #eff3f7;
+  font-size: 14px;
 }
 </style>

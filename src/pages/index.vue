@@ -30,7 +30,7 @@
         <div class="title-eng md:inline-block">Our Solution&nbsp;=&nbsp;</div>
         <div class="md:inline-block">클라우드서비스 +@ 운영지원</div>
       </div>
-      <div class="text-base md:text-xl description">
+      <div class="text-lg md:text-xl description">
         <div>30년 여행사에서의 업무 노하우를 바탕으로 모든 고객의 니즈에 맞는 맞춤 솔루션을 비용과 시간을 절약할 수 있는 클라우드서비스로 제공하며 운영 업무도 지원합니다.</div>
       </div>
       <div class="px-0 md:px-24 content flex flex-col text-xs lg:flex-row lg:text-base justify-evenly items-center">
@@ -93,7 +93,7 @@
         <div>여행 디지털 서비스의 가치를 공유합니다.</div>
       </div>
       <div class="content flex justify-center md:justify-between items-center">
-        <div class="text-center md:text-left text-xl md:text-4xl slogans">
+        <div class="text-center text-xl mb-10 md:mb-0 md:text-left md:text-4xl slogans">
           <div>TO BE AND WE DO</div>
           <div>ANY TIME</div>
           <div>ANY PRODUCTS</div>
@@ -102,22 +102,22 @@
           <div>ANY CUSTOMIZATION</div>
           <div>ANY WORK</div>
         </div>
-        <div class="w-100% h-100% text-xs px-5 py-10 md:w-800px md:h-800px md:text-xl roadmap-circle-area flex justify-center items-center">
-          <div class="w-85vw h-85vw md:w-600px md:h-600px roadmap-circle"/>
-          <div class="w-10em h-10em roadmap-stage oclock-12">Our<br/>Development</div>
-          <div class="w-10em h-10em roadmap-stage oclock-1-5">B2C<br/>Booking</div>
-          <div class="w-10em h-10em roadmap-stage oclock-3">B2B<br/>Booking</div>
-          <div class="w-10em h-10em roadmap-stage oclock-4-5">BTMS<br/>Booking</div>
-          <div class="w-10em h-10em roadmap-stage oclock-6">
+        <div class="w-100% h-100% text-xs px-5 py-5 sm:text-sm md:w-800px md:h-800px md:text-2xl roadmap-circle-area flex justify-center items-center">
+          <div class="w-75vw h-75vw md:w-600px md:h-600px roadmap-circle"/>
+          <div class="w-8em h-8em roadmap-stage oclock-12">Our<br/>Development</div>
+          <div class="w-8em h-8em roadmap-stage oclock-1-5">B2C<br/>Booking</div>
+          <div class="w-8em h-8em roadmap-stage oclock-3">B2B<br/>Booking</div>
+          <div class="w-8em h-8em roadmap-stage oclock-4-5">BTMS<br/>Booking</div>
+          <div class="w-8em h-8em roadmap-stage oclock-6">
             <div>PG</div>
             <div class="stage-description">(Payment Gateway)</div>
           </div>
-          <div class="w-10em h-10em roadmap-stage oclock-7-5">
+          <div class="w-8em h-8em roadmap-stage oclock-7-5">
             <div>PMS</div>
             <div class="stage-description">(Property Management System)</div>
           </div>
-          <div class="w-10em h-10em roadmap-stage oclock-9">Business<br/>Agent</div>
-          <div class="w-10em h-10em roadmap-stage oclock-10-5">Dynamic<br/>Package<br/>Booking</div>
+          <div class="w-8em h-8em roadmap-stage oclock-9">Business<br/>Agent</div>
+          <div class="w-8em h-8em roadmap-stage oclock-10-5">Dynamic<br/>Package<br/>Booking</div>
         </div>
       </div>
     </div>
@@ -313,7 +313,7 @@
 
 .section-3 .content .oclock-12 {
   top: 0;
-  left: calc(50% - 5em);
+  left: calc(50% - 4em);
   font-weight: bold;
   background-color: #eff3f7;
 }
@@ -324,7 +324,7 @@
 }
 
 .section-3 .content .oclock-3 {
-  top: calc(50% - 5em);
+  top: calc(50% - 4em);
   right: 0;
 }
 
@@ -335,7 +335,7 @@
 
 .section-3 .content .oclock-6 {
   bottom: 0;
-  left: calc(50% - 5em);
+  left: calc(50% - 4em);
 }
 
 .section-3 .content .oclock-7-5 {
@@ -344,7 +344,7 @@
 }
 
 .section-3 .content .oclock-9 {
-  top: calc(50% - 5em);
+  top: calc(50% - 4em);
   left: 0;
 }
 
