@@ -1,11 +1,6 @@
-.engine-sub-description {
-    @apply bg-primary-500 c-white;
-    padding: 15px 0;
-}
-
 .engine-sub-description .title {
-    font-size: 21px;
-    line-height: 35px;
+    @apply text-sm inline md:text-lg md:block lg:text-xl;
+    line-height: 1.66;
     letter-spacing: -0.53px;
     text-align: left;
     word-break: keep-all;

@@ -52,13 +52,16 @@ const backOfficeSpecList: Array<IProductSpec> = [{
       </div>
     </div>
   </div>
-  <div class="section-2 bg-secondary-500 c-white">
-    <div class="default-container px-15 flex flex-row items-center">
-      <div class="mr-5 title">소중한 고객 정보를 관리하고, 카카오톡 채널의 친구추가 및 알림이 자유롭고, 업무의 생산성 및 효율성 증대로 비용 절감과 업무 리스크 관리가 가능합니다.</div>
+  <div class="py-11 bg-secondary-500 c-white md:py-4 section-2">
+    <div class="px-5 text-center md:text-left md:px-10 md:flex md:flex-row md:items-center lg:px-15 default-container">
+      <div class="mr-2 md:mr-5 title">소중한 고객 정보를 관리하고, 카카오톡 채널의 친구추가 및 알림이 자유롭고, 업무의 생산성 및 효율성 증대로 비용 절감과 업무 리스크 관리가 가능합니다.</div>
       <img src="/image/icon/ico_white_worker.webp"
-           width="67"
-           height="70"
-           alt="icon"/>
+           srcset="/image/icon/ico_white_worker@2x.webp 768w,
+                   /image/icon/ico_white_worker@3x.webp 1024w"
+           width="22"
+           height="23"
+           alt="icon"
+           class="inline-block w-22px h-23px md:w-44px md:h-46px lg:w-67px lg:h-70px"/>
     </div>
   </div>
   <div class="px-5 py-37.5">
@@ -177,15 +180,10 @@ const backOfficeSpecList: Array<IProductSpec> = [{
   font-weight: 800;
 }
 
-.section-2 {
-  padding: 15px 0;
-}
-
 .section-2 .title {
-  font-size: 21px;
-  line-height: 35px;
+  @apply text-sm inline md:text-lg md:block lg:text-xl;
+  line-height: 1.66;
   letter-spacing: -0.53px;
-  text-align: left;
   word-break: keep-all;
 }
 

@@ -207,13 +207,16 @@ onUnmounted(() => {
       </div>
     </div>
   </div>
-  <div class="engine-sub-description">
-    <div class="default-container px-35 flex flex-row items-center">
-      <div class="mr-5 title">개인 항공권, 단체 항공권, 전세기 항공권, 저비용 항공사 전용 항공권까지~! 세상의 모든 항공권 상품을 24시간 고객에게 제공하세요!</div>
+  <div class="py-11 bg-primary-500 c-white md:py-4 engine-sub-description">
+    <div class="px-5 text-center md:px-20 md:text-left md:flex md:flex-row md:items-center lg:px-35 default-container">
+      <div class="mr-2 md:mr-5 title">개인 항공권, 단체 항공권, 전세기 항공권, 저비용 항공사 전용 항공권까지~! 세상의 모든 항공권 상품을 24시간 고객에게 제공하세요!</div>
       <img src="/image/icon/ico_white_airplane.webp"
-           width="72"
-           height="70"
-           alt="icon"/>
+           srcset="/image/icon/ico_white_airplane@2x.webp 768w,
+                   /image/icon/ico_white_airplane@3x.webp 1024w"
+           width="24"
+           height="23"
+           alt="icon"
+           class="inline-block w-24px h-23px md:w-48px md:h-46px lg:w-72px lg:h-70px"/>
     </div>
   </div>
   <div class="px-5 py-37.5 bg-white">
