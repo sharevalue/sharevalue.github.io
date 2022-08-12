@@ -76,7 +76,7 @@ body {
 .engine-process-title,
 .price-table-title,
 .support-title {
-    @apply text-2xl md:text-4xl;
+    @apply text-2xl md:text-3xl lg:text-4xl;
     line-height: 48px;
     color: #152038;
     font-weight: bold;
@@ -122,8 +122,8 @@ body {
 }
 
 .price-table {
+    @apply text-xs md:text-lg;
     width: 100%;
-    font-size: 18px;
     font-weight: 300;
     letter-spacing: -0.45px;
     text-align: left;
@@ -134,7 +134,7 @@ body {
 
 .price-table th,
 .price-table td {
-    padding: 25px 20px;
+    @apply py-4 px-5 md:py-6;
 }
 
 .price-table thead th {
@@ -144,17 +144,17 @@ body {
 }
 
 .price-table tbody th {
+    @apply text-sm md:text-lg;
     border: 1px solid #c4d2dd;
     text-align: left;
-    font-size: 18px;
     font-weight: normal;
     border-left-width: 0;
 }
 
 .price-table tbody td {
+    @apply text-xs md:text-base;
     border: 1px solid #c4d2dd;
     text-align: center;
-    font-size: 16px;
     letter-spacing: -0.4px;
 }
 

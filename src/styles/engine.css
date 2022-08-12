@@ -14,16 +14,18 @@
 }
 
 .engine-process {
-    padding: 200px 0;
+    @apply py-25 md:py-50;
     box-shadow: 0 0 9px 1px rgba(0, 0, 0, 0.07);
 }
 
 .engine-process .engine-process-content {
+    @apply py-10 md:px-10 lg:px-0 lg:py-0;
     position: relative;
 }
 
 .engine-process .engine-process-content .engine-process-stage {
-    font-size: 30px;
+    @apply text-xl lg:mb-5 lg:text-3xl;
+
     font-weight: 300;
     font-stretch: normal;
     font-style: normal;
@@ -31,30 +33,27 @@
     letter-spacing: normal;
     text-align: center;
     color: #2e2d33;
-    margin-bottom: 20px;
     z-index: 1;
 }
 
 .engine-process .engine-process-content .engine-process-stage-bar {
-    width: 150px;
-    height: 2px;
+    @apply w-90px h-1px my-4 lg:transform-none lg:w-150px lg:h-2px lg:mb-7.5;
+
     background-color: #00264b;
     position: relative;
     display: inline-block;
-    margin-bottom: 30px;
     z-index: 1;
 }
 
 .engine-process .engine-process-content .engine-process-stage-bar .dot {
-    @apply bg-primary-500;
+    @apply bg-primary-500 w-7px h-7px -top-5.5px border-2 lg:w-13px lg:h-13px lg:border-3 lg:-top-8.5px;
 
-    width: 13px;
-    height: 13px;
     box-sizing: initial;
     border-radius: 50%;
     position: absolute;
-    border: 3px solid #00264b;
-    top: -8.5px;
+    border-style: solid;
+    border-color: #00264b;
+    /*top: -5.5px;*/
     left: calc(50% - 8.5px);
     cursor: pointer;
     z-index: 1;
@@ -75,7 +74,8 @@
 }
 
 .engine-process .engine-process-content .engine-process-stage-title {
-    font-size: 21px;
+    @apply text-base md:text-lg lg:text-xl;
+
     font-weight: normal;
     font-stretch: normal;
     font-style: normal;
@@ -85,17 +85,28 @@
     color: #2e2d33;
 }
 
-.engine-process .engine-process-content .engine-process-line {
+.engine-process .engine-process-content .engine-process-vertical-line {
     position: absolute;
-    top: 50px;
+    top: 72px;
     width: 100%;
     border: 1px solid #c4d2dd;
     z-index: -1;
 }
 
+.engine-process .engine-process-content .engine-process-horizontal-line {
+    @apply ml-17 md:mx-27;
+
+    position: absolute;
+    top: 0;
+    left: -1px;
+    height: 880px;
+    border: 1px solid #c4d2dd;
+    z-index: -1;
+}
+
 .engine-price-table {
+    @apply py-25 md:py-50;
     background-color: #f8f9fb;
-    padding: 200px 0;
 }
 
 .engine-price-table .price-table-title,

@@ -90,7 +90,7 @@ const engineSpecList: Array<IProductSpec> = [{
 
 const engineProcessStages = [
   '협약서 체결',
-  'GDS 웹 계정 생성<br/>및 승인',
+  'GDS 웹 계정 생성 및 승인',
   '항공전용 사이트 설정',
   '백오피스 설정',
   '서비스 오픈 테스트',
@@ -117,11 +117,22 @@ const engineProcessStageStyleList = computed(() => {
 
   if (scrollYPosition.value > 0 && foundTarget) {
     const { top } = foundTarget.getBoundingClientRect();
-    const paddingTopSize = 450;
-    const startPosition = top - window.innerHeight + paddingTopSize;
+    let elementScrollSize = 450;
+    const foundElement = document.getElementById('engine_process_content');
+
+    if (foundElement) {
+      const paddingTop = window.getComputedStyle(foundElement, null).getPropertyValue('padding-top');
+      const parsedPaddingTop = parseInt(paddingTop.replace('px', ''));
+
+      if (parsedPaddingTop > 0) {
+        elementScrollSize = (parsedPaddingTop * 15);
+      }
+    }
+
+    const startPosition = top - window.innerHeight + elementScrollSize;
 
     if (startPosition < 0) {
-      const endPosition = top - (window.innerHeight / 2) + paddingTopSize;
+      const endPosition = top - (window.innerHeight / 2) + elementScrollSize;
       const stageSize = Math.ceil((endPosition - startPosition) / engineProcessStages.length);
       const absStartPosition = Math.abs(startPosition);
 
@@ -219,7 +230,7 @@ onUnmounted(() => {
            class="inline-block w-24px h-23px md:w-48px md:h-46px lg:w-72px lg:h-70px"/>
     </div>
   </div>
-  <div class="px-5 py-37.5 bg-white">
+  <div class="py-37.5 bg-white px-3 xl:px-5">
     <div class="default-container engine-spec-list">
       <ProductSpec v-for="(engineSpec, index) in engineSpecList"
                    :key="`engine_spec_${index}`"
@@ -233,40 +244,42 @@ onUnmounted(() => {
     </div>
   </div>
   <div id="engine_process"
-       ref="el"
        class="engine-process">
     <div class="px-5 default-container">
-      <div class="engine-process-title mb-17.5">서비스 계약 및 진행 절차</div>
-      <div class="engine-process-content">
-        <div class="flex flex-row justify-evenly">
+      <div class="mb-8 md:mb-17.5 engine-process-title">서비스 계약 및 진행 절차</div>
+      <div id="engine_process_content"
+           class="engine-process-content">
+        <div class="flex flex-col justify-center lg:flex-row lg:justify-evenly">
           <div v-for="(stage, index) in engineProcessStages"
                :key="`engine_process_${index}`"
+               class="flex flex-row my-10 lg:block lg:my-0"
                :style="engineProcessStageStyleList[index]">
             <div class="engine-process-stage">{{ `0${index + 1}` }}</div>
-            <div class="engine-process-stage-bar">
+            <div class="rotate-270 -scale-x-100 engine-process-stage-bar">
               <span class="dot"/>
             </div>
             <div class="engine-process-stage-title"
                  v-html="stage"/>
           </div>
         </div>
-        <div class="engine-process-line"/>
+        <div class="hidden lg:block engine-process-vertical-line"/>
+        <div class="lg:hidden engine-process-horizontal-line"/>
       </div>
     </div>
   </div>
   <div class="engine-price-table">
-    <div class="px-5 default-container">
-      <div class="price-table-title mb-17.5">PLAN</div>
-      <table class="price-table">
+    <div class="md:px-5 default-container">
+      <div class="mb-8.5 md:mb-17.5 price-table-title">PLAN</div>
+      <table class="mb-8.5 md:mb-0 price-table">
         <thead>
         <tr>
           <th colspan="2"></th>
           <th>EASY</th>
           <th>WITH</th>
           <th>PRO</th>
-          <th>PMS</th>
-          <th>API</th>
-          <th>CUSTOMIZING</th>
+          <th class="hidden md:table-cell">PMS</th>
+          <th class="hidden md:table-cell">API</th>
+          <th class="hidden md:table-cell">CUSTOMIZING</th>
         </tr>
         </thead>
         <tbody>
@@ -275,18 +288,21 @@ onUnmounted(() => {
           <td>ATR</td>
           <td>BSP</td>
           <td>BSP</td>
-          <td>ALL</td>
-          <td>ALL</td>
-          <td>ALL</td>
+          <td class="hidden md:table-cell">ALL</td>
+          <td class="hidden md:table-cell">ALL</td>
+          <td class="hidden md:table-cell">ALL</td>
         </tr>
         <tr>
           <th colspan="2">GDS 웹서비스 PCC</th>
           <td><div class="icon-checked"/></td>
           <td><div class="icon-checked"/></td>
           <td><div class="icon-checked"/></td>
-          <td rowspan="13">문의</td>
-          <td rowspan="13">문의</td>
-          <td rowspan="13">문의</td>
+          <td class="hidden md:table-cell"
+              rowspan="13">문의</td>
+          <td class="hidden md:table-cell"
+              rowspan="13">문의</td>
+          <td class="hidden md:table-cell"
+              rowspan="13">문의</td>
         </tr>
         <tr>
           <th colspan="2">웹 호스팅</th>
@@ -359,6 +375,66 @@ onUnmounted(() => {
           <td>10만 원</td>
           <td>20만 원</td>
           <td>문의</td>
+        </tr>
+        </tbody>
+      </table>
+      <table class="table md:hidden price-table">
+        <thead>
+        <tr>
+          <th colspan="2"></th>
+          <th>PMS</th>
+          <th>API</th>
+          <th>CUSTOM</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th colspan="2">대상</th>
+          <td>ALL</td>
+          <td>ALL</td>
+          <td>ALL</td>
+        </tr>
+        <tr>
+          <th colspan="2">GDS 웹서비스 PCC</th>
+          <td rowspan="13">문의</td>
+          <td rowspan="13">문의</td>
+          <td rowspan="13">문의</td>
+        </tr>
+        <tr>
+          <th colspan="2">웹 호스팅</th>
+        </tr>
+        <tr>
+          <th colspan="2">유지관리</th>
+        </tr>
+        <tr>
+          <th colspan="2">카카오 알림톡 연동</th>
+        </tr>
+        <tr>
+          <th colspan="2">판매 사이트 추가</th>
+        </tr>
+        <tr>
+          <th colspan="2">자동 발권</th>
+        </tr>
+        <tr>
+          <th colspan="2">전세기, 단체항공 서비스</th>
+        </tr>
+        <tr>
+          <th colspan="2">항공사 API 연동</th>
+        </tr>
+        <tr>
+          <th colspan="2">PG 카드결제 연동</th>
+        </tr>
+        <tr>
+          <th colspan="2">PG 가상계좌 결제 연동</th>
+        </tr>
+        <tr>
+          <th colspan="2">고객용 다국어 지원</th>
+        </tr>
+        <tr>
+          <th colspan="2">고객 DB이동 및 로그인 연동</th>
+        </tr>
+        <tr>
+          <th colspan="2">월 사용 수수료</th>
         </tr>
         </tbody>
       </table>
