@@ -230,8 +230,8 @@ onUnmounted(() => {
            class="inline-block w-24px h-23px md:w-48px md:h-46px lg:w-72px lg:h-70px"/>
     </div>
   </div>
-  <div class="py-37.5 bg-white px-3 xl:px-5">
-    <div class="default-container engine-spec-list">
+  <div class="bg-white py-16.5 md:px-10 lg:px-5 lg:py-37.5">
+    <div class="w-full default-container engine-spec-list">
       <ProductSpec v-for="(engineSpec, index) in engineSpecList"
                    :key="`engine_spec_${index}`"
                    :icon="engineSpec.icon">

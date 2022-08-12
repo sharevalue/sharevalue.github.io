@@ -9,8 +9,12 @@
 .engine-spec-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+.engine-spec-list >div {
+    @apply w-49/100 lg:w-24/100;
 }
 
 .engine-process {

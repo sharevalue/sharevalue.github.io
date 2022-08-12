@@ -6,7 +6,6 @@ const props = defineProps({
     default: '',
     description: 'input icon img name("/image/icon/~")',
   },
-
 });
 </script>
 
@@ -33,24 +32,23 @@ const props = defineProps({
 
 <style scoped>
 .product-spec {
+  @apply pt-5 h-340px mb-2 max-w-275px md:mx-7 md:h-375px lg:mx-0 lg:h-450px lg:pt-13 lg:mb-7.5 lg:max-w-350px;
   display: inline-block;
-  width: 350px;
-  height: 450px;
+  width: 100%;
   text-align: center;
   border-radius: 15px;
   background-color: #eff3f7;
   box-sizing: border-box;
-  padding: 50px 60px 0 60px;
-  margin-bottom: 30px;
   color: #000000;
 }
 
 .product-spec-icon-area {
+  @apply lg:mb-7;
   text-align: center;
-  margin-bottom: 27.5px;
 }
 
 .product-spec-icon {
+  @apply scale-75 lg:scale-100;
   width: 120px;
   height: 120px;
   border-radius: 60px;
@@ -60,18 +58,18 @@ const props = defineProps({
 }
 
 .product-spec-title {
+  @apply text-base mb-5 md:text-lg lg:text-xl lg:mb-7.5;
   font-weight: bold;
-  font-size: 21px;
-  line-height: 24px;
+  line-height: 1.14;
   letter-spacing: -0.53px;
-  margin-bottom: 30.5px;
 }
 
 .product-spec-list {
+  @apply text-sm lg:text-base;
   text-align: left;
   display: inline-block;
   letter-spacing: -0.4px;
-  line-height: 28px;
+  line-height: 1.75 !important;
 }
 </style>
 
