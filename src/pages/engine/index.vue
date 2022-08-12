@@ -90,7 +90,7 @@ const engineSpecList: Array<IProductSpec> = [{
 
 const engineProcessStages = [
   '협약서 체결',
-  'GDS 웹 계정 생성 및 승인',
+  'GDS 웹 계정 생성 <br class="hidden lg:block"/>및 승인',
   '항공전용 사이트 설정',
   '백오피스 설정',
   '서비스 오픈 테스트',
@@ -117,7 +117,7 @@ const engineProcessStageStyleList = computed(() => {
 
   if (scrollYPosition.value > 0 && foundTarget) {
     const { top } = foundTarget.getBoundingClientRect();
-    let elementScrollSize = 450;
+    let elementScrollSize = 400;
     const foundElement = document.getElementById('engine_process_content');
 
     if (foundElement) {
@@ -279,7 +279,7 @@ onUnmounted(() => {
           <th>PRO</th>
           <th class="hidden md:table-cell">PMS</th>
           <th class="hidden md:table-cell">API</th>
-          <th class="hidden md:table-cell">CUSTOMIZING</th>
+          <th class="hidden md:table-cell">CUSTOM</th>
         </tr>
         </thead>
         <tbody>

@@ -37,7 +37,7 @@
 }
 
 .engine-process .engine-process-content .engine-process-stage-bar {
-    @apply w-90px h-1px my-4 lg:transform-none lg:w-150px lg:h-2px lg:mb-7.5;
+    @apply w-90px h-1px my-4 lg:transform-none lg:w-120px xl:w-150px lg:h-2px lg:mb-7.5;
 
     background-color: #00264b;
     position: relative;
@@ -73,7 +73,7 @@
 }
 
 .engine-process .engine-process-content .engine-process-stage-title {
-    @apply text-base md:text-lg lg:text-xl;
+    @apply text-base md:text-lg xl:text-xl;
 
     font-weight: normal;
     font-stretch: normal;
