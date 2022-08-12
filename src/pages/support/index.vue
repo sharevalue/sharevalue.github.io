@@ -104,9 +104,9 @@ onMounted(() => {
                      height="30"
                      alt="address"
                      class="address-icon"/>
-                <div class="text-base md:text-lg">Address</div>
+                <div class="icon-title text-base md:text-lg">Address</div>
               </div>
-              <div class="text-sm ml-10 md:text-lg md:ml-7">서울특별시 중구 무교로 15, 남강건설회관빌딩 1805호</div>
+              <div class="text-sm ml-10 md:text-lg md:ml-13 lg:ml-7">서울특별시 중구 무교로 15, 남강건설회관빌딩 1805호</div>
             </div>
             <div class="flex flex-col md:flex-row md:items-center">
               <div class="flex flex-row">
@@ -115,7 +115,7 @@ onMounted(() => {
                      height="23"
                      alt="email"
                      class="email-icon"/>
-                <div class="text-base md:text-lg">E-Mail</div>
+                <div class="icon-title text-base md:text-lg">E-Mail</div>
               </div>
               <div class="text-sm ml-10 md:text-lg">sales@sharevaluecorp.com</div>
             </div>
@@ -185,15 +185,15 @@ onMounted(() => {
 }
 
 #contact_us .contact-us-map >div {
-  @apply py-6 px-5 md:py-12.5 md:pr-15 md:pl-0;
+  @apply py-6 px-5 md:py-12.5 md:pr-7.5 md:pl-0 lg:pr-15;
 }
 
 #contact_us .contact-us-address >div {
-  @apply py-12.5 px-5 md:pt-22.5 md:pr-0 md:pb-5 md:pl-15;
+  @apply py-12.5 px-5 md:pt-22.5 md:pr-0 md:pb-5 md:pl-7.5 lg:pl-15
 }
 
 .map {
-  @apply w-full h-180px md:w-32.23vw md:min-w-500px md:h-300px;
+  @apply w-full h-180px md:w-32.23vw md:min-w-300px md:h-300px lg:min-w-300px;
   /*width: 32.23vw;*/
   max-width: 659px;
   display: block;
@@ -221,13 +221,17 @@ onMounted(() => {
 }
 
 .address-content .address-icon {
-  @apply mr-4 md:mr-8;
+  @apply mr-4 md:mr-6 xl:mr-8;
   height: 30px;
 }
 
 .address-content .email-icon {
-  @apply mr-2.5 md:mr-7.5;
+  @apply mr-2.5 md:mr-5 xl:mr-7.5;
   height: 23px;
+}
+
+.address-content .icon-title {
+  white-space: nowrap;
 }
 
 .address-caution {

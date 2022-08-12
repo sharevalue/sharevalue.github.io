@@ -33,10 +33,10 @@
       <div class="text-lg md:text-xl description">
         <div>30년 여행사에서의 업무 노하우를 바탕으로 모든 고객의 니즈에 맞는 맞춤 솔루션을 비용과 시간을 절약할 수 있는 클라우드서비스로 제공하며 운영 업무도 지원합니다.</div>
       </div>
-      <div class="px-0 md:px-24 content flex flex-col text-xs lg:flex-row lg:text-base justify-evenly items-center">
+      <div class="px-0 md:px-24 content flex flex-col text-xs lg:flex-row lg:text-sm xl:text-base justify-evenly items-center">
         <div class="w-full lg:w-auto flex flex-row items-center justify-between">
           <div class="p-5 lg:p-7.5 icon-block bg-primary-500 c-white">
-            <div class="mb-4 lg:mb-6">
+            <div class="mb-4 lg:mb-5 xl:mb-6">
               <img src="/image/icon/ico_white_computer.webp"
                    width="48"
                    height="50"
@@ -45,9 +45,9 @@
             <div class="icon-title">개발</div>
             <div class="icon-description">Development</div>
           </div>
-          <div class="plus-icon lg:mx-12">+</div>
+          <div class="plus-icon lg-mx-6 xl-mx-12">+</div>
           <div class="p-5 lg:p-7.5 icon-block bg-primary-500 c-white">
-            <div class="mb-4 lg:mb-6">
+            <div class="mb-4 lg:mb-5 xl:mb-6">
               <img src="/image/icon/ico_white_map-home.webp"
                    width="39"
                    height="50"
@@ -58,11 +58,11 @@
           </div>
         </div>
         <div class="w-full lg:w-auto flex flex-row-reverse items-center justify-between">
-          <div class="plus-icon mr-16 my-5 lg:my-0 lg:mx-12">+</div>
+          <div class="plus-icon mr-16 my-5 lg:my-0 lg-mx-6 xl-mx-12">+</div>
         </div>
         <div class="w-full lg:w-auto flex flex-row-reverse lg:flex-row items-center justify-between">
           <div class="p-5 lg:p-7.5 icon-block bg-primary-500 c-white">
-            <div class="mb-4 lg:mb-6">
+            <div class="mb-4 lg:mb-5 xl:mb-6">
               <img src="/image/icon/ico_white_engineer.webp"
                    width="53"
                    height="50"
@@ -71,9 +71,9 @@
             <div class="icon-title">전문인력</div>
             <div class="icon-description">IT Resource</div>
           </div>
-          <div class="at-icon c-secondary-500 lg:mx-12">@</div>
+          <div class="at-icon c-secondary-500 lg-mx-6 xl-mx-12">@</div>
           <div class="p-5 lg:p-7.5 icon-block bg-secondary-500 c-white">
-            <div class="mb-4 md:mb-6">
+            <div class="mb-4 lg:mb-5 xl:mb-6">
               <img src="/image/icon/ico_white_graph.webp"
                    width="66"
                    height="50"

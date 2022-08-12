@@ -214,13 +214,13 @@ function closeModal() {
 }
 
 .inquiry-content .inquiry-input-area >div .inquiry-input-title {
-  @apply text-base leading-8 md:text-xl md:mb-0 md:leading-12;
+  @apply text-base leading-8 md:text-lg md:mb-0 md:leading-12 lg:text-xl;
   letter-spacing: -0.53px;
   font-weight: normal;
 }
 
 .inquiry-content input[type=text] {
-  @apply px-3 py-4 text-sm md:px-7 md:py-6.5 md:text-lg;
+  @apply px-3 py-4 text-sm md:px-5 md:py-5.25 md:text-base lg:px-7 lg:py-6.5 lg:text-lg;
   width: 100%;
   box-sizing: border-box;
   background-color: #e2e9f2;
