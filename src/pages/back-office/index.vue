@@ -200,7 +200,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 }
 
 .back-office-faq {
-  padding: 150px 20px;
+  @apply py-16 md:px-5 md:py-37.5;
   background-color: #ffffff;
 }
 </style>
