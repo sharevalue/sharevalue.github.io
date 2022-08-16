@@ -12,6 +12,13 @@ const engineMainBgList: Array<IEngineMainBg> = [{
   playTime: '35.5s',
 }];
 
+const mobileEngineMainBgList: Array<IEngineMainBg> = [{
+  title: 'SMART<br/>BOOKING<br/>PLUS',
+  content: '스마트 부킹 플러스는 모든 고객이 직접<br/><b>검색, 예약, 결제, 발권</b>까지 가능한<br/>항공 부킹 엔진입니다.',
+  video: 'mobile_engine_booking.mp4',
+  playTime: '32.5s',
+}];
+
 const engineSpecList: Array<IProductSpec> = [{
   icon: 'ico_black_tickets.webp',
   title: '모든 항공권',
@@ -108,8 +115,20 @@ const selectedEngineMainBg = computed(() => {
   }
 });
 
+const selectedMobileEngineMainBg = computed(() => {
+  if (engineMainBgIndex.value !== -1) {
+    return mobileEngineMainBgList[engineMainBgIndex.value];
+  } else {
+    return undefined;
+  }
+});
+
 const engineBgOrderText = computed(() => {
   return `${engineMainBgIndex.value + 1} / ${engineMainBgList.length}`;
+});
+
+const mobileEngineBgOrderText = computed(() => {
+  return `${engineMainBgIndex.value + 1} / ${mobileEngineMainBgList.length}`;
 });
 
 const engineProcessStageStyleList = computed(() => {
@@ -167,13 +186,15 @@ function moveEngineMainBgIndex(index: number) {
 }
 
 function restartEngineProgressBarTrigger() {
-  const foundElement = document.getElementById('progress_bar_trigger');
+  const foundElements = document.getElementsByClassName('engine-bg-progress-bar-trigger');
 
-  if (foundElement) {
-    foundElement.classList.remove('trigger-animation');
-    setTimeout(() => {
-      foundElement.classList.add('trigger-animation');
-    }, 10);
+  if (foundElements.length > 0) {
+    Array.from(foundElements).forEach((foundElement) => {
+      foundElement.classList.remove('trigger-animation');
+      setTimeout(() => {
+        foundElement.classList.add('trigger-animation');
+      }, 10);
+    });
   }
 }
 
@@ -189,7 +210,8 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <div class="engine-main">
+  <!--ONLY VISIBLE ABOVE 768px-->
+  <div class="engine-main hidden md:block">
     <div class="engine-main-bg-video-area">
       <video :src="`/video/${ selectedEngineMainBg.video }`"
              autoplay loop playsinline muted/>
@@ -201,9 +223,9 @@ onUnmounted(() => {
              class="engine-main-content-title"
              v-html="selectedEngineMainBg.title"/>
         <div v-if="selectedEngineMainBg.content"
-             class="engine-main-content engine-main-content-text"
+             class="engine-main-content-text"
              v-html="selectedEngineMainBg.content"/>
-        <div class="engine-main-content engine-main-bg-nav">
+        <div class="engine-main-bg-nav">
           <button class="nav-left-btn"
                   @click="moveEngineMainBgIndex(-1)"/>
           <button class="nav-right-btn"
@@ -214,6 +236,35 @@ onUnmounted(() => {
           <div id="progress_bar_trigger"
                class="engine-bg-progress-bar-trigger trigger-animation"
                :style="{'animation-duration': selectedEngineMainBg.playTime}"/>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--ONLY VISIBLE UNDER 768px-->
+  <div class="mobile-engine-main md:hidden">
+    <div class="engine-main-bg-video-area">
+      <video :src="`/video/${ selectedMobileEngineMainBg.video }`"
+             autoplay loop playsinline muted/>
+    </div>
+    <div class="engine-main-content-area">
+      <div class=" default-container text-left c-secondary-500">
+        <div class="engine-bg-order">{{ mobileEngineBgOrderText }}</div>
+        <div class="engine-main-bg-nav">
+          <button class="nav-left-btn"
+                  @click="moveEngineMainBgIndex(-1)"/>
+          <button class="nav-right-btn"
+                  @click="moveEngineMainBgIndex(1)"/>
+        </div>
+        <div v-if="selectedMobileEngineMainBg.title"
+             class="engine-main-content-title"
+             v-html="selectedMobileEngineMainBg.title"/>
+        <div v-if="selectedMobileEngineMainBg.content"
+             class="engine-main-content-text"
+             v-html="selectedMobileEngineMainBg.content"/>
+        <div v-if="selectedMobileEngineMainBg.playTime"
+             class="engine-bg-progress-bar">
+          <div class="engine-bg-progress-bar-trigger trigger-animation"
+               :style="{'animation-duration': selectedMobileEngineMainBg.playTime}"/>
         </div>
       </div>
     </div>
