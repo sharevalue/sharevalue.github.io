@@ -103,7 +103,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
           <th colspan="3"></th>
           <th colspan="2">홈페이지 미연동</th>
           <th colspan="2">홈페이지 연동</th>
-          <th colspan="2">타 판매채널 연동</th>
+          <th colspan="2">타 판매<br class="md:hidden"/>채널 연동</th>
         </tr>
         </thead>
         <tbody>
