@@ -10,15 +10,16 @@ npm run build
 cd dist
 
 # CNAME 파일을 이용해 커스텀 도메인을 지정할 수도 있습니다.
- echo 'www.sharevaluecorp.com' > CNAME
+# echo 'www.sharevaluecorp.com' > CNAME
+
+today=`date +%m-%d-%y`
 
 git init
-# gh-pages 브랜치 기준
-git checkout -b master
+git checkout -b deploy$today
 git add -A
-git commit -m 'deploy gh-pages'
+git commit -m "deploy gh-pages $today"
 
 # sharevaluecorp.github.io 에 배포, gh-pages 브랜치 기준
-git push origin master
+git push -f git@github.com:sharevaluecorp/sharevaluecorp.github.io.git master
 
 cd -
