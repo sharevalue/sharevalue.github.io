@@ -36,8 +36,16 @@
           </div>
         </div>
         <div class="text-xs	md:text-base footer-company-desc text-left">
-          <div>사업자등록번호 : 750-86-00899<span> | </span>통신판매업번호 : 제2020-서울중구-1067호</div>
-          <div>주소 : 서울시 중구 무교로15, 남강건설회관빌딩 1805호     |     대표 : 조미숙</div>
+          <div>
+            <div class="block md:inline-block">사업자등록번호 : 750-86-00899</div>
+            <span class="hidden md:inline"> | </span>
+            <div class="block md:inline-block">통신판매업번호 : 제2020-서울중구-1067호</div>
+          </div>
+          <div>
+            <div class="block md:inline-block">주소 : 서울시 중구 무교로15, 남강건설회관빌딩 1805호</div>
+            <span class="hidden md:inline"> | </span>
+            <div class="block md:inline-block">대표 : 조미숙</div>
+          </div>
           <div class="text-xs md:text-sm copyright">Copyright 2020 Sharevalue Co., Ltd. All rights reserved</div>
         </div>
       </div>
