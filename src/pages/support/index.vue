@@ -189,7 +189,7 @@ onMounted(() => {
 }
 
 #contact_us .contact-us-address >div {
-  @apply py-12.5 px-5 md:pt-22.5 md:pr-0 md:pb-5 md:pl-7.5 lg:pl-15
+  @apply pt-12.5 pb-5.5 px-5 md:pt-22.5 md:pr-0 md:pb-5 md:pl-7.5 lg:pl-15
 }
 
 .map {

@@ -144,7 +144,7 @@ const engineProcessStageStyleList = computed(() => {
       const parsedPaddingTop = parseInt(paddingTop.replace('px', ''));
 
       if (parsedPaddingTop > 0) {
-        elementScrollSize = (parsedPaddingTop * 15);
+        elementScrollSize = (parsedPaddingTop * 12);
       }
     }
 
@@ -467,7 +467,7 @@ onUnmounted(() => {
           <th colspan="2">자동 발권</th>
         </tr>
         <tr>
-          <th colspan="2">전세기, 단체항공 서비스</th>
+          <th colspan="2">전세기, 단체항공<br/>서비스</th>
         </tr>
         <tr>
           <th colspan="2">항공사 API 연동</th>
@@ -476,13 +476,13 @@ onUnmounted(() => {
           <th colspan="2">PG 카드결제 연동</th>
         </tr>
         <tr>
-          <th colspan="2">PG 가상계좌 결제 연동</th>
+          <th colspan="2">PG 가상계좌<br/>결제 연동</th>
         </tr>
         <tr>
           <th colspan="2">고객용 다국어 지원</th>
         </tr>
         <tr>
-          <th colspan="2">고객 DB이동 및 로그인 연동</th>
+          <th colspan="2">고객 DB이동 및<br/>로그인 연동</th>
         </tr>
         <tr>
           <th colspan="2">월 사용 수수료</th>
