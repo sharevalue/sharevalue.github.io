@@ -38,7 +38,8 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 </script>
 
 <template>
-  <div class="section-1 use-full-bg-image c-white">
+  <!--ONLY VISIBLE ABOVE 768px-->
+  <div class="section-1 use-full-bg-image hidden md:block">
     <div class="px-5 default-container">
       <div class="title">
         <div>SMART</div>
@@ -49,6 +50,22 @@ const backOfficeSpecList: Array<IProductSpec> = [{
         <div>스마트 비엠은 고객의 <b>예약, 결제, 변경요청, 문의</b>에 대한 온라인 업무 처리와</div>
         <div>여행사의 <b>상품 판매 및 미수, 수익, 정산</b>을 한 번에 관리할 수 있는 전문 백오피스입니다.</div>
         <div class="sub-description">* 고객 관리부터 예약, 판매 정산까지 올인원 솔루션으로 언제 어디서나 비대면 업무처리가 가능합니다. </div>
+      </div>
+    </div>
+  </div>
+  <!--ONLY VISIBLE UNDER 768px-->
+  <div class="mobile-section-1 use-full-bg-image md:hidden">
+    <div class="px-5 default-container">
+      <div class="title">
+        <div>SMART</div>
+        <div>BUSINESS</div>
+        <div>MANAGEMENT</div>
+      </div>
+      <div class="description">
+        <div>스마트 비엠은 고객의 <b>예약, 결제, 변경요청, 문의</b>에 대한</div>
+        <div>온라인 업무 처리와 여행사의 <b>상품 판매 및 미수, 수익,</b></div>
+        <div><b>정산</b>을 한 번에 관리할 수 있는 전문 백오피스입니다.</div>
+        <div class="sub-description">* 고객 관리부터 예약, 판매 정산까지 올인원 솔루션으로 언제 어디서나<br/>비대면 업무처리가 가능합니다. </div>
       </div>
     </div>
   </div>
@@ -64,7 +81,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
            class="inline-block w-22px h-23px md:w-44px md:h-46px lg:w-67px lg:h-70px"/>
     </div>
   </div>
-  <div class="px-5 py-37.5">
+  <div class="bg-white py-16.5 md:px-10 lg:px-5 lg:py-37.5">
     <div class="default-container back-office-spec-list">
       <ProductSpec v-for="(backOfficeSpec, index) in backOfficeSpecList"
                    :key="`back_office_spec_${index}`"
@@ -78,52 +95,52 @@ const backOfficeSpecList: Array<IProductSpec> = [{
     </div>
   </div>
   <div class="section-4">
-    <div class="px-5 default-container">
-      <div class="price-table-title mb-17.5">사용료</div>
-      <div>
-        <table class="price-table">
-          <thead>
-          <tr>
-            <th></th>
-            <th>홈페이지 미연동</th>
-            <th>홈페이지 연동</th>
-            <th>타 판매채널 연동</th>
-          </tr>
-          </thead>
-          <tbody>
-          <tr>
-            <th>유지 관리</th>
-            <td><div class="icon-checked"/></td>
-            <td rowspan="7">문의</td>
-            <td rowspan="7">문의</td>
-          </tr>
-          <tr>
-            <th>카카오 알림톡</th>
-            <td><div class="icon-checked"/></td>
-          </tr>
-          <tr>
-            <th>웹 호스팅</th>
-            <td>문의</td>
-          </tr>
-          <tr>
-            <th>PG 카드결제 연동</th>
-            <td>문의</td>
-          </tr>
-          <tr>
-            <th>PG 가상계좌 결제 연동</th>
-            <td>문의</td>
-          </tr>
-          <tr>
-            <th>고객용 다국어 지원</th>
-            <td>문의</td>
-          </tr>
-          <tr>
-            <th>월 사용 수수료</th>
-            <td>5만 원</td>
-          </tr>
-          </tbody>
-        </table>
-      </div>
+    <div class="md:px-5 default-container">
+      <div class="mb-8.5 md:mb-17.5 price-table-title">사용료</div>
+      <table class="price-table">
+        <thead>
+        <tr>
+          <th colspan="3"></th>
+          <th colspan="2">홈페이지 미연동</th>
+          <th colspan="2">홈페이지 연동</th>
+          <th colspan="2">타 판매채널 연동</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th colspan="3">유지 관리</th>
+          <td colspan="2"><div class="icon-checked"/></td>
+          <td rowspan="7"
+              colspan="2">문의</td>
+          <td rowspan="7"
+              colspan="2">문의</td>
+        </tr>
+        <tr>
+          <th colspan="3">카카오 알림톡</th>
+          <td colspan="2"><div class="icon-checked"/></td>
+        </tr>
+        <tr>
+          <th colspan="3">웹 호스팅</th>
+          <td colspan="2">문의</td>
+        </tr>
+        <tr>
+          <th colspan="3">PG 카드결제 연동</th>
+          <td colspan="2">문의</td>
+        </tr>
+        <tr>
+          <th colspan="3">PG 가상계좌 결제 연동</th>
+          <td colspan="2">문의</td>
+        </tr>
+        <tr>
+          <th colspan="3">고객용 다국어 지원</th>
+          <td colspan="2">문의</td>
+        </tr>
+        <tr>
+          <th colspan="3">월 사용 수수료</th>
+          <td colspan="2">5만 원</td>
+        </tr>
+        </tbody>
+      </table>
     </div>
   </div>
   <div class="back-office-faq">
@@ -135,21 +152,26 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 </template>
 
 <style scoped>
-.section-1 {
-  height: calc(100vh - 90px - 100px);
+
+.section-1,
+.mobile-section-1 {
+  @apply c-white;
+
   background-color: #154999;
-  background-image: url(/image/common/erp.webp);
   position: relative;
   text-align: left;
 }
 
-.section-1 .title {
+.section-1 {
+  height: calc(100vh - 90px - 100px);
+  background-image: url(/image/common/erp.webp);
+}
+
+.section-1 .title,
+.mobile-section-1 .title {
   font-family: Raleway;
   position: absolute;
-  top: calc(55.9% - 240px);
-  font-size: 80px;
   font-weight: 800;
-  line-height: 85px;
   letter-spacing: normal;
   animation: fadein 1s;
   -moz-animation: fadein 1s; /* Firefox */
@@ -157,11 +179,9 @@ const backOfficeSpecList: Array<IProductSpec> = [{
   -o-animation: fadein 1s; /* Opera */
 }
 
-.section-1 .description {
+.section-1 .description,
+.mobile-section-1 .description {
   position: absolute;
-  top: calc(73.6% - 84px);
-  font-size: 18px;
-  line-height: 33px;
   letter-spacing: -0.45px;
   text-align: left;
 
@@ -171,13 +191,52 @@ const backOfficeSpecList: Array<IProductSpec> = [{
   -o-animation: fadein 2.5s; /* Opera */
 }
 
+.section-1 .description .sub-description,
+.mobile-section-1 .description .sub-description {
+}
+
+.section-1 .description b,
+.mobile-section-1 .description b {
+  font-weight: 800;
+}
+
+.section-1 .title {
+  top: calc(55.9% - 240px);
+  font-size: 80px;
+  line-height: 85px;
+}
+
+.section-1 .description {
+  top: calc(73.6% - 84px);
+  font-size: 18px;
+  line-height: 33px;
+}
+
 .section-1 .description .sub-description {
   font-size: 16px;
   letter-spacing: -0.4px;
 }
 
-.section-1 .description b {
-  font-weight: 800;
+.mobile-section-1 {
+  height: calc(100vh - 65px);
+  background-image: url(/image/common/erp_mobile.webp);
+}
+
+.mobile-section-1 .title {
+  @apply text-5xl;
+  top: calc(30.3% - 144px);
+}
+
+.mobile-section-1 .description {
+  top: calc(44% - 65px);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.mobile-section-1 .description .sub-description {
+  @apply mt-6;
+
+  font-size: 12px;
 }
 
 .section-2 .title {
@@ -188,15 +247,25 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 }
 
 .section-4 {
+  @apply py-25 md:py-50;
   background-color: #f8f9fb;
-  padding: 200px;
+}
+
+.section-4 .price-table tbody th {
+  @apply text-xs md:text-lg;
+
+  word-break: keep-all;
 }
 
 .back-office-spec-list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-wrap: wrap;
+}
+
+.back-office-spec-list >div {
+  @apply w-49/100 lg:w-24/100;
 }
 
 .back-office-faq {

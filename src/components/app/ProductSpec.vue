@@ -58,7 +58,7 @@ const props = defineProps({
 }
 
 .product-spec-title {
-  @apply text-base mb-5 md:text-lg lg:text-xl lg:mb-7.5;
+  @apply text-base mb-4 md:text-lg lg:text-xl lg:mb-7.5;
   font-weight: bold;
   line-height: 1.14;
   letter-spacing: -0.53px;
