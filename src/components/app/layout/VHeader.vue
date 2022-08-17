@@ -48,14 +48,14 @@ function turnVisibleMenuModal() {
         class="text-xs md:text-xl py-0.75em md:py-5 bg-white transition-padding duration-700 w-full right-0 z-20 space-y-none shadow-md md:flex-row fixed">
       <div class="default-container flex flex-row items-center justify-between px-1em md:px-7.5">
         <div class="py-2">
-          <RouterLink to="/">
+          <a href="https://www.sharevaluecorp.com/">
             <img src="/image/logo/ci.png"
                  srcset=""
                  width="147"
                  height="31"
                  alt="쉐어밸류"
                  class="font-bold"/>
-          </RouterLink>
+          </a>
         </div>
         <div class="hidden md:inline-block navigation-area">
           <nav>
