@@ -49,7 +49,7 @@ function turnVisibleMenuModal() {
       <div class="default-container flex flex-row items-center justify-between px-1em md:px-7.5">
         <div class="py-2">
           <RouterLink to="/">
-            <img src="/image/logo/ci-sharevalue.png"
+            <img src="/image/logo/ci.png"
                  srcset=""
                  width="147"
                  height="31"
