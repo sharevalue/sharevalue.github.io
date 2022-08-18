@@ -386,7 +386,7 @@ onUnmounted(() => {
           <td>문의</td>
         </tr>
         <tr>
-          <th colspan="2">전세기, 단체항공 서비스</th>
+          <th colspan="2">전세기, 단체항공</th>
           <td>문의</td>
           <td>문의</td>
           <td>문의</td>
@@ -416,7 +416,7 @@ onUnmounted(() => {
           <td>문의</td>
         </tr>
         <tr>
-          <th colspan="2">고객 DB이동 및 로그인 연동</th>
+          <th colspan="2">로그인 연동</th>
           <td>문의</td>
           <td>문의</td>
           <td>문의</td>
