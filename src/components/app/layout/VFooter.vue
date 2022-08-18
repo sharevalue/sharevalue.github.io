@@ -12,25 +12,23 @@
           <div class="footer-company-sns">
             <a href="https://blog.naver.com/sharevaluecorp"
                class="inline-block px-2">
-              <img src="/image/logo/dark_blog.webp"
-                   width="35"
-                   height="32"
-                   class="pt-0.2"
+              <img src="/image/logo/dark_blog.png"
+                   width="36"
+                   height="30"
                    alt="blog"/>
             </a>
             <a href="https://www.youtube.com/channel/UC7oNi16xzMz4b043bucT5ww"
                class="inline-block px-2">
-              <img src="/image/logo/dark_youtube.webp"
-                   width="35"
-                   height="25"
-                   class="pt-0.5 pb-1.5"
+              <img src="/image/logo/dark_youtube.png"
+                   width="36"
+                   height="30"
                    alt="youtube"/>
             </a>
             <a href="https://www.facebook.com/sharevaluecorp/"
                class="inline-block px-2">
-              <img src="/image/logo/dark_facebook.webp"
-                   width="35"
-                   height="35"
+              <img src="/image/logo/dark_facebook.png"
+                   width="36"
+                   height="30"
                    alt="facebook"/>
             </a>
           </div>
