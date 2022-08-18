@@ -404,7 +404,7 @@ onUnmounted(() => {
           <td>문의</td>
         </tr>
         <tr>
-          <th colspan="2">PG 가상계좌 결제 연동</th>
+          <th colspan="2">PG 가상계좌 연동</th>
           <td>문의</td>
           <td>문의</td>
           <td>문의</td>
@@ -476,7 +476,7 @@ onUnmounted(() => {
           <th colspan="2">PG 카드결제 연동</th>
         </tr>
         <tr>
-          <th colspan="2">PG 가상계좌<br/>결제 연동</th>
+          <th colspan="2">PG 가상계좌 연동</th>
         </tr>
         <tr>
           <th colspan="2">고객용 다국어 지원</th>
