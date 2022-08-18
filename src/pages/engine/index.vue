@@ -493,7 +493,7 @@ onUnmounted(() => {
   </div>
   <div class="engine-faq">
     <div class="default-container">
-      <div class="support-title mb-17.5">자주하는 질문</div>
+      <div class="support-title mb-8 md:mb-17.5">자주하는 질문</div>
       <Faq faq-type="SBP"/>
     </div>
   </div>
