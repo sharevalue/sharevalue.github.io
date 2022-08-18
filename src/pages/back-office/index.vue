@@ -128,7 +128,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
           <td colspan="2">문의</td>
         </tr>
         <tr>
-          <th colspan="3">PG 가상계좌 결제 연동</th>
+          <th colspan="3">PG 가상계좌<span class="hidden md:inline"> 결제</span> 연동</th>
           <td colspan="2">문의</td>
         </tr>
         <tr>

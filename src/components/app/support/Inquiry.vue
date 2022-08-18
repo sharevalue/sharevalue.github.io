@@ -65,7 +65,7 @@ function closeModal() {
       <div>전문 여행 솔루션과 운영지원 서비스를 제공하는 쉐어밸류입니다.</div>
       <div>
         <span class="c-primary-600">상품소개서 및 서비스 연동, 제휴 문의</span>
-        <span>를 남겨 주시면 신속히 연락드리겠습니다.</span>
+        <span><span class="hidden md:inline">를 남겨 </span>주시면 신속히 연락드리겠습니다.</span>
       </div>
     </div>
     <form class="pt-8.5 pb-6.5 px-4 rounded-xl md:pt-22.5 md:pb-17.5 md:px-12.5 md:rounded-3xl text-left inquiry-content"
