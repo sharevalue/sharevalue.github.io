@@ -135,11 +135,12 @@
   background-color: #16B6DD;
   background-image: url(/image/common/engine.webp);
   position: relative;
-  text-align: center;
+  text-align: left;
 }
 
 .section-1.mobile {
   background-image: url(/image/common/engine_mobile.webp);
+  text-align: center;
 }
 
 .section-1.mobile .title {
