@@ -135,7 +135,7 @@
   background-color: #16B6DD;
   background-image: url(/image/common/engine.webp);
   position: relative;
-  text-align: left;
+  text-align: center;
 }
 
 .section-1.mobile {
@@ -143,11 +143,11 @@
 }
 
 .section-1.mobile .title {
-  top: calc(30.1% - 5em);
+  top: calc(35.1% - 5em);
 }
 
 .section-1.mobile .description {
-  top: calc(42.7% - 5em);
+  top: calc(47.7% - 5em);
 }
 
 .section-1 .title {
