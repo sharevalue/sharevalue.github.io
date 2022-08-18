@@ -179,7 +179,8 @@ onMounted(() => {
 
 #contact_us .contact-us-map >div,
 #contact_us .contact-us-address >div {
-  display: inline-block;
+  @apply md:inline-block;
+
   max-width: 720px;
   box-sizing: border-box;
 }
