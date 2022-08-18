@@ -23,7 +23,7 @@
 }
 
 .engine-process .engine-process-content {
-    @apply py-10 md:px-10 lg:px-0 lg:py-0;
+    @apply pt-4 pb-10 md:px-10 lg:px-0 lg:py-0;
     position: relative;
 }
 
@@ -102,7 +102,7 @@
     position: absolute;
     top: 0;
     left: -1px;
-    height: 880px;
+    height: 820px;
     border: 1px solid #c4d2dd;
     z-index: -1;
 }
