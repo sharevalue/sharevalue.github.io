@@ -94,7 +94,7 @@ details {
   flex: 1;
   font-size: 18px;
   letter-spacing: -0.45px;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
 }
 

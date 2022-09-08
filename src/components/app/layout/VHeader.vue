@@ -62,7 +62,7 @@ function turnVisibleMenuModal() {
             <RouterLink
                 v-for="({ title, path }) in navigationLinks"
                 :key="`nav_${path}`"
-                :class="['decoration-none', 'mx-4', checkSelected(path) ? 'c-primary-500 font-bold' : '']"
+                :class="['decoration-none', 'mx-4', checkSelected(path) ? 'c-primary-500' : '']"
                 :to="path">
               <span>{{ title }}</span>
             </RouterLink>
@@ -120,11 +120,11 @@ function turnVisibleMenuModal() {
 
 .navigation-area {
   color: #152038;
-  font-size: 16px;
+  font-size: 20px;
 }
 
 .navigation-area a:hover {
-  @apply c-primary-500  font-bold;
+  @apply c-primary-500;
 }
 
 .visible-btn {

@@ -126,7 +126,7 @@ details[open] .faq-title-area:after {
   @apply text-base md:text-lg;
   flex: 1;
   letter-spacing: -0.45px;
-  font-weight: bold;
+  font-weight: normal;
   cursor: pointer;
 }
 
