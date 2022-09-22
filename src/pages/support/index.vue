@@ -55,8 +55,8 @@ onMounted(() => {
              height="42"
              alt="cs"
              class="inline-block mr-4 md:mr-6"/>
-        <a href="tel:02-364-5400"
-           class="font-bold text-4xl md:font-light md:text-5xl inline-block">02.364.5400</a>
+        <a href="tel:1899-5407"
+           class="font-bold text-4xl md:font-light md:text-5xl inline-block">1899.5407</a>
       </div>
       <div class="text-base leading-8 md:text-lg md:leading-16 support-cs-info">
         <span>상담 가능 시간 | 평일 </span>
