@@ -7,6 +7,7 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     Faq: typeof import('./components/app/support/Faq.vue')['default']
     Inquiry: typeof import('./components/app/support/Inquiry.vue')['default']
+    KakaoChatting: typeof import('./components/app/layout/kakao-chatting.vue')['default']
     Notice: typeof import('./components/app/support/Notice.vue')['default']
     Pagination: typeof import('./components/core/Pagination.vue')['default']
     ProductSpec: typeof import('./components/app/ProductSpec.vue')['default']
