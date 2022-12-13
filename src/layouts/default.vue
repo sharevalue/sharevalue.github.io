@@ -5,5 +5,7 @@
       <RouterView />
     </div>
     <VFooter />
+    <kakao-chatting />
   </main>
 </template>
+
