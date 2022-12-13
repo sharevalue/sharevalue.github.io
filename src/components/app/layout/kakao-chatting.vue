@@ -2,7 +2,7 @@
   <div class="kakao-channel">
     <a href="http://pf.kakao.com/_QyEss/chat">
       <p>카카오톡 상담하기</p>
-      <img src="/image/logo/kakao-logo-yellow.png">
+      <img src="/image/logo/kakao-logo-yellow.png" alt="kakaotalk" width="60" height="60">
     </a>
   </div>
 </template>
@@ -26,7 +26,6 @@ export default {
   align-items:center;
 }
 .kakao-channel>a>img{
-  width: 60px; height: 60px;
   background-color: #F7E600;
   background-image: url(/image/logo/kakao-channel-logo-yellow.png);
   background-size: contain;border-radius:30px;
