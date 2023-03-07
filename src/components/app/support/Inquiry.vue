@@ -191,7 +191,7 @@ function closeModal() {
 
 .inquiry-title {
   color: #152038;
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.75px;
 }
 
@@ -217,6 +217,13 @@ function closeModal() {
   @apply text-base leading-8 md:text-lg md:mb-0 md:leading-12 lg:text-xl;
   letter-spacing: -0.53px;
   font-weight: normal;
+  padding-bottom: 0.5em;
+  display: flex;
+  align-items: center;
+}
+
+.inquiry-content .inquiry-input-area >div .inquiry-input-title .c-primary-500 {
+  height: 1em;
 }
 
 .inquiry-content input[type=text] {
