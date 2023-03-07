@@ -35,7 +35,7 @@ export default {
   white-space: nowrap;
   font-size: 18px;
   font-weight: 700;
-  padding: 0 10px;
+  padding: 0 0.5em 0 0.75em;
   color: #3A1D1D;
 }
 .kakao-channel:hover{transform: scale(1.03);}
