@@ -36,6 +36,33 @@ useHead({
       content: '#00b0ec',
     },
   ],
+  link: [
+    {
+      rel: "stylesheet",
+      href: "https://static.smartbm.co.kr/stylesheets/NotoSansSubset.css",
+    },
+    {
+      type: "font/woff2",
+      rel: "preload",
+      href: "https://static.smartbm.co.kr/fonts/woff2/NotoSansKR-Regular.woff2",
+      as: "font",
+      crossOrigin: true,
+    },
+    {
+      type: "font/woff2",
+      rel: "preload",
+      href: "https://static.smartbm.co.kr/fonts/woff2/NotoSansKR-Medium.woff2",
+      as: "font",
+      crossOrigin: true,
+    },
+    {
+      type: "font/woff2",
+      rel: "preload",
+      href: "https://static.smartbm.co.kr/fonts/woff2/NotoSansKR-Bold.woff2",
+      as: "font",
+      crossOrigin: true,
+    }
+  ]
 })
 </script>
 
