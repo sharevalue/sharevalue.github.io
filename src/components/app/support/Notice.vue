@@ -38,8 +38,21 @@ async function search() {
 
 }
 
-function formatDate(date: string) {
-  return new Date(date).toLocaleDateString();
+function formatDate(dateText: string) {
+  const date = new Date(dateText);
+  const year = date.getFullYear();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+
+  const formatDigit = (text: number) => {
+    if (text < 10) {
+      return `0${text}`;
+    }
+
+    return String(text);
+  };
+
+  return `${year}-${formatDigit(month)}-${formatDigit(day)}`;
 }
 
 const notices = computed(() => noticeResponse.noticeList);
@@ -84,7 +97,7 @@ details {
 
 .notice-title-area {
   padding: 20px 20px 20px 28px;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 30px;
   letter-spacing: -0.35px;
   color: #2e2d33;

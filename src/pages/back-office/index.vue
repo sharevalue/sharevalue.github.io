@@ -70,8 +70,11 @@ const backOfficeSpecList: Array<IProductSpec> = [{
     </div>
   </div>
   <div class="py-11 bg-secondary-500 c-white md:py-4 section-2">
-    <div class="px-5 text-center md:text-left md:px-10 md:flex md:flex-row md:items-center lg:px-15 default-container">
-      <div class="mr-2 md:mr-5 title">소중한 고객 정보를 관리하고, 카카오톡 채널의 친구추가 및 알림이 자유롭고, 업무의 생산성 및 효율성 증대로 비용 절감과 업무 리스크 관리가 가능합니다.</div>
+    <div class="px-5 text-center md:text-left md:px-25 md:flex md:flex-row md:items-center lg:px-15 default-container">
+      <div class="mr-2 md:mr-5 title">
+        <span class="inline-block">소중한 고객 정보를 관리하고, 카카오톡 채널의 친구추가 및 알림이 자유롭고, </span>
+        <span class="inline-block">업무의 생산성 및 효율성 증대로 비용 절감과 업무 리스크 관리가 가능합니다.</span>
+      </div>
       <img src="/image/icon/ico_white_worker.webp"
            srcset="/image/icon/ico_white_worker@2x.webp 768w,
                    /image/icon/ico_white_worker@3x.webp 1024w"

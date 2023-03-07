@@ -117,7 +117,9 @@ onMounted(() => {
                      class="email-icon"/>
                 <div class="icon-title text-base md:text-lg">E-Mail</div>
               </div>
-              <div class="text-sm ml-10 md:text-lg">sales@sharevaluecorp.com</div>
+              <div class="text-sm ml-10 md:text-lg">
+                <a href="mailto:sales@sharevaluecorp.com">sales@sharevaluecorp.com</a>
+              </div>
             </div>
           </div>
           <div class="hidden md:block address-caution">* 궁금한 점이 있으면 언제든 연락해주세요.</div>

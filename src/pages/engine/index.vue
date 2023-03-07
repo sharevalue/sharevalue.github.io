@@ -97,7 +97,7 @@ const engineSpecList: Array<IProductSpec> = [{
 
 const engineProcessStages = [
   '협약서 체결',
-  'GDS 웹 계정 생성 <br class="hidden lg:block"/>및 승인',
+  'GDS 계정 생성',
   '항공전용 사이트 설정',
   '백오피스 설정',
   '서비스 오픈 테스트',
@@ -271,7 +271,10 @@ onUnmounted(() => {
   </div>
   <div class="py-11 bg-primary-500 c-white md:py-4 engine-sub-description">
     <div class="px-5 text-center md:px-20 md:text-left md:flex md:flex-row md:items-center lg:px-35 default-container">
-      <div class="mr-2 md:mr-5 title">개인 항공권, 단체 항공권, 전세기 항공권, 저비용 항공사 전용 항공권까지~! 세상의 모든 항공권 상품을 24시간 고객에게 제공하세요!</div>
+      <div class="mr-2 md:mr-5 title">
+        <span class="inline-block">개인 항공권, 단체 항공권, 전세기 항공권, 저비용 항공사 전용 항공권까지~! </span>
+        <span class="inline-block">세상의 모든 항공권 상품을 24시간 고객에게 제공하세요!</span>
+      </div>
       <img src="/image/icon/ico_white_airplane.webp"
            srcset="/image/icon/ico_white_airplane@2x.webp 768w,
                    /image/icon/ico_white_airplane@3x.webp 1024w"
