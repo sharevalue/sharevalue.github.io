@@ -3,12 +3,8 @@
   "scripts": {
     "build": "vite-ssg build",
     "dev": "vite --port 3333 --host",
-    "lint": "eslint .",
-    "preview": "vite preview",
-    "preview-https": "serve dist",
-    "test": "vitest",
-    "test:unit": "vitest",
-    "typecheck": "vue-tsc --noEmit"
+    "deploy": "npm run build & deploy.sh",
+    "deploy-without-build": "deploy.sh"
   },
   "dependencies": {
     "@formkit/auto-animate": "1.0.0-beta.1",
