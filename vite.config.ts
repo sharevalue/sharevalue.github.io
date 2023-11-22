@@ -24,9 +24,6 @@ export default defineConfig({
       '~/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
-  build: {
-    emptyOutDir: false,
-  },
   plugins: [
     Vue({
       include: [/\.vue$/],
