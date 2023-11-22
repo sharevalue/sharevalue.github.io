@@ -26,11 +26,6 @@ useHead({
     { name: 'og:url', content: 'https://www.sharevaluecorp.com/' },
     { name: 'og:image', content: '/image/logo/logo-og.png' },
     { name: 'og:description', content: '범용 온라인항공예약 솔루션, 예약 API, 여행상품 백오피스' },
-    { name: 'twitter:card', content: 'summary' },
-    { name: 'twitter:title', content: '쉐어밸류' },
-    { name: 'twitter:url', content: 'https://www.sharevaluecorp.com/' },
-    { name: 'twitter:image', content: '/image/logo/logo-og.png' },
-    { name: 'twitter:description', content: '범용 온라인항공예약 솔루션, 예약 API, 여행상품 백오피스' },
     {
       name: 'theme-color',
       content: '#00b0ec',
