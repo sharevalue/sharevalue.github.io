@@ -10,7 +10,7 @@ cd dist
 
 git add .
 
-today=`date +%Y-%m-%d`
+today=`date "+%Y-%m-%d %H:%M:%S"`
 
 git commit -m "deploy gh-pages $today"
 
