@@ -426,8 +426,8 @@ onUnmounted(() => {
         </tr>
         <tr>
           <th colspan="2">월 사용 수수료</th>
-          <td>10만 원</td>
-          <td>20만 원</td>
+          <td>문의</td>
+          <td>문의</td>
           <td>문의</td>
         </tr>
         </tbody>

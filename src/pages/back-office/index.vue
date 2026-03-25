@@ -140,7 +140,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
         </tr>
         <tr>
           <th colspan="3">월 사용 수수료</th>
-          <td colspan="2">5만 원</td>
+          <td colspan="2">문의</td>
         </tr>
         </tbody>
       </table>
