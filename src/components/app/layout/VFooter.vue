@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { COMPANY_ADDRESS } from '@/utils/const/company'
+import { COMPANY_ADDRESS } from '~/utils/const/company'
 </script>
 
 <template>

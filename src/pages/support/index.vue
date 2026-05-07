@@ -2,7 +2,7 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { COMPANY_ADDRESS, COMPANY_LOCATION } from '@/utils/const/company'
+import { COMPANY_ADDRESS, COMPANY_LOCATION } from '~/utils/const/company'
 
 function initNaverMap() {
   try {
