@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { COMPANY_ADDRESS } from '@/utils/const/company'
 </script>
 
 <template>
@@ -51,7 +52,7 @@
             <div class="block md:inline-block">통신판매업번호 : 제2020-서울중구-1067호</div>
           </div>
           <div>
-            <div class="block md:inline-block">주소 : 서울특별시 중구 정동길 35, 3층 302호(정동, 두비빌딩)</div>
+            <div class="block md:inline-block">주소 : {{ COMPANY_ADDRESS }}</div>
             <span class="hidden md:inline"> | </span>
             <div class="block md:inline-block">대표 : 조미숙</div>
           </div>
