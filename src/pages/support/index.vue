@@ -8,7 +8,7 @@ function initNaverMap() {
     //  @ts-ignore
     const map = new naver.maps.Map('map');
     //  @ts-ignore
-    const point = new naver.maps.Point(126.978976, 37.567271);
+    const point = new naver.maps.Point(126.972347, 37.566068);
 
     // 검색된 좌표로 지도 이동
     map.setCenter(point);
@@ -106,7 +106,7 @@ onMounted(() => {
                      class="address-icon"/>
                 <div class="icon-title text-base md:text-lg">Address</div>
               </div>
-              <div class="text-sm ml-10 md:text-lg md:ml-13 lg:ml-7">서울특별시 중구 무교로 15, 남강건설회관빌딩 1805호</div>
+              <div class="text-sm ml-10 md:text-lg md:ml-13 lg:ml-7">서울특별시 중구 정동길 35, 3층 302호(정동, 두비빌딩)</div>
             </div>
             <div class="flex flex-col md:flex-row md:items-center">
               <div class="flex flex-row">
