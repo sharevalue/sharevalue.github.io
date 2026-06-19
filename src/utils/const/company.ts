@@ -4,3 +4,5 @@ export const COMPANY_LOCATION = {
   lng: 126.972347,
   lat: 37.566068,
 }
+
+export const COMPANY_PHONE = '1899-5407';

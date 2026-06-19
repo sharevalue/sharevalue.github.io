@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { COMPANY_ADDRESS } from '~/utils/const/company'
+import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
 </script>
 
 <template>
@@ -55,6 +55,9 @@ import { COMPANY_ADDRESS } from '~/utils/const/company'
             <div class="block md:inline-block">주소 : {{ COMPANY_ADDRESS }}</div>
             <span class="hidden md:inline"> | </span>
             <div class="block md:inline-block">대표 : 조미숙</div>
+          </div>
+          <div>
+            <div class="block md:inline-block">전화번호 : {{ COMPANY_PHONE }}</div>
           </div>
           <div class="text-xs md:text-sm copyright">Copyright 2020 Sharevalue Co., Ltd. All rights reserved</div>
         </div>
