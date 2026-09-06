@@ -1,30 +1,56 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const visibleMenuModal = ref(false);
-
-const navigationLinks: Array<{ [key: string]: string }> = [{
-  title: '부킹엔진',
-  path: '/engine',
-  icon: 'ico_black_engine.webp',
-}, {
-  title: '백오피스',
-  path: '/back-office',
-  icon: 'ico_black_back-office.webp',
-}, {
-//   title: '부가서비스',
-//   path: '/extra',
-//   icon: 'ico_black_addition.webp',
-// }, {
-  title: '고객센터',
-  path: '/support',
-  icon: 'ico_black_support.webp',
-}];
 
 const route = useRoute();
 const router = useRouter();
 
-//  페이지 이동 시마다, 강제로 상단으로 이동
+/* 영문 페이지 여부 */
+const isEnglish = computed(() => route.path === '/en' || route.path.startsWith('/en/'));
+
+/* 한글 / 영문 메뉴 */
+const navigationLinks = computed(() => {
+  if (isEnglish.value) {
+    return [
+      {
+        title: 'Booking Engine',
+        path: '/en/engine',
+        icon: 'ico_black_engine.webp',
+      },
+      {
+        title: 'Back Office',
+        path: '/en/back-office',
+        icon: 'ico_black_back-office.webp',
+      },
+      {
+        title: 'Support',
+        path: '/en/support',
+        icon: 'ico_black_support.webp',
+      },
+    ];
+  }
+
+  return [
+    {
+      title: '부킹엔진',
+      path: '/engine',
+      icon: 'ico_black_engine.webp',
+    },
+    {
+      title: '백오피스',
+      path: '/back-office',
+      icon: 'ico_black_back-office.webp',
+    },
+    {
+      title: '고객센터',
+      path: '/support',
+      icon: 'ico_black_support.webp',
+    },
+  ];
+});
+
+// 페이지 이동 시마다 강제로 상단으로 이동
 router.beforeEach(() => {
   window.scrollTo(0, 0);
 });
@@ -41,7 +67,6 @@ function turnVisibleMenuModal() {
   visibleMenuModal.value = !(visibleMenuModal.value);
 }
 </script>
-
 <template>
     <!-- header component -->
     <header
@@ -62,7 +87,7 @@ function turnVisibleMenuModal() {
             <RouterLink
                 v-for="({ title, path }) in navigationLinks"
                 :key="`nav_${path}`"
-                :class="['decoration-none', 'mx-4', checkSelected(path) ? 'c-primary-500' : '']"
+                :class="['decoration-none', 'mx-4', checkSelected(path) ? 'nav-selected' : '']"
                 :to="path">
               <span>{{ title }}</span>
             </RouterLink>
@@ -71,7 +96,9 @@ function turnVisibleMenuModal() {
         <div>
           <button type="button"
                   class="hidden md:inline-block bg-primary-500 c-white btn contact-btn"
-                  @click="moveToPageWithTargetId('/support', 'inquiry')">가입문의</button>
+                 @click="moveToPageWithTargetId(isEnglish ? '/en/support' : '/support', 'inquiry')">
+  {{ isEnglish ? 'Contact Us' : '서비스 문의' }}
+</button>
           <!--ONLY VISIBLE UNDER 768px-->
           <button type="button"
                   class="inline-block md:hidden visible-btn"
@@ -88,7 +115,7 @@ function turnVisibleMenuModal() {
             <RouterLink
                 v-for="({ title, path, icon }) in navigationLinks"
                 :key="`nav_${path}`"
-                :class="['decoration-none', 'px-7.5', checkSelected(path) ? 'c-primary-500 font-bold' : '']"
+                :class="['decoration-none', 'px-7.5', checkSelected(path) ? 'nav-selected font-bold' : '']"
                 :to="path">
               <div class="flex flex-row items-center h-full">
                 <img v-if="icon"
@@ -105,7 +132,9 @@ function turnVisibleMenuModal() {
         <div class="flex flex-col menu-modal-btn-area">
           <button type="button"
                   class="bg-primary-500 c-white h-60px"
-                  @click="moveToPageWithTargetId('/support', 'inquiry')">가입문의</button>
+                  @click="moveToPageWithTargetId(isEnglish ? '/en/support' : '/support', 'inquiry')">
+  {{ isEnglish ? 'Contact Us' : '서비스 문의' }}
+</button>
         </div>
       </div>
     </header>
@@ -116,8 +145,20 @@ function turnVisibleMenuModal() {
   height: 50px;
   line-height: 50px;
   font-size: 16px;
+ background: linear-gradient(
+    135deg,
+    #006DFF 0%,
+    #00B8FF 100%
+  );  
 }
 
+.nav-selected {
+   color: #006DFF !important;
+}
+.navigation-area a:hover,
+.navigation-area a:hover span {
+  color: #006DFF !important;
+}
 .navigation-area {
   color: #152038;
   font-size: 20px;
@@ -152,5 +193,12 @@ function turnVisibleMenuModal() {
 .menu-modal .menu-modal-btn-area {
   border-top: 1px solid #eff3f7;
   font-size: 14px;
+}
+.menu-modal .menu-modal-btn-area button {
+  background: linear-gradient(
+    135deg,
+    #006DFF 0%,
+    #00B8FF 100%
+  );
 }
 </style>

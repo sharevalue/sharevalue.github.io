@@ -3,16 +3,16 @@
 import {IProductSpec} from "~/types";
 
 useHead({
-  title: '부킹엔진 | 여행사 예약·판매 시스템 | 쉐어밸류',
+  title: 'Back Office | Travel Operations Management Platform | ShareValue',
 
   meta: [
     {
       name: 'description',
-      content: '항공, 숙박, 골프, 투어 등 다양한 여행상품의 예약과 판매를 지원하는 여행사 부킹엔진입니다. B2C·B2B·기업출장·맞춤여행 등 다양한 판매 채널과 시스템 연동을 지원합니다.'
+      content: 'Manage reservations, customers, travel inventory, suppliers, payments and settlement in one back-office platform. ShareValue helps travel businesses streamline operations and expand into AI-powered automation.'
     },
     {
       property: 'og:title',
-      content: '부킹엔진 | 여행사 예약·판매 시스템 | 쉐어밸류'
+      content: 'Back Office | Travel Operations Management Platform | ShareValue'
     },
     {
       property: 'og:type',
@@ -20,7 +20,7 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://www.sharevaluecorp.com/engine'
+      content: 'https://www.sharevaluecorp.com/en/back-office'
     },
     {
       property: 'og:image',
@@ -28,7 +28,15 @@ useHead({
     },
     {
       property: 'og:description',
-      content: '항공, 숙박, 골프, 투어 등 다양한 여행상품의 예약과 판매를 지원하는 여행사 부킹엔진입니다.'
+      content: 'Manage reservations, customers, travel inventory, suppliers, payments and settlement in one integrated back-office platform.'
+    },
+    {
+      property: 'og:site_name',
+      content: 'ShareValue'
+    },
+    {
+      property: 'og:locale',
+      content: 'en_US'
     },
     {
       name: 'twitter:card',
@@ -36,11 +44,11 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: '부킹엔진 | 여행사 예약·판매 시스템 | 쉐어밸류'
+      content: 'Back Office | Travel Operations Management Platform | ShareValue'
     },
     {
       name: 'twitter:url',
-      content: 'https://www.sharevaluecorp.com/engine'
+      content: 'https://www.sharevaluecorp.com/en/back-office'
     },
     {
       name: 'twitter:image',
@@ -48,128 +56,116 @@ useHead({
     },
     {
       name: 'twitter:description',
-      content: '항공, 숙박, 골프, 투어 등 다양한 여행상품의 예약과 판매를 지원하는 여행사 부킹엔진입니다.'
+      content: 'Manage reservations, customers, travel inventory, suppliers, payments and settlement in one integrated back-office platform.'
     }
   ],
 
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.sharevaluecorp.com/engine'
+      href: 'https://www.sharevaluecorp.com/en/back-office'
     },
     {
       rel: 'alternate',
       hreflang: 'ko',
-      href: 'https://www.sharevaluecorp.com/engine'
+      href: 'https://www.sharevaluecorp.com/back-office'
     },
     {
       rel: 'alternate',
       hreflang: 'en',
-      href: 'https://www.sharevaluecorp.com/en/engine'
+      href: 'https://www.sharevaluecorp.com/en/back-office'
     },
     {
       rel: 'alternate',
       hreflang: 'x-default',
-      href: 'https://www.sharevaluecorp.com/engine'
+      href: 'https://www.sharevaluecorp.com/back-office'
     }
   ]
 });
-const engineSpecList: Array<IProductSpec> = [
+const backOfficeSpecList: Array<IProductSpec> = [
   {
-    icon: 'ico_engine_airbooking.webp',
-    title: '항공 예약 · 발권',
+    icon: 'ico_ops_customer.webp',
+    title: 'Customer & Member Management',
     specList: [
-      '해외 실시간 항공',
-      'Multi-GDS 연동',
-      '전세기 · 단체항공',
-      '항공권 자동발권',
+      'Customer & Client',
+      'Individual & Corporate',
+      'Login Integration',
+      'Customer Search',
     ],
   },
   {
-    icon: 'ico_engine_hotel.webp',
-    title: '숙박 · 골프 · 투어',
+    icon: 'ico_ops_booking.webp',
+    title: 'Booking & Sales Management',
     specList: [
-      '숙박 예약',
-      '골프 상품',
-      '투어 · 액티비티',
-      '실시간 예약 · 예약 요청',
+      'Changes & Refunds',
+      'Booking & Sales',
+      'Customer Requests',
+      'Booking History',
     ],
   },
   {
-    icon: 'ico_engine_package.webp',
-    title: '패키지 · 맞춤여행',
+    icon: 'ico_ops_inventory.webp',
+    title: 'Travel Products & Inventory',
     specList: [
-      '패키지 여행상품',
-      '맞춤여행 상품 구성',
-      '항공 · 숙박 · 투어 조합',
-      '일정 · 옵션 구성',
+      'Golf · Hotels · Tours',
+      'Inventory & Suppliers',
+      'Tailor-Made Travel',
+      'Itineraries & Invoices',
     ],
   },
   {
-    icon: 'ico_engine_business.webp',
-    title: 'B2C · B2B · 기업출장',
+    icon: 'ico_ops_ticketing.webp',
+    title: 'Flight Booking & Ticketing',
     specList: [
-      '일반 고객 B2C 서비스',
-      '여행사 B2B 서비스',
-      '기업출장 예약 서비스',
-      '고객별 전용 판매 채널',
+      'Flights & PNR',
+      'Automated Ticketing',
+      'VOID & Refunds',
+      'TASF & Fees',
     ],
   },
   {
-    icon: 'ico_engine_channel.webp',
-    title: '판매 · 공급 채널',
+    icon: 'ico_ops_group_air.webp',
+    title: 'Group & Charter Flights',
     specList: [
-      'PC 웹 · 모바일 전용 화면',
-      '거래처별 판매 채널 구성',
-      '공급사 요청 · 업무 연계',
-      '판매부터 공급 업무까지 연결',
+      'Schedules & Inventory',
+      'Client Blocks & Sales',
+      'Fares · Rules · Fees',
+      'Passengers & Settlement',
     ],
   },
   {
-    icon: 'ico_engine_payment.webp',
-    title: '결제 · 자동발권',
+    icon: 'ico_ops_bsp.webp',
+    title: 'BSP & Settlement Management',
     specList: [
-      '카드 · 현금 · 포인트 결제',
-      '다양한 PG 결제 연동',
-      '항공권 자동발권',
-      '취소 · 환불 처리',
+      'Ticketing & Refund DSR',
+      'BSP Billing & Documents',
+      'ADM & ACM Management',
+      'Ticketing & Refund Statistics',
     ],
   },
   {
-    icon: 'ico_engine_integration.webp',
-    title: '서비스 · 시스템 연동',
+    icon: 'ico_ops_payment.webp',
+    title: 'Payment & Cash Management',
     specList: [
-      '기존 홈페이지 서비스 연동',
-      '회원 로그인 연동',
-      '카카오 알림톡 연동',
-      '외부 시스템 · API 연동',
+      'Card · Cash · Points',
+      'Payment Gateways',
+      'Cancellations & Refunds',
+      'Receipts & Receivables',
     ],
   },
   {
-    icon: 'ico_engine_ai.webp',
-    title: 'AI · 업무 자동화',
+    icon: 'ico_ops_system.webp',
+    title: 'Operations & Integration',
     specList: [
-      '고객 요청 분석 · 업무 연결',
-      '예약 업무 자동화',
-      '반복 업무 자동화',
-      'AI 기반 운영 자동화 확장',
+      'Users & Permissions',
+      'Kakao & Email',
+      'External Systems & APIs',
+      'ERP & Accounting',
+      'Automation & AI',
     ],
   },
 ];
-  
-
-const engineProcessStages = [
-  '도입 상담',
-  '계약 · 연동 협의',
-  '서비스 환경 설정',
-  '백오피스 설정',
-  '연동 · 오픈 테스트',
-  '관리자 교육',
-  '서비스 오픈',
-];
-
 </script>
-
 
 <template>
  <!-- ONLY VISIBLE ABOVE 768px-->
@@ -177,16 +173,16 @@ const engineProcessStages = [
   <div class="px-5 default-container">
 
     <div class="title">
-      <div>여행 비즈니스</div>
-      <div>판매를 하나로</div>
+      <div>One Platform for</div>
+      <div>Travel Operations</div>
     </div>
 
     <div class="description">
       <div>
-        항공 · 숙박 · 골프 · 투어 · 패키지 · 맞춤여행까지
+        Bookings · Customers · Products · Suppliers · Payments · Settlement
       </div>
       <div>
-        검색부터 예약, 결제까지 하나의 부킹엔진으로 연결합니다.
+        Manage your entire travel operation in one platform.
       </div>
     </div>
 
@@ -197,22 +193,13 @@ const engineProcessStages = [
   <div class="px-5 default-container">
 
     <div class="title">
-      <div>여행 비즈니스</div>
-      <div>판매를 하나로</div>
+      <div>One Platform for</div>
+      <div>Travel Operations</div>
     </div>
 
     <div class="description">
-      <div>
-        항공 · 숙박 · 골프 · 투어
-      </div>
-      <div>
-        패키지 · 맞춤여행까지
-      </div>
-
-      <div class="sub-description">
-        검색부터 예약, 결제까지<br>
-        하나의 부킹엔진으로 연결합니다.
-      </div>
+      <div>Bookings · Customers · Products · Suppliers</div>
+      <div>Payments · Settlement</div>
     </div>
 
   </div>
@@ -222,22 +209,22 @@ const engineProcessStages = [
   <div class="px-5 text-center md:px-25 lg:px-15 default-container">
     <div class="title">
       <span class="inline-block">
-        B2C&nbsp;&nbsp;·&nbsp;&nbsp;B2B&nbsp;&nbsp;·&nbsp;&nbsp;기업출장&nbsp;&nbsp;·&nbsp;&nbsp;맞춤여행&nbsp;&nbsp;·&nbsp;&nbsp;다양한 판매 채널을 하나의 엔진으로
+        Anytime, Anywhere&nbsp;&nbsp;·&nbsp;&nbsp;Easy for Everyone&nbsp;&nbsp;·&nbsp;&nbsp;Automate Repetitive Tasks&nbsp;&nbsp;·&nbsp;&nbsp;See Your Business at a Glance
       </span>
     </div>
   </div>
 </div>
   <div class="bg-white py-16.5 md:px-10 lg:px-5 lg:py-37.5">
-    <div class="default-container engine-spec-list">
-      <ProductSpec v-for="(engineSpec, index) in engineSpecList"
-             :key="`engine_spec_${index}`"
-             :icon="engineSpec.icon">
-  <template v-slot:title>{{ engineSpec.title }}</template>
-  <template v-slot:list>
-    <li v-for="(spec, specIndex) in engineSpec.specList"
-        :key="`engine_spec_${index}_${specIndex}`">{{ spec }}</li>
-  </template>
-</ProductSpec>
+    <div class="default-container back-office-spec-list">
+      <ProductSpec v-for="(backOfficeSpec, index) in backOfficeSpecList"
+                   :key="`back_office_spec_${index}`"
+                   :icon="backOfficeSpec.icon">
+        <template v-slot:title>{{ backOfficeSpec.title }}</template>
+        <template v-slot:list>
+          <li v-for="(spec, specIndex) in backOfficeSpec.specList"
+              :key="`back_office_spec_${index}_${specIndex}`">{{ spec }}</li>
+        </template>
+      </ProductSpec>
     </div>
   </div>
   <!-- Section 4: Price Table 숨김 시작
@@ -291,45 +278,12 @@ const engineProcessStages = [
     </div>
   </div>
 Section 4: Price Table 숨김 끝 --> 
- <!-- Service Process -->
-<div id="engine_process"
-     class="engine-process">
-  <div class="px-5 default-container">
-    <div class="mb-8 md:mb-17.5 engine-process-title">
-      서비스 계약 및 진행 절차
-    </div>
-
-    <div id="engine_process_content"
-         class="engine-process-content">
-      <div class="flex flex-col justify-center lg:flex-row lg:justify-evenly">
-        <div v-for="(stage, index) in engineProcessStages"
-             :key="`engine_process_${index}`"
-             class="flex flex-row my-10 lg:block lg:my-0">
-
-          <div class="engine-process-stage">
-            {{ `0${index + 1}` }}
-          </div>
-
-          <div class="rotate-270 -scale-x-100 engine-process-stage-bar">
-            <span class="dot"/>
-          </div>
-
-          <div class="engine-process-stage-title"
-               v-html="stage"/>
-        </div>
-      </div>
-
-      <div class="hidden lg:block engine-process-vertical-line"/>
-      <div class="lg:hidden engine-process-horizontal-line"/>
+  <div class="back-office-faq">
+    <div class="default-container">
+      <div class="support-title mb-8 md:mb-17.5">Frequently Asked Questions</div>
+      <Faq faq-type="SBM"/>
     </div>
   </div>
-</div>
-<div class="engine-faq">
-  <div class="default-container">
-    <div class="support-title mb-8 md:mb-17.5">자주하는 질문</div>
-    <Faq faq-type="SBP"/>
-  </div>
-</div>
  
 </template>
 
@@ -346,7 +300,7 @@ Section 4: Price Table 숨김 끝 -->
 
 .section-1 {
   height: calc(100vh - 90px - 100px);
-  background-image: url(/image/common/engine.webp);
+  background-image: url(/image/common/backoffice.webp);
 }
 
 .section-1 .title,
@@ -407,7 +361,7 @@ Section 4: Price Table 숨김 끝 -->
 
 .mobile-section-1 {
   height: calc(100vh - 65px);
-  background-image: url(/image/common/engine_mobile.webp);
+  background-image: url(/image/common/backoffice_mobile.webp);
 }
 
 .mobile-section-1 .title {
@@ -416,16 +370,15 @@ Section 4: Price Table 숨김 끝 -->
 }
 
 .mobile-section-1 .description {
- top: calc(39% - 65px);
+  top: calc(44% - 65px);
   font-size: 16px;
   line-height: 24px;
 }
 
 .mobile-section-1 .description .sub-description {
-  @apply mt-1;
+  @apply mt-6;
 
   font-size: 12px;
-  line-height: 18px;
 }
 
 .section-2 .title {
@@ -446,23 +399,19 @@ Section 4: Price Table 숨김 끝 -->
   word-break: keep-all;
 }
 
-.engine-spec-list {
+.back-office-spec-list {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.engine-spec-list > div {
+.back-office-spec-list >div {
   @apply w-49/100 lg:w-24/100;
 }
 
-
-.engine-faq {
+.back-office-faq {
   @apply py-16 md:px-5 md:py-37.5;
   background-color: #ffffff;
 }
-</style>
-<style scoped>
-@import '/src/styles/engine.css';
 </style>

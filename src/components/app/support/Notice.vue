@@ -4,6 +4,16 @@ import axios from 'axios';
 import { onMounted, ref, reactive, computed } from 'vue'
 import {INotice} from "~/types";
 
+const route = useRoute();
+
+const isEnglish = computed(() =>
+  route.path === '/en' || route.path.startsWith('/en/')
+);
+
+const lang = computed(() =>
+  isEnglish.value ? 'en' : 'ko'
+);
+
 const noticeResponse = reactive({
   noticeList: [] as Array<INotice>,
   totalCount: 0,
@@ -18,7 +28,7 @@ function updatePage(val: number) {
 }
 
 async function search() {
-  await axios.get(`https://api.smartbookingplus.com/notice/list?page=${(page.value - 1)}&pageSize=${pageSize}&siteId=129`).then((res) => {
+  await axios.get(`https://api.smartbookingplus.com/notice/list?page=${(page.value - 1)}&pageSize=${pageSize}&siteId=129&lang=${lang.value}`).then((res) => {
     const {
       statusCode,
       data
@@ -70,7 +80,9 @@ onMounted(() => {
       <details>
         <summary class="notice-title-area flex flex-col md:flex-row ">
           <div class="flex flex-row justify-between w-full">
-            <div class="mr-12.5">공지사항</div>
+            <div class="mr-12.5">
+  {{ isEnglish ? 'Notice' : '공지사항' }}
+</div>
             <div class="hidden md:block notice-title">{{ notice.title }}</div>
             <div>{{ formatDate(notice.createdDateTime) }}</div>
           </div>

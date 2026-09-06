@@ -10,6 +10,11 @@ const props = defineProps({
     default: '',
   }
 });
+const route = useRoute();
+
+const lang = computed(() =>
+  route.path === '/en' || route.path.startsWith('/en/') ? 'en' : 'ko'
+);
 
 const faqResponse = reactive({
   faqList: [] as Array<IFAQ>,
@@ -25,7 +30,7 @@ function updatePage(val: number) {
 }
 
 async function search() {
-  let requestUrl = `https://api.smartbookingplus.com/faq/list?page=${(page.value - 1)}&pageSize=${pageSize}&siteId=129`;
+  let requestUrl = `https://api.smartbookingplus.com/faq/list?page=${page.value - 1}&pageSize=${pageSize}&siteId=129&lang=${lang.value}`;
 
   if (props.faqType) {
     requestUrl += `&product=${props.faqType}`;
@@ -87,7 +92,7 @@ details {
 }
 
 details[open] .faq-title-area .faq-title {
-  @apply  c-primary-500;
+  color: #006DFF;
 }
 
 .faq-title-area {

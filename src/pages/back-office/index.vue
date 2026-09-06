@@ -2,88 +2,208 @@
 <script setup lang="ts">
 import {IProductSpec} from "~/types";
 
-const backOfficeSpecList: Array<IProductSpec> = [{
-  icon: 'ico_black_customer.webp',
-  title: '고객 관리',
-  specList: ['고객 통합 검색', '온라인 개인 회원', '온라인 거래처 회원', '기존 고객 / 거래처'],
-}, {
-  icon: 'ico_black_gears.webp',
-  title: '홈페이지 관리',
-  specList: ['로고, 파비콘 설정', '배너 / 팝업 설정', 'SNS 아이콘 노출 설정', '이용약관 템플릿', '공지사항 템플릿', '자주하는 질문 템플릿'],
-}, {
-  icon: 'ico_black_management-sms.webp',
-  title: '운임 및 메시지 설정',
-  specList: ['운임 할인 / 할증 설정', '발권 수수료 설정', '사용자 계정 설정', '카카오 알림톡 템플릿', '메시지 템플릿', '이메일 템플릿'],
-}, {
-  icon: 'ico_black_laptop-with-customer.webp',
-  title: '예약・판매관리',
-  specList: ['예약 관리', '판매 / 환불 관리', '변경요청 관리', '고객문의 및 답변', '항공 예약 요청 관리'],
-}, {
-  icon: 'ico_black_schedule.webp',
-  title: '전세기 및 단체항공권',
-  specList: ['항공 스케줄 생성', '거래처 블록 생성', '판매 탑승자목록', '판매 정산 목록', '운임/규정 생성', '수수료 생성'],
-}, {
-  icon: 'ico_black_documents.webp',
-  title: '항공 BSP 관리',
-  specList: ['발권 DSR', '환불 DSR', 'BSP 빌링 관리', 'BSP 증빙 관리', 'ADM / ACM 관리', '발권 / 환불 통계'],
-}, {
-  icon: 'ico_black_flight.webp',
-  title: '여행상품 판매관리',
-  specList: ['여행상품 판매관리', '인보이스, 일정표 발송관리', '여행자 보험 가입 관리', '항공 예약 관리', '정산 / 마감 관리', '정산서 생성 / 출력'],
-}, {
-  icon: 'ico_black_commission.webp',
-  title: 'PG 결제 및 입출금 관리',
-  specList: ['PG 결제 목록', '입 / 출금 관리', '입금 완료 리스트', '출금 완료 리스트', '미수 / 미지급 관리', '지급 커미션 관리'],
-}];
+useHead({
+  title: '백오피스 | 여행사 통합 운영·관리 시스템 | 쉐어밸류',
+
+  meta: [
+    {
+      name: 'description',
+      content: '예약, 고객, 여행상품, 공급사, 결제와 정산까지 여행사 운영에 필요한 업무를 하나의 시스템에서 관리합니다. 반복 업무 자동화와 AI 기반 운영 자동화로 확장 가능한 쉐어밸류 백오피스입니다.'
+    },
+    {
+      property: 'og:title',
+      content: '백오피스 | 여행사 통합 운영·관리 시스템 | 쉐어밸류'
+    },
+    {
+      property: 'og:type',
+      content: 'website'
+    },
+    {
+      property: 'og:url',
+      content: 'https://www.sharevaluecorp.com/back-office'
+    },
+    {
+      property: 'og:image',
+      content: 'https://www.sharevaluecorp.com/image/logo/logo-og.png'
+    },
+    {
+      property: 'og:description',
+      content: '예약, 고객, 여행상품, 공급사, 결제와 정산까지 여행사 운영에 필요한 업무를 하나의 시스템에서 통합 관리합니다.'
+    },
+    {
+      name: 'twitter:card',
+      content: 'summary_large_image'
+    },
+    {
+      name: 'twitter:title',
+      content: '백오피스 | 여행사 통합 운영·관리 시스템 | 쉐어밸류'
+    },
+    {
+      name: 'twitter:url',
+      content: 'https://www.sharevaluecorp.com/back-office'
+    },
+    {
+      name: 'twitter:image',
+      content: 'https://www.sharevaluecorp.com/image/logo/logo-og.png'
+    },
+    {
+      name: 'twitter:description',
+      content: '예약, 고객, 여행상품, 공급사, 결제와 정산까지 여행사 운영에 필요한 업무를 하나의 시스템에서 통합 관리합니다.'
+    }
+  ],
+
+  link: [
+    {
+      rel: 'canonical',
+      href: 'https://www.sharevaluecorp.com/back-office'
+    },
+    {
+      rel: 'alternate',
+      hreflang: 'ko',
+      href: 'https://www.sharevaluecorp.com/back-office'
+    },
+    {
+      rel: 'alternate',
+      hreflang: 'en',
+      href: 'https://www.sharevaluecorp.com/en/back-office'
+    },
+    {
+      rel: 'alternate',
+      hreflang: 'x-default',
+      href: 'https://www.sharevaluecorp.com/back-office'
+    }
+  ]
+});
+const backOfficeSpecList: Array<IProductSpec> = [
+  {
+    icon: 'ico_ops_customer.webp',
+    title: '고객 · 회원 관리',
+    specList: [
+      '고객 · 거래처 통합 관리',
+      '개인 · 기업회원 관리',
+      '회원 로그인 연동',
+      '고객 통합검색',
+    ],
+  },
+  {
+    icon: 'ico_ops_booking.webp',
+    title: '예약 · 판매 관리',
+    specList: [
+      '예약 · 변경 · 취소 · 환불',
+      '예약 · 판매 통합 관리',
+      '고객 요청 · 업무 관리',
+      '예약 상세 · 업무 이력',
+    ],
+  },
+  {
+    icon: 'ico_ops_inventory.webp',
+    title: '여행상품 · 인벤토리',
+    specList: [
+      '골프 · 숙박 · 투어 상품',
+      '재고 · 공급사 · 예약 관리',
+      '맞춤형 여행상품 구성',
+      '일정표 · 인보이스 생성',
+    ],
+  },
+  {
+    icon: 'ico_ops_ticketing.webp',
+    title: '항공 예약 · 자동발권',
+    specList: [
+      '실시간 항공 · PNR 관리',
+      '항공권 자동발권',
+      'VOID · 환불 관리',
+      'TASF · 수수료 설정',
+    ],
+  },
+  {
+    icon: 'ico_ops_group_air.webp',
+    title: '단체 · 전세기 항공',
+    specList: [
+      '항공 스케줄 · 인벤토리 관리',
+      '거래처별 블록 · 판매 관리',
+      '운임 · 규정 · 수수료 설정',
+      '탑승자 · 판매 정산 관리',
+    ],
+  },
+  {
+    icon: 'ico_ops_bsp.webp',
+    title: '항공 BSP · 정산 관리',
+    specList: [
+      '발권 · 환불 DSR 관리',
+      'BSP 빌링 · 증빙 관리',
+      'ADM · ACM 관리',
+      '발권 · 환불 통계',
+    ],
+  },
+  {
+    icon: 'ico_ops_payment.webp',
+    title: '결제 · 입출금 관리',
+    specList: [
+      '카드 · 현금 · 포인트 결제',
+      '다양한 PG 결제 연동',
+      '결제 · 취소 · 환불 관리',
+      '입금 · 출금 · 미수금 관리',
+    ],
+  },
+  {
+    icon: 'ico_ops_system.webp',
+    title: '운영 · 시스템 연동',
+    specList: [
+      '사용자 계정 · 권한 관리',
+      '알림톡 · 이메일 메시지 관리',
+      '외부 시스템 · API 연동',
+      'ERP · 회계 시스템 연동',
+      '업무 자동화 · AI 연계',
+    ],
+  },
+];
 </script>
 
 <template>
-  <!--ONLY VISIBLE ABOVE 768px-->
-  <div class="section-1 use-full-bg-image hidden md:block">
-    <div class="px-5 default-container">
-      <div class="title">
-        <div>SMART</div>
-        <div>BUSINESS</div>
-        <div>MANAGEMENT</div>
+ <!-- ONLY VISIBLE ABOVE 768px-->
+<div class="section-1 use-full-bg-image hidden md:block">
+  <div class="px-5 default-container">
+    <div class="title">
+      <div>여행 비즈니스</div>
+      <div>운영을 하나로</div>
+    </div>
+
+    <div class="description">
+      <div>
+        예약부터 고객, 상품, 공급사, 결제와 정산까지
       </div>
-      <div class="description">
-        <div>스마트 비엠은 고객의 <b>예약, 결제, 변경요청, 문의</b>에 대한 온라인 업무 처리와</div>
-        <div>여행사의 <b>상품 판매 및 미수, 수익, 정산</b>을 한 번에 관리할 수 있는 전문 백오피스입니다.</div>
-        <div class="sub-description">* 고객 관리부터 예약, 판매 정산까지 올인원 솔루션으로 언제 어디서나 비대면 업무처리가 가능합니다. </div>
+      <div>
+        여행사의 복잡한 운영 업무를 하나의 플랫폼에서 관리합니다.
       </div>
     </div>
   </div>
-  <!--ONLY VISIBLE UNDER 768px-->
-  <div class="mobile-section-1 use-full-bg-image md:hidden">
-    <div class="px-5 default-container">
-      <div class="title">
-        <div>SMART</div>
-        <div>BUSINESS</div>
-        <div>MANAGEMENT</div>
-      </div>
-      <div class="description">
-        <div>스마트 비엠은 고객의 <b>예약, 결제, 변경요청, 문의</b>에 대한</div>
-        <div>온라인 업무 처리와 여행사의 <b>상품 판매 및 미수, 수익,</b></div>
-        <div><b>정산</b>을 한 번에 관리할 수 있는 전문 백오피스입니다.</div>
-        <div class="sub-description">* 고객 관리부터 예약, 판매 정산까지 올인원 솔루션으로 언제 어디서나<br/>비대면 업무처리가 가능합니다. </div>
-      </div>
+</div>
+  <!-- ONLY VISIBLE UNDER 768px-->
+<div class="mobile-section-1 use-full-bg-image md:hidden">
+  <div class="px-5 default-container">
+
+    <div class="title">
+      <div>여행 비즈니스</div>
+      <div>운영을 하나로</div>
+    </div>
+
+    <div class="description">
+      <div>예약부터 고객, 상품, 공급사, 결제와 정산까지</div>
+      <div>여행사의 복잡한 운영 업무를 하나의 플랫폼에서 관리합니다.</div>
+    </div>
+
+  </div>
+</div>
+  <!-- Section 2 -->
+<div class="py-11 bg-secondary-500 c-white md:py-8 section-2">
+  <div class="px-5 text-center md:px-25 lg:px-15 default-container">
+    <div class="title">
+      <span class="inline-block">
+        언제 어디서나&nbsp;&nbsp;·&nbsp;&nbsp;누구나 쉽게&nbsp;&nbsp;·&nbsp;&nbsp;반복 업무는 자동으로&nbsp;&nbsp;·&nbsp;&nbsp;비즈니스는 한눈에
+      </span>
     </div>
   </div>
-  <div class="py-11 bg-secondary-500 c-white md:py-4 section-2">
-    <div class="px-5 text-center md:text-left md:px-25 md:flex md:flex-row md:items-center lg:px-15 default-container">
-      <div class="mr-2 md:mr-5 title">
-        <span class="inline-block">소중한 고객 정보를 관리하고, 카카오톡 채널의 친구추가 및 알림이 자유롭고, </span>
-        <span class="inline-block">업무의 생산성 및 효율성 증대로 비용 절감과 업무 리스크 관리가 가능합니다.</span>
-      </div>
-      <img src="/image/icon/ico_white_worker.webp"
-           srcset="/image/icon/ico_white_worker@2x.webp 768w,
-                   /image/icon/ico_white_worker@3x.webp 1024w"
-           width="22"
-           height="23"
-           alt="icon"
-           class="inline-block w-22px h-23px md:w-44px md:h-46px lg:w-67px lg:h-70px"/>
-    </div>
-  </div>
+</div>
   <div class="bg-white py-16.5 md:px-10 lg:px-5 lg:py-37.5">
     <div class="default-container back-office-spec-list">
       <ProductSpec v-for="(backOfficeSpec, index) in backOfficeSpecList"
@@ -97,6 +217,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
       </ProductSpec>
     </div>
   </div>
+  <!-- Section 4: Price Table 숨김 시작
   <div class="section-4">
     <div class="md:px-5 default-container">
       <div class="mb-8.5 md:mb-17.5 price-table-title">사용료</div>
@@ -146,12 +267,14 @@ const backOfficeSpecList: Array<IProductSpec> = [{
       </table>
     </div>
   </div>
+Section 4: Price Table 숨김 끝 --> 
   <div class="back-office-faq">
     <div class="default-container">
       <div class="support-title mb-8 md:mb-17.5">자주하는 질문</div>
       <Faq faq-type="SBM"/>
     </div>
   </div>
+ 
 </template>
 
 <style scoped>
@@ -167,7 +290,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 
 .section-1 {
   height: calc(100vh - 90px - 100px);
-  background-image: url(/image/common/erp.webp);
+  background-image: url(/image/common/backoffice.webp);
 }
 
 .section-1 .title,
@@ -192,6 +315,12 @@ const backOfficeSpecList: Array<IProductSpec> = [{
   -moz-animation: fadein 2.5s; /* Firefox */
   -webkit-animation: fadein 2.5s; /* Safari and Chrome */
   -o-animation: fadein 2.5s; /* Opera */
+}
+.mobile-section-1 .title,
+.mobile-section-1 .description {
+  left: 0;
+  width: 100%;
+  text-align: center;
 }
 
 .section-1 .description .sub-description,
@@ -222,7 +351,7 @@ const backOfficeSpecList: Array<IProductSpec> = [{
 
 .mobile-section-1 {
   height: calc(100vh - 65px);
-  background-image: url(/image/common/erp_mobile.webp);
+  background-image: url(/image/common/backoffice_mobile.webp);
 }
 
 .mobile-section-1 .title {

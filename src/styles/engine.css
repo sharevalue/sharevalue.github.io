@@ -36,14 +36,14 @@
     line-height: 30px;
     letter-spacing: normal;
     text-align: center;
-    color: #2e2d33;
+    color: #006DFF;
     z-index: 1;
 }
 
 .engine-process .engine-process-content .engine-process-stage-bar {
     @apply w-90px h-1px my-4 lg:transform-none lg:w-120px xl:w-150px lg:h-2px lg:mb-7.5;
 
-    background-color: #00264b;
+    background-color: #006DFF;
     position: relative;
     display: inline-block;
     z-index: 1;
@@ -56,7 +56,8 @@
     border-radius: 50%;
     position: absolute;
     border-style: solid;
-    border-color: #00264b;
+    border-color: #006DFF;
+    background-color: #00B8FF;
     left: calc(50% - 8.5px);
     cursor: pointer;
     z-index: 1;
@@ -64,7 +65,7 @@
 
 .engine-process .engine-process-content .engine-process-stage-bar:after {
     content: '';
-    border: solid #00264b;
+    border: solid #006DFF;
     display: inline-block;
     padding: 7px;
     right: 3px;
@@ -92,7 +93,7 @@
     position: absolute;
     top: 72px;
     width: 100%;
-    border: 1px solid #c4d2dd;
+    border: 1px solid #006DFF;
     z-index: -1;
 }
 
@@ -103,7 +104,7 @@
     top: 0;
     left: -1px;
     height: 820px;
-    border: 1px solid #c4d2dd;
+    border: 1px solid #006DFF;
     z-index: -1;
 }
 
