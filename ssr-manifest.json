@@ -22,7 +22,6 @@
   "../../image/logo/klbo.webp": [],
   "../../image/logo/koita.webp": [],
   "../../image/logo/startup.webp": [],
-  "../../image/logo/iata.webp": [],
   "src/utils/const/company.ts": [],
   "src/components/app/layout/VFooter.vue?vue&type=style&index=0&scoped=true&lang.css": [],
   "src/components/app/layout/VFooter.vue": [],
@@ -33,10 +32,10 @@
   "../../@vite-plugin-vue-layouts/generated-layouts": [],
   "src/App.vue?vue&type=style&index=0&lang.css": [],
   "src/App.vue": [],
-  "../../image/icon/ico_white_computer.webp": [],
-  "../../image/icon/ico_white_map-home.webp": [],
-  "../../image/icon/ico_white_engineer.webp": [],
-  "../../image/icon/ico_white_graph.webp": [],
+  "../../image/icon/ico_index_reserve.webp": [],
+  "../../image/icon/ico_index_admin.webp": [],
+  "../../image/icon/ico_index_ai.webp": [],
+  "../../image/icon/ico_index_growth.webp": [],
   "src/pages/index.vue?vue&type=style&index=0&scoped=true&lang.css": [],
   "src/pages/index.vue": [],
   "../../@vite-plugin-pages/generated-pages?id=~pages": [],
@@ -47,7 +46,7 @@
   "../../__uno.css": [],
   "src/main.ts": [],
   "index.html": [],
-  "assets/app.1354fab3.js-unocss-hash.css": [],
+  "assets/app.7097c9ef.js-unocss-hash.css": [],
   "node_modules/workbox-window/build/workbox-window.prod.es5.mjs": [
     "/assets/virtual_pwa-register.0e447193.js"
   ],
@@ -55,270 +54,282 @@
     "/assets/virtual_pwa-register.0e447193.js"
   ],
   "src/layouts/404.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/404.fc51d34b.js",
+    "/assets/404.5cc20a6f.js",
     "/assets/404.f02705b8.css"
   ],
   "src/layouts/404.vue": [
-    "/assets/404.fc51d34b.js",
+    "/assets/404.5cc20a6f.js",
     "/assets/404.f02705b8.css"
   ],
   "src/pages/404.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/404.2b830b0b.js",
+    "/assets/404.c50933b5.js",
     "/assets/404.8ca2f87d.css"
   ],
   "src/pages/404.vue": [
-    "/assets/404.2b830b0b.js",
+    "/assets/404.c50933b5.js",
     "/assets/404.8ca2f87d.css"
   ],
   "../../@vite-plugin-pages/route-block": [
     "/assets/route-block.67f66939.js"
   ],
   "src/pages/[...all].vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/_...all_.6a672f18.js",
+    "/assets/_...all_.d7c39309.js",
     "/assets/_...all_.5e6c6c65.css"
   ],
   "src/pages/[...all].vue": [
-    "/assets/_...all_.6a672f18.js",
+    "/assets/_...all_.d7c39309.js",
     "/assets/_...all_.5e6c6c65.css"
   ],
-  "../../image/icon/ico_white_worker.webp": [
-    "/assets/index.f1dcb40a.js",
-    "/assets/index.0e2a5330.css"
-  ],
-  "../../image/icon/ico_white_worker@2x.webp": [
-    "/assets/index.f1dcb40a.js",
-    "/assets/index.0e2a5330.css"
-  ],
-  "../../image/icon/ico_white_worker@3x.webp": [
-    "/assets/index.f1dcb40a.js",
-    "/assets/index.0e2a5330.css"
-  ],
   "src/pages/back-office/index.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/index.f1dcb40a.js",
-    "/assets/index.0e2a5330.css"
+    "/assets/index.ebd4cfde.js",
+    "/assets/index.40a77084.css"
   ],
   "src/pages/back-office/index.vue": [
-    "/assets/index.f1dcb40a.js",
-    "/assets/index.0e2a5330.css"
+    "/assets/index.ebd4cfde.js",
+    "/assets/index.40a77084.css"
   ],
   "src/components/core/Pagination.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "src/components/core/Pagination.vue": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "\u0000C:/git/sharevalue.github.io-dev/node_modules/axios/lib/axios.js?commonjs-module": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/bind.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/utils.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/buildURL.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/core/InterceptorManager.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/normalizeHeaderName.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/core/AxiosError.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/defaults/transitional.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/toFormData.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/core/settle.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/cookies.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/isAbsoluteURL.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/combineURLs.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/core/buildFullPath.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/parseHeaders.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/isURLSameOrigin.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/cancel/CanceledError.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/parseProtocol.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/adapters/xhr.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/null.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/defaults/index.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/core/transformData.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/cancel/isCancel.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/core/dispatchRequest.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/core/mergeConfig.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/env/data.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/validator.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/core/Axios.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/cancel/CancelToken.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/spread.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/helpers/isAxiosError.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/lib/axios.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "node_modules/axios/index.js": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "src/components/app/support/Faq.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "src/components/app/support/Faq.vue": [
-    "/assets/Faq.b9dbdf67.js",
-    "/assets/Faq.809c5712.css"
+    "/assets/Faq.3493d23f.js",
+    "/assets/Faq.f38f8f39.css"
   ],
   "src/components/app/ProductSpec.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/ProductSpec.132eff85.js",
+    "/assets/ProductSpec.201ff9c6.js",
     "/assets/ProductSpec.5f589c06.css"
   ],
   "src/components/app/ProductSpec.vue?vue&type=style&index=1&lang.css": [
-    "/assets/ProductSpec.132eff85.js",
+    "/assets/ProductSpec.201ff9c6.js",
     "/assets/ProductSpec.5f589c06.css"
   ],
   "src/components/app/ProductSpec.vue": [
-    "/assets/ProductSpec.132eff85.js",
+    "/assets/ProductSpec.201ff9c6.js",
     "/assets/ProductSpec.5f589c06.css"
   ],
-  "../../image/icon/ico_white_airplane.webp": [
-    "/assets/index.a4632972.js",
-    "/assets/index.ec42c9bc.css"
+  "src/pages/en/index.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/index.3a6b0932.js",
+    "/assets/index.026e63e1.css"
   ],
-  "../../image/icon/ico_white_airplane@2x.webp": [
-    "/assets/index.a4632972.js",
-    "/assets/index.ec42c9bc.css"
+  "src/pages/en/index.vue": [
+    "/assets/index.3a6b0932.js",
+    "/assets/index.026e63e1.css"
   ],
-  "../../image/icon/ico_white_airplane@3x.webp": [
-    "/assets/index.a4632972.js",
-    "/assets/index.ec42c9bc.css"
-  ],
-  "src/pages/engine/index.vue?vue&type=style&index=0&lang.css": [
-    "/assets/index.a4632972.js",
-    "/assets/index.ec42c9bc.css"
+  "src/pages/engine/index.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/index.befa360d.js",
+    "/assets/index.b60e2e7a.css"
   ],
   "src/pages/engine/index.vue?vue&type=style&index=1&scoped=true&lang.css": [
-    "/assets/index.a4632972.js",
-    "/assets/index.ec42c9bc.css"
+    "/assets/index.befa360d.js",
+    "/assets/index.b60e2e7a.css"
   ],
   "src/pages/engine/index.vue": [
-    "/assets/index.a4632972.js",
-    "/assets/index.ec42c9bc.css"
-  ],
-  "src/components/app/support/Notice.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
-  ],
-  "src/components/app/support/Notice.vue": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
-  ],
-  "src/components/app/support/Inquiry.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
-  ],
-  "src/components/app/support/Inquiry.vue": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
-  ],
-  "../../image/icon/ico_white_cs.webp": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
-  ],
-  "../../image/icon/ico_white_map.webp": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
-  ],
-  "../../image/icon/ico_white_mail.webp": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
+    "/assets/index.befa360d.js",
+    "/assets/index.b60e2e7a.css"
   ],
   "src/pages/support/index.vue?vue&type=style&index=0&scoped=true&lang.css": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
+    "/assets/index.6e00e784.js",
+    "/assets/index.67a827ae.css"
   ],
   "src/pages/support/index.vue": [
-    "/assets/index.73005347.js",
-    "/assets/index.b1864214.css"
+    "/assets/index.6e00e784.js",
+    "/assets/index.67a827ae.css"
+  ],
+  "src/components/app/support/Notice.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/ico_white_mail.e66fd978.js",
+    "/assets/ico_white_mail.77fbfccf.css"
+  ],
+  "src/components/app/support/Notice.vue": [
+    "/assets/ico_white_mail.e66fd978.js",
+    "/assets/ico_white_mail.77fbfccf.css"
+  ],
+  "src/components/app/support/Inquiry.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/ico_white_mail.e66fd978.js",
+    "/assets/ico_white_mail.77fbfccf.css"
+  ],
+  "src/components/app/support/Inquiry.vue": [
+    "/assets/ico_white_mail.e66fd978.js",
+    "/assets/ico_white_mail.77fbfccf.css"
+  ],
+  "../../image/icon/ico_white_cs.webp": [
+    "/assets/ico_white_mail.e66fd978.js",
+    "/assets/ico_white_mail.77fbfccf.css"
+  ],
+  "../../image/icon/ico_white_map.webp": [
+    "/assets/ico_white_mail.e66fd978.js",
+    "/assets/ico_white_mail.77fbfccf.css"
+  ],
+  "../../image/icon/ico_white_mail.webp": [
+    "/assets/ico_white_mail.e66fd978.js",
+    "/assets/ico_white_mail.77fbfccf.css"
+  ],
+  "src/pages/en/back-office/index.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/index.d8981792.js",
+    "/assets/index.474b4893.css"
+  ],
+  "src/pages/en/back-office/index.vue": [
+    "/assets/index.d8981792.js",
+    "/assets/index.474b4893.css"
+  ],
+  "src/pages/en/engine/index.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/index.5cf9dcf1.js",
+    "/assets/index.0e80e2b5.css"
+  ],
+  "src/pages/en/engine/index.vue?vue&type=style&index=1&scoped=true&lang.css": [
+    "/assets/index.5cf9dcf1.js",
+    "/assets/index.0e80e2b5.css"
+  ],
+  "src/pages/en/engine/index.vue": [
+    "/assets/index.5cf9dcf1.js",
+    "/assets/index.0e80e2b5.css"
+  ],
+  "src/pages/en/support/index.vue?vue&type=style&index=0&scoped=true&lang.css": [
+    "/assets/index.0df862d5.js",
+    "/assets/index.745beb02.css"
+  ],
+  "src/pages/en/support/index.vue": [
+    "/assets/index.0df862d5.js",
+    "/assets/index.745beb02.css"
   ]
 }
