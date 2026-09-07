@@ -1,9 +1,14 @@
 
 <script setup lang="ts">
 import axios from 'axios';
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 import {IInquiryForm} from "~/types";
 
+const route = useRoute();
+
+const isEnglish = computed(() =>
+  route.path === '/en' || route.path.startsWith('/en/')
+);
 let agreement: boolean = false;
 let visibleModal = ref(false);
 let isSuccessfulRequest = ref(false);
@@ -30,14 +35,23 @@ function requestInquiry() {
   } = inquiryForm;
 
   if (!(name && tel && email)) {
-    alert("업체명 / 대표자명, 연락처, 이메일 입력내용을 확인해주세요.");
-    return;
-  }
+  alert(
+    isEnglish.value
+      ? "Please check the required fields: Company / Contact Name, Contact Number, and Email."
+      : "업체명 / 대표자명, 연락처, 이메일 입력내용을 확인해주세요."
+  );
+  return;
+}
+ 
 
   if (!agreement) {
-    alert("마케팅 수신 동의를 확인해주세요.");
-    return;
-  }
+  alert(
+    isEnglish.value
+      ? "Please confirm your consent to receive marketing communications."
+      : "마케팅 수신 동의를 확인해주세요."
+  );
+  return;
+}
 
   loadingRequest.value = true;
   axios.post(
@@ -61,101 +75,146 @@ function closeModal() {
 
 <template>
   <div class="default-container px-5">
-    <div class="text-2xl mb-8.5 text-center md:text-3xl md:mb-17.5 md:text-left inquiry-title">
-      <div>전문 여행 솔루션과 운영지원 서비스를 제공하는 쉐어밸류입니다.</div>
-      <div>
-        <span class="c-primary-600">상품소개서 및 서비스 연동, 제휴 문의</span>
-        <span><span class="hidden md:inline">를 남겨</span> 주시면 신속히 연락드리겠습니다.</span>
-      </div>
-    </div>
+   <div class="text-2xl mb-8.5 text-center md:text-3xl md:mb-17.5 md:text-left inquiry-title">
+
+  <div>
+    {{ isEnglish
+      ? 'Booking engines and operations platforms built for travel businesses.'
+      : '여행 비즈니스를 위한 부킹엔진과 운영 플랫폼을 제공합니다.'
+    }}
+  </div>
+
+  <div v-if="isEnglish">
+    <span class="c-primary-600" style="color:#006DFF;">
+  For service implementation, integration, or partnership inquiries,
+</span>
+    <span>
+      please leave us a message and we’ll get back to you shortly.
+    </span>
+  </div>
+
+  <div v-else>
+    <span class="c-primary-600" style="color:#006DFF;">서비스 도입 및 연동, 제휴 문의</span>
+    <span>
+      <span class="hidden md:inline">를 남겨</span>
+      주시면 신속히 연락드리겠습니다.
+    </span>
+  </div>
+
+</div>
     <form class="pt-8.5 pb-6.5 px-4 rounded-xl md:pt-22.5 md:pb-17.5 md:px-12.5 md:rounded-3xl text-left inquiry-content"
           @submit.prevent="requestInquiry">
       <div class="flex flex-col md:flex-row inquiry-input-area">
+
+  <div>
+    <div class="inquiry-input-title">
+    <span class="c-primary-500 pr-1">*</span>
+    <span>{{ isEnglish ? ' Company / Contact Name' : ' 업체명 / 대표자명' }}</span>
+  </div>
+  <div>
+    <input type="text"
+           v-model="inquiryForm.name"
+           :placeholder="isEnglish
+             ? 'Enter your company or contact name.'
+             : '업체명 / 대표자명을 입력하세요.'"/>
+  </div>
+</div>
         <div>
-          <div class="inquiry-input-title">
-            <span class="c-primary-500 pr-1">*</span>
-            <span> 업체명 / 대표자명</span>
-          </div>
-          <div>
-            <input type="text"
-                   v-model="inquiryForm.name"
-                   placeholder="업체명 / 대표자명을 입력하세요."/>
-          </div>
-        </div>
+  <div class="inquiry-input-title">
+    <span class="c-primary-500 pr-1">*</span>
+    <span>{{ isEnglish ? ' Contact Number' : ' 연락처' }}</span>
+  </div>
+  <div>
+    <input type="text"
+           v-model="inquiryForm.tel"
+           :placeholder="isEnglish
+             ? 'Enter your contact number.'
+             : '연락처를 입력하세요.'"/>
+  </div>
+</div>
         <div>
-          <div class="inquiry-input-title">
-            <span class="c-primary-500 pr-1">*</span>
-            <span> 연락처</span>
-          </div>
-          <div>
-            <input type="text"
-                   v-model="inquiryForm.tel"
-                   placeholder="연락처를 입력하세요."/>
-          </div>
-        </div>
+  <div class="inquiry-input-title">
+    <span class="c-primary-500 pr-1">*</span>
+    <span>{{ isEnglish ? ' Email' : ' 이메일' }}</span>
+  </div>
+  <div>
+    <input type="text"
+           v-model="inquiryForm.email"
+           :placeholder="isEnglish
+             ? 'Enter your email address.'
+             : '이메일 주소를 입력하세요.'"/>
+  </div>
+</div>
+       <div>
+  <div class="inquiry-input-title">
+    <span>{{ isEnglish ? 'Interested Service' : '관심 서비스' }}</span>
+  </div>
+  <div>
+    <input type="text"
+           v-model="inquiryForm.title"
+           :placeholder="isEnglish
+             ? 'Enter the service or area you are interested in.'
+             : '관심 있는 서비스 또는 문의 분야를 입력하세요.'"/>
+  </div>
+</div>
+       <div>
+  <div class="inquiry-input-title">
+    <span>{{ isEnglish ? 'Website / SNS' : '홈페이지 / SNS' }}</span>
+  </div>
+  <div>
+    <input type="text"
+           v-model="inquiryForm.companyName"
+           :placeholder="isEnglish
+             ? 'Enter your website or social media URL.'
+             : '홈페이지 또는 SNS 주소를 입력하세요.'"/>
+  </div>
+</div>
         <div>
-          <div class="inquiry-input-title">
-            <span class="c-primary-500 pr-1">*</span>
-            <span> 이메일</span>
-          </div>
-          <div>
-            <input type="text"
-                   v-model="inquiryForm.email"
-                   placeholder="이메일 주소를 입력하세요."/>
-          </div>
-        </div>
-        <div>
-          <div class="inquiry-input-title">
-            <span>상품소개서 신청</span>
-          </div>
-          <div>
-            <input type="text"
-                   v-model="inquiryForm.title"
-                   placeholder="필요한 상품소개서를 입력하세요."/>
-          </div>
-        </div>
-        <div>
-          <div class="inquiry-input-title">
-            <span>홈페이지 / SNS</span>
-          </div>
-          <div>
-            <input type="text"
-                   v-model="inquiryForm.companyName"
-                   placeholder="홈페이지 또는 SNS 주소를 입력하세요."/>
-          </div>
-        </div>
-        <div>
-          <div class="inquiry-input-title">
-            <span>문의 내용</span>
-          </div>
-          <div>
-            <input type="text"
-                   v-model="inquiryForm.content"
-                   placeholder="문의 내용을 입력하세요."/>
-          </div>
-        </div>
+  <div class="inquiry-input-title">
+    <span>{{ isEnglish ? 'Inquiry Details' : '문의 내용' }}</span>
+  </div>
+  <div>
+    <input type="text"
+           v-model="inquiryForm.content"
+           :placeholder="isEnglish
+             ? 'Enter your inquiry details.'
+             : '문의 내용을 입력하세요.'"/>
+  </div>
+</div>
       </div>
-      <div class="flex flex-col md:flex-row justify-start md:justify-between md:items-center">
-        <div class="flex flex-col inquiry-checkbox-area text-left pl-2 md:pl-0">
-          <div class="mb-3">
-            <label class="flex flex-row items-center font-bold">
-              <input type="checkbox"
-                     v-model="agreement"
-                     class="inquiry-checkbox"
-                     @change="changeAgreement"/>
-              <span class="c-primary-500 pr-1">*</span>
-              <span> 마케팅 수신 동의</span>
-            </label>
-          </div>
-          <div class="text-xs md:text-base md:ml-11 md:whitespace-nowrap">동의 시 자사의 서비스 안내 및 마케팅 정보 수신에 동의함을 의미합니다.</div>
-        </div>
+     <div class="flex flex-col md:flex-row justify-start md:justify-between md:items-center"> 
+     <div class="flex flex-col inquiry-checkbox-area text-left pl-2 md:pl-0">
+  <div class="mb-3">
+    <label class="flex flex-row items-center font-bold">
+      <input type="checkbox"
+             v-model="agreement"
+             class="inquiry-checkbox"
+             @change="changeAgreement"/>
+
+      <span class="c-primary-500 pr-1">*</span>
+      <span>{{ isEnglish ? ' Marketing Communications Consent' : ' 마케팅 수신 동의' }}</span>
+    </label>
+  </div>
+
+  <div class="text-xs md:text-base md:ml-11 md:whitespace-nowrap">
+    <span v-if="isEnglish">
+      By agreeing, you consent to receive service updates and marketing communications from Share Value.
+    </span>
+    <span v-else>
+      동의 시 자사의 서비스 안내 및 마케팅 정보 수신에 동의함을 의미합니다.
+    </span>
+  </div>
+</div>
         <div class="text-center w-full mt-15 md:text-right md:mt-0">
+        
           <button type="submit"
                   :disabled="loadingRequest"
                   class="bg-primary-500 c-white inquiry-btn">
             <div v-if="loadingRequest"
                  class="loading-spinner"/>
-            <span v-else>문의 신청하기</span>
+            <span v-else>
+  {{ isEnglish ? 'Submit Inquiry' : '문의 신청하기' }}
+</span>
           </button>
         </div>
       </div>
@@ -165,21 +224,48 @@ function closeModal() {
     <div v-show="visibleModal"
          class="modal-backdrop">
       <div class="modal">
-        <div class="modal-title">{{ `신청 ${isSuccessfulRequest ? '성공' : '실패'}` }}</div>
+        <div class="modal-title">
+  {{ isEnglish
+    ? (isSuccessfulRequest ? 'Inquiry Submitted' : 'Submission Failed')
+    : `신청 ${isSuccessfulRequest ? '성공' : '실패'}`
+  }}
+</div>
         <div class="modal-content">
-          <template v-if="isSuccessfulRequest">
-            <div>문의가 신청 되었습니다.</div>
-            <div>담당자가 확인 후 연락 드리겠습니다.</div>
-          </template>
-          <template v-else>
-            <div>잠시 후 다시 시도해주세요.</div>
-            <div>동일한 현상이 계속 발생하면 전화(<a href='tel:02-364-5400'>02-364-5400</a>)나 채널톡으로 문의 부탁드립니다.</div>
-          </template>
+         <template v-if="isSuccessfulRequest">
+  <template v-if="isEnglish">
+    <div>Your inquiry has been submitted successfully.</div>
+    <div>Our team will review it and get back to you shortly.</div>
+  </template>
+
+  <template v-else>
+    <div>문의가 신청 되었습니다.</div>
+    <div>담당자가 확인 후 연락 드리겠습니다.</div>
+  </template>
+</template>
+
+<template v-else>
+  <template v-if="isEnglish">
+    <div>Please try again in a moment.</div>
+    <div>
+      If the issue persists, please contact us at
+      <a href="tel:1899-5407">1899-5407</a>.
+    </div>
+  </template>
+
+  <template v-else>
+    <div>잠시 후 다시 시도해주세요.</div>
+    <div>
+      동일한 현상이 계속 발생하면 전화(<a href="tel:1899-5407">1899-5407</a>)로 문의 부탁드립니다.
+    </div>
+  </template>
+</template>
         </div>
         <div class="modal-btn-area">
           <button type="button"
-                  class="btn modal-btn"
-                  @click="closeModal">확인</button>
+        class="btn modal-btn"
+        @click="closeModal">
+  {{ isEnglish ? 'OK' : '확인' }}
+</button>
         </div>
       </div>
     </div>
@@ -260,6 +346,7 @@ function closeModal() {
   line-height: 1;
   max-width: 300px;
   font-weight: normal;
+   background: linear-gradient(135deg, #006DFF 0%, #00B8FF 100%);
 }
 
 .inquiry-btn:hover {

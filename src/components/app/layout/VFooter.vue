@@ -1,5 +1,12 @@
 <script setup lang="ts">
+import { computed } from 'vue'
 import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
+
+const route = useRoute()
+
+const isEnglish = computed(() =>
+  route.path === '/en' || route.path.startsWith('/en/')
+)
 </script>
 
 <template>
@@ -9,7 +16,9 @@ import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
     <div class="bg-secondary-500 text-white">
       <div class="default-container footer-company">
         <div class="flex flex-row justify-between mb-6">
-          <div class="text-sm	md:text-lg footer-company-name">(주) 쉐어밸류</div>
+          <div class="text-sm md:text-lg footer-company-name">
+  {{ isEnglish ? 'Share Value Co., Ltd.' : '(주) 쉐어밸류' }}
+</div>
           <div class="footer-company-sns">
             <a href="https://blog.naver.com/sharevaluecorp"
                class="inline-block external-link px-2">
@@ -45,24 +54,47 @@ import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
             </a>
           </div>
         </div>
-        <div class="text-xs	md:text-base footer-company-desc text-left">
+         <div class="text-xs md:text-base footer-company-desc text-left">
           <div>
-            <div class="block md:inline-block">사업자등록번호 : 750-86-00899</div>
+            <div class="block md:inline-block">
+              {{ isEnglish ? 'Business Registration No. : 750-86-00899' : '사업자등록번호 : 750-86-00899' }}
+            </div>
+
             <span class="hidden md:inline"> | </span>
-            <div class="block md:inline-block">통신판매업번호 : 제2020-서울중구-1067호</div>
+
+            <div class="block md:inline-block">
+              {{ isEnglish ? 'Online Retailer License No. : 제2020-서울중구-1067호' : '통신판매업번호 : 제2020-서울중구-1067호' }}
+            </div>
           </div>
+
           <div>
-            <div class="block md:inline-block">주소 : {{ COMPANY_ADDRESS }}</div>
+            <div class="block md:inline-block">
+              {{ isEnglish
+                ? 'Address : 3F, 35 Jeongdong-gil, Jung-gu, Seoul, Republic of Korea'
+                : `주소 : ${COMPANY_ADDRESS}` }}
+            </div>
+
             <span class="hidden md:inline"> | </span>
-            <div class="block md:inline-block">대표 : 조미숙</div>
+
+            <div class="block md:inline-block">
+              {{ isEnglish ? 'CEO : Meesuk Cho' : '대표 : 조미숙' }}
+            </div>
           </div>
+
           <div>
-            <div class="block md:inline-block">전화번호 : {{ COMPANY_PHONE }}</div>
+            <div class="block md:inline-block">
+              {{ isEnglish ? `Tel : ${COMPANY_PHONE}` : `전화번호 : ${COMPANY_PHONE}` }}
+            </div>
           </div>
-          <div class="text-xs md:text-sm copyright">Copyright 2020 Sharevalue Co., Ltd. All rights reserved</div>
+
+          <div class="text-xs md:text-sm copyright">
+            Copyright 2026 Share Value Co., Ltd. All rights reserved
+          </div>
         </div>
+
       </div>
     </div>
+
     <div class="bg-white">
       <div class="flex-wrap md:flex-nowrap text-xs md:text-sm tracking-tighter md:tracking-tight flex flex-row md:justify-between items-center text-center footer-record">
         <div class="items-center text-center mb-5 md:mb-0">
@@ -71,7 +103,7 @@ import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
                height="30"
                alt="로고"
                class="inline-block"/>
-          <div>기술벤처인증기업</div>
+          <div>{{ isEnglish ? 'Technology Venture Certified' : '기술벤처인증기업' }}</div>
         </div>
         <div class="items-center text-center mb-5 md:mb-0">
           <img src="/image/logo/koita.webp"
@@ -79,7 +111,7 @@ import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
                height="30"
                alt="로고"
                class="inline-block"/>
-          <div>기업부설연구소 인증기업</div>
+          <div>{{ isEnglish ? 'Corporate R&D Center Certified' : '기업부설연구소 인증기업' }}</div>
         </div>
         <div class="items-center text-center">
           <img src="/image/logo/startup.webp"
@@ -87,16 +119,18 @@ import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
                height="30"
                alt="로고"
                class="inline-block"/>
-          <div>초기관광벤처기업</div>
+          <div>{{ isEnglish ? 'Tourism Venture Company' : '초기관광벤처기업' }}</div>
         </div>
-        <div class="items-center text-center">
-          <img src="/image/logo/iata.webp"
-               width="47"
-               height="30"
-               alt="로고"
-               class="inline-block"/>
-          <div>International Air Transport Association</div>
-        </div>
+        <!--
+<div class="items-center text-center">
+  <img src="/image/logo/iata.webp"
+       width="47"
+       height="30"
+       alt="로고"
+       class="inline-block"/>
+  <div>International Air Transport Association</div>
+</div>
+-->
       </div>
     </div>
   </footer>
@@ -119,8 +153,8 @@ import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
 }
 
 .footer-company .footer-company-name {
-  color: #98a2ac;
-  font-weight: bold;
+  color: #b8c3ce;
+  font-weight: 700;
   line-height: 35px;
 }
 
@@ -130,13 +164,14 @@ import { COMPANY_ADDRESS, COMPANY_PHONE } from '~/utils/const/company'
 }
 
 .footer-company .footer-company-desc {
-  color: #5b6e81;
+  color: #8fa0b2;
   line-height: 1.75;
   letter-spacing: -.4px;
   word-break: keep-all;
 }
 
 .footer-company .footer-company-desc .copyright {
+  color: #7f91a4; 
   letter-spacing: -.35px;
   line-height: 1.75;
 }

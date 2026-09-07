@@ -1,16 +1,15 @@
 <script setup lang="ts">
 useHead({
-  title: '쉐어밸류 | 여행 비즈니스 통합 운영 플랫폼',
+  title: 'ShareValue | Travel Business Operation Platform',
 
   meta: [
     {
       name: 'description',
-      content: '항공·숙박·골프·투어 예약부터 고객, 상품, 공급사, 결제와 정산까지 여행 비즈니스 운영을 하나의 플랫폼으로 연결합니다. 부킹엔진부터 백오피스, 업무 자동화까지 쉐어밸류에서 만나보세요.'
+      content: 'Connect booking, customer management, travel inventory, suppliers, payments and settlement in one platform. ShareValue provides integrated booking engines, back-office solutions and travel operations automation.'
     },
-
     {
       property: 'og:title',
-      content: '쉐어밸류 | 여행 비즈니스 통합 운영 플랫폼'
+      content: 'ShareValue | Travel Business Operation Platform'
     },
     {
       property: 'og:type',
@@ -18,7 +17,7 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://www.sharevaluecorp.com/'
+      content: 'https://www.sharevaluecorp.com/en/'
     },
     {
       property: 'og:image',
@@ -26,20 +25,27 @@ useHead({
     },
     {
       property: 'og:description',
-      content: '예약부터 운영, 결제와 정산까지 여행 비즈니스를 하나의 플랫폼으로 연결합니다.'
+      content: "Connect booking, operations, payments and settlement with ShareValue's integrated platform for travel businesses."
     },
-
+    {
+      property: 'og:site_name',
+      content: 'ShareValue'
+    },
+    {
+      property: 'og:locale',
+      content: 'en_US'
+    },
     {
       name: 'twitter:card',
       content: 'summary_large_image'
     },
     {
       name: 'twitter:title',
-      content: '쉐어밸류 | 여행 비즈니스 통합 운영 플랫폼'
+      content: 'ShareValue | Travel Business Operation Platform'
     },
     {
       name: 'twitter:url',
-      content: 'https://www.sharevaluecorp.com/'
+      content: 'https://www.sharevaluecorp.com/en/'
     },
     {
       name: 'twitter:image',
@@ -47,14 +53,14 @@ useHead({
     },
     {
       name: 'twitter:description',
-      content: '예약부터 운영, 결제와 정산까지 여행 비즈니스를 하나의 플랫폼으로 연결합니다.'
+      content: "Connect booking, operations, payments and settlement with ShareValue's integrated platform for travel businesses."
     }
   ],
 
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.sharevaluecorp.com/'
+      href: 'https://www.sharevaluecorp.com/en/'
     },
     {
       rel: 'alternate',
@@ -72,92 +78,95 @@ useHead({
       href: 'https://www.sharevaluecorp.com/'
     }
   ]
-})
+});
 </script>
 
 <template>
   <!--ONLY VISIBLE ABOVE 768px-->
   <div class="section-1 use-full-bg-image hidden md:block">
-    <div class="px-5 default-container">
-        <div class="text-3xl md:text-5xl title">
-            여행 비즈니스를 위한<br>
-            통합 운영 플랫폼<br>
+  <div class="px-5 default-container">
+    <div class="text-3xl md:text-5xl title">
+      All-in-One Platform<br>
+      for Travel Business<br>
 
-            <b style="color:#22B8E6;">
-                예약 · 운영 · 정산
-            </b><br>
+      <b style="color:#16c7d9;">
+        Book · Manage · Settle
+      </b><br>
 
-            고객관리까지 한 번에!
-        </div>
-
-        <div class="description">
-            복잡한 여행 업무를 하나의 플랫폼으로 연결합니다.
-        </div>
+      Everything Connected!
     </div>
+
+    <div class="description">
+      Simplify your travel operations with one connected platform.
+    </div>
+  </div>
 </div>
-  <!--ONLY VISIBLE UNDER 768px-->
-  <div class="section-1 mobile use-full-bg-image md:hidden">
-    <div class="px-5 default-container">
-        <div class="text-3xl md:text-5xl title">
-            여행 비즈니스를 위한<br>
-            통합 운영 플랫폼<br>
+ <!-- ONLY VISIBLE UNDER 768px-->
+<div class="section-1 mobile use-full-bg-image md:hidden">
+  <div class="px-5 default-container">
 
-            <b style="color:#22B8E6;">
-                예약 · 운영 · 정산
-            </b><br>
+    <div class="text-3xl md:text-5xl title">
+      All-in-One Platform<br>
+      for Travel Business<br>
+      <br>
 
-            고객관리까지 한 번에!
-        </div>
+      <b style="color:#00eaff;">
+        Book · Manage · Settle
+      </b><br>
 
-        <div class="description">
-            복잡한 여행 업무를<br>
-            하나의 플랫폼으로 연결합니다.
-        </div>
+      Everything Connected!
     </div>
+
+    <div class="description">
+      Simplify your travel operations<br>
+      with one connected platform.
+    </div>
+
+  </div>
 </div>
  <div class="py-25 md:py-50 section-2">
   <div class="px-5 default-container">
+
     <div class="text-2xl md:text-5xl title">
-      <div class="title-eng md:inline-block">쉐어밸류 플랫폼&nbsp;=&nbsp;</div>
-      <div class="md:inline-block">여행 업무 통합 운영</div>
+      <div class="title-eng md:inline-block">Share Value Platform &nbsp;=&nbsp;</div>
+      <div class="md:inline-block">All-in-One Travel Operations</div>
     </div>
 
     <div class="text-lg md:text-xl description">
       <div>
-        30년 여행 산업 경험과 SaaS 기술로<br>
-        예약·운영·정산 업무를 하나의 플랫폼으로 연결합니다.
+        30 years of travel expertise meets SaaS technology.<br>
+        Connect booking, operations, and settlement in one platform.
       </div>
     </div>
 
     <div class="mt-12 md:mt-20 px-0 md:px-24 content flex flex-col text-xs lg:flex-row lg:text-sm xl:text-base justify-evenly items-center">
+
       <div class="w-full lg:w-auto flex flex-row items-center justify-between">
+
         <div class="p-5 lg:p-7.5 icon-block bg-primary-500 c-white">
           <div class="mb-4 lg:mb-5 xl:mb-6">
-            <img
-              src="/image/icon/ico_index_reserve.webp"
-              width="60"
-              height="60"
-              alt="예약플랫폼"
-            >
+            <img src="/image/icon/ico_index_reserve.webp"
+                 width="60"
+                 height="60"
+                 alt="Booking">
           </div>
-          <div class="icon-title">예약 플랫폼</div>
-          <div class="icon-description">항공· 숙박· 상품</div>
+          <div class="icon-title">Booking</div>
+          <div class="icon-description">Air · Hotel · Tour</div>
         </div>
 
         <div class="plus-icon lg-mx-6 xl-mx-12">+</div>
 
         <div class="p-5 lg:p-7.5 icon-block bg-primary-500 c-white">
           <div class="mb-4 lg:mb-5 xl:mb-6">
-            <img
-              src="/image/icon/ico_index_admin.webp"
-              width="60"
-              height="60"
-              alt="운영자동화"
-            >
+            <img src="/image/icon/ico_index_admin.webp"
+                 width="60"
+                 height="60"
+                 alt="Operations">
           </div>
-          <div class="icon-title">운영 자동화</div>
-          <div class="icon-description">예약· 공급· 정산</div>
+          <div class="icon-title">Operations</div>
+          <div class="icon-description">Manage · Settle</div>
         </div>
+
       </div>
 
       <div class="w-full lg:w-auto flex flex-row-reverse items-center justify-between">
@@ -165,45 +174,46 @@ useHead({
       </div>
 
       <div class="w-full lg:w-auto flex flex-row-reverse lg:flex-row items-center justify-between">
+
         <div class="p-5 lg:p-7.5 icon-block bg-primary-500 c-white">
           <div class="mb-4 lg:mb-5 xl:mb-6">
-            <img
-              src="/image/icon/ico_index_ai.webp"
-              width="60"
-              height="60"
-              alt="AI지원"
-            >
+            <img src="/image/icon/ico_index_ai.webp"
+                 width="60"
+                 height="60"
+                 alt="AI Support">
           </div>
-          <div class="icon-title">AI 업무지원</div>
-          <div class="icon-description">업무 자동화</div>
+          <div class="icon-title">AI Support</div>
+          <div class="icon-description">Work Automation</div>
         </div>
 
         <div class="at-icon c-secondary-500 lg-mx-6 xl-mx-12">@</div>
 
         <div class="p-5 lg:p-7.5 icon-block bg-secondary-500 c-white">
           <div class="mb-4 lg:mb-5 xl:mb-6">
-            <img
-              src="/image/icon/ico_index_growth.webp"
-              width="60"
-              height="60"
-              alt="성장지원"
-            >
+            <img src="/image/icon/ico_index_growth.webp"
+                 width="60"
+                 height="60"
+                 alt="Growth">
           </div>
-          <div class="icon-title">성장지원</div>
-          <div class="icon-description">운영 혁신</div>
+          <div class="icon-title">Growth</div>
+          <div class="icon-description">Scale Up</div>
         </div>
+
       </div>
+
     </div>
   </div>
 </div>
   <div class="section-3 py-25 md:py-50">
   <div class="px-5 default-container">
+
     <div class="text-2xl md:text-4xl title">
-      <div>하나의 플랫폼으로 연결되는</div>
-      <div>여행 비즈니스 운영 생태계</div>
+      <div>Connected Travel Business</div>
+      <div>Ecosystem on One Platform</div>
     </div>
 
     <div class="content flex justify-center md:justify-between items-center">
+
       <div class="text-center text-xl mb-10 md:mb-0 md:text-left md:text-4xl slogans">
         <div>ONE PLATFORM</div>
         <div>ANY CHANNEL</div>
@@ -215,6 +225,7 @@ useHead({
       </div>
 
       <div class="w-100% h-100% text-xs px-5 py-5 sm:text-sm md:w-800px md:h-800px md:text-2xl roadmap-circle-area flex justify-center items-center">
+
         <div class="w-75vw h-75vw md:w-600px md:h-600px roadmap-circle"></div>
 
         <div class="w-8em h-8em roadmap-stage oclock-12">
@@ -230,17 +241,17 @@ useHead({
         </div>
 
         <div class="w-8em h-8em roadmap-stage oclock-4-5">
-          Booking<br>Operation
+          Booking<br>Management
         </div>
 
         <div class="w-8em h-8em roadmap-stage oclock-6">
           <div>Payment</div>
-          <div class="stage-description">Settlement</div>
+          <div>Settlement</div>
         </div>
 
         <div class="w-8em h-8em roadmap-stage oclock-7-5">
           <div>Supplier</div>
-          <div class="stage-description">Management</div>
+          <div>Management</div>
         </div>
 
         <div class="w-8em h-8em roadmap-stage oclock-9">
@@ -250,6 +261,7 @@ useHead({
         <div class="w-8em h-8em roadmap-stage oclock-10-5">
           AI<br>Assistant
         </div>
+
       </div>
     </div>
   </div>
@@ -408,6 +420,13 @@ useHead({
 
   .section-2 .icon-block .icon-description {
     margin-top: -4px;
+  }
+}
+
+/* English Mobile Hero - description position */
+@media (max-width: 767px) {
+  .section-1.mobile .description {
+    top: calc(53% - 5em);
   }
 }
 .section-3 .title {

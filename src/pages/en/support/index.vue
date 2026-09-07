@@ -2,19 +2,19 @@
 
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { COMPANY_ADDRESS, COMPANY_LOCATION } from '~/utils/const/company'
+import { COMPANY_ADDRESS_EN, COMPANY_LOCATION } from '~/utils/const/company'
 
 useHead({
-  title: '고객센터 | 서비스 문의 및 이용 안내 | 쉐어밸류',
+  title: 'Support | Service Inquiries & Help | ShareValue',
 
   meta: [
     {
       name: 'description',
-      content: '쉐어밸류 서비스 이용에 관한 자주하는 질문과 서비스 문의를 확인하세요. 부킹엔진, 백오피스 및 여행 비즈니스 플랫폼 도입과 이용에 대해 안내해드립니다.'
+      content: 'Find answers to frequently asked questions and contact ShareValue for service inquiries. Get support for our booking engine, back-office platform and travel business solutions.'
     },
     {
       property: 'og:title',
-      content: '고객센터 | 서비스 문의 및 이용 안내 | 쉐어밸류'
+      content: 'Support | Service Inquiries & Help | ShareValue'
     },
     {
       property: 'og:type',
@@ -22,7 +22,7 @@ useHead({
     },
     {
       property: 'og:url',
-      content: 'https://www.sharevaluecorp.com/support'
+      content: 'https://www.sharevaluecorp.com/en/support'
     },
     {
       property: 'og:image',
@@ -30,7 +30,15 @@ useHead({
     },
     {
       property: 'og:description',
-      content: '쉐어밸류의 부킹엔진, 백오피스 및 여행 비즈니스 플랫폼에 대한 자주하는 질문과 서비스 문의를 확인하세요.'
+      content: 'Find answers to frequently asked questions and contact ShareValue for support with our booking engine, back-office platform and travel business solutions.'
+    },
+    {
+      property: 'og:site_name',
+      content: 'ShareValue'
+    },
+    {
+      property: 'og:locale',
+      content: 'en_US'
     },
     {
       name: 'twitter:card',
@@ -38,11 +46,11 @@ useHead({
     },
     {
       name: 'twitter:title',
-      content: '고객센터 | 서비스 문의 및 이용 안내 | 쉐어밸류'
+      content: 'Support | Service Inquiries & Help | ShareValue'
     },
     {
       name: 'twitter:url',
-      content: 'https://www.sharevaluecorp.com/support'
+      content: 'https://www.sharevaluecorp.com/en/support'
     },
     {
       name: 'twitter:image',
@@ -50,14 +58,14 @@ useHead({
     },
     {
       name: 'twitter:description',
-      content: '쉐어밸류의 부킹엔진, 백오피스 및 여행 비즈니스 플랫폼에 대한 자주하는 질문과 서비스 문의를 확인하세요.'
+      content: 'Find answers to frequently asked questions and contact ShareValue for support with our booking engine and travel business solutions.'
     }
   ],
 
   link: [
     {
       rel: 'canonical',
-      href: 'https://www.sharevaluecorp.com/support'
+      href: 'https://www.sharevaluecorp.com/en/support'
     },
     {
       rel: 'alternate',
@@ -121,41 +129,46 @@ onMounted(() => {
 
 <template>
   <div class="px-7.5 py-4 md:py-8 support-cs bg-primary-500 c-white">
-    <div class="default-container flex text-center flex-col md:text-left md:flex-row justify-between">
-      <div class="support-cs-number">
-        <img src="/image/icon/ico_white_cs.webp"
-             width="70"
-             height="42"
-             alt="cs"
-             class="inline-block mr-4 md:mr-6"/>
-        <a href="tel:1899-5407"
-           class="font-bold text-4xl md:font-light md:text-5xl inline-block">1899.5407</a>
-      </div>
-      <div class="text-base leading-8 md:text-lg md:leading-16 support-cs-info">
-        <span>상담 가능 시간 | 평일 </span>
-        <span class="hours-of-operation">09:30 ~ 18:30</span>
-      </div>
+  <div class="default-container flex text-center flex-col md:text-left md:flex-row justify-between">
+    <div class="support-cs-number">
+      <img src="/image/icon/ico_white_cs.webp"
+           width="70"
+           height="42"
+           alt="Customer Support"
+           class="inline-block mr-4 md:mr-6">
+      <a href="tel:1899-5407"
+         class="font-bold text-4xl md:font-light md:text-5xl inline-block">
+        1899.5407
+      </a>
+    </div>
+
+    <div class="text-base leading-8 md:text-lg md:leading-16 support-cs-info">
+      <span>Support Hours | Weekdays </span>
+      <span class="hours-of-operation">09:30 ~ 18:30</span>
     </div>
   </div>
+</div>
   <!--INQUIRY-->
   <div id="inquiry"
        class="pt-20.5 pb-12.5 md:py-37.5">
     <Inquiry/>
   </div>
-  <!--공지사항-->
-  <div class="support-notice py-16 md:px-5 md:py-37.5">
-    <div class="default-container">
-      <div class="support-title mb-8 md:mb-17.5">공지사항</div>
-      <Notice/>
-    </div>
+  <!-- Notices -->
+<div class="support-notice py-16 md:px-5 md:py-37.5">
+  <div class="default-container">
+    <div class="support-title mb-8 md:mb-17.5">Notices</div>
+    <Notice/>
   </div>
-  <!--자주하는 질문-->
-  <div class="support-faq py-16 md:px-5 md:py-37.5">
-    <div class="default-container">
-      <div class="support-title mb-8 md:mb-17.5">자주하는 질문</div>
-      <Faq/>
+</div>
+  <!-- Frequently Asked Questions -->
+<div class="support-faq py-16 md:px-5 md:py-37.5">
+  <div class="default-container">
+    <div class="support-title mb-8 md:mb-17.5">
+      Frequently Asked Questions
     </div>
+    <Faq/>
   </div>
+</div>
   <!--CONTACT US-->
   <div id="contact_us"
        class="shadow-md">
@@ -167,8 +180,8 @@ onMounted(() => {
         </div>
       </div>
       <div class="contact-us-address">
-        <div>
-          <div class="address-title" style="color:#fff;">오시는 길</div>
+  <div>
+    <div class="address-title" style="color:#fff;">Location</div>
           <div class="address-content flex flex-col text-left">
             <div class="flex flex-col md:flex-row md:items-center pl-0.5 ">
               <div class="flex flex-row">
@@ -177,9 +190,9 @@ onMounted(() => {
                      height="30"
                      alt="address"
                      class="address-icon"/>
-                <div class="icon-title text-base md:text-lg">주소</div>
+                <div class="icon-title text-base md:text-lg">Address</div>
               </div>
-              <div class="text-sm ml-10 md:text-lg md:ml-13 lg:ml-7">{{ COMPANY_ADDRESS }}</div>
+              <div class="text-sm ml-10 md:text-lg md:ml-13 lg:ml-7">{{ COMPANY_ADDRESS_EN }}</div>
             </div>
             <div class="flex flex-col md:flex-row md:items-center">
               <div class="flex flex-row">
@@ -196,7 +209,7 @@ onMounted(() => {
             </div>
           </div>
           <div class="hidden md:block address-caution">
-  * 서비스 관련 문의는 언제든 연락해주세요.
+  * Feel free to contact us with any service-related inquiries.
 </div>
       </div>
     </div>
