@@ -50,6 +50,25 @@ const navigationLinks = computed(() => {
   ];
 });
 
+function changeLanguage(lang: 'ko' | 'en') {
+  const pathMap: Record<string, { ko: string; en: string }> = {
+    '/': { ko: '/', en: '/en/' },
+    '/engine': { ko: '/engine', en: '/en/engine' },
+    '/back-office': { ko: '/back-office', en: '/en/back-office' },
+    '/support': { ko: '/support', en: '/en/support' },
+
+    '/en/': { ko: '/', en: '/en/' },
+    '/en/engine': { ko: '/engine', en: '/en/engine' },
+    '/en/back-office': { ko: '/back-office', en: '/en/back-office' },
+    '/en/support': { ko: '/support', en: '/en/support' },
+  };
+
+  const targetPath = pathMap[route.path]?.[lang];
+
+  if (targetPath && targetPath !== route.path) {
+    router.push(targetPath);
+  }
+}
 // 페이지 이동 시마다 강제로 상단으로 이동
 router.beforeEach(() => {
   window.scrollTo(0, 0);
@@ -73,14 +92,14 @@ function turnVisibleMenuModal() {
         class="text-xs md:text-xl py-0.75em md:py-5 bg-white transition-padding duration-700 w-full right-0 z-20 space-y-none shadow-md md:flex-row fixed">
       <div class="default-container flex flex-row items-center justify-between px-1em md:px-7.5">
         <div class="py-2">
-          <a href="https://www.sharevaluecorp.com/">
-            <img src="/image/logo/ci.png"
-                 srcset=""
-                 width="147"
-                 height="31"
-                 alt="쉐어밸류"
-                 class="font-bold"/>
-          </a>
+          <RouterLink :to="isEnglish ? '/en/' : '/'">
+  <img src="/image/logo/ci.png"
+       srcset=""
+       width="147"
+       height="31"
+       alt="Share Value"
+       class="font-bold"/>
+</RouterLink>
         </div>
         <div class="hidden md:inline-block navigation-area">
           <nav>
@@ -93,12 +112,44 @@ function turnVisibleMenuModal() {
             </RouterLink>
           </nav>
         </div>
-        <div>
+
+        <div class="flex items-center">
+ <div class="hidden md:flex items-center mr-6 language-switcher">
+  <span
+      :class="{ active: !isEnglish }"
+      @click="changeLanguage('ko')">
+    KR
+  </span>
+
+  <span class="mx-2 language-divider">|</span>
+
+  <span
+      :class="{ active: isEnglish }"
+      @click="changeLanguage('en')">
+    EN
+  </span>
+</div>
           <button type="button"
                   class="hidden md:inline-block bg-primary-500 c-white btn contact-btn"
                  @click="moveToPageWithTargetId(isEnglish ? '/en/support' : '/support', 'inquiry')">
   {{ isEnglish ? 'Contact Us' : '서비스 문의' }}
 </button>
+<!-- ★★★ 바로 여기에 모바일 언어 선택 넣기 ★★★ -->
+<div class="mobile-language-switcher md:hidden">
+  <span
+      :class="{ active: !isEnglish }"
+      @click="changeLanguage('ko')">
+    KR
+  </span>
+
+  <span class="mx-2 language-divider">|</span>
+
+  <span
+      :class="{ active: isEnglish }"
+      @click="changeLanguage('en')">
+    EN
+  </span>
+</div>
           <!--ONLY VISIBLE UNDER 768px-->
           <button type="button"
                   class="inline-block md:hidden visible-btn"
@@ -106,6 +157,7 @@ function turnVisibleMenuModal() {
         </div>
       </div>
 
+    
       <!--ONLY VISIBLE UNDER 768px-->
       <div v-show="visibleMenuModal"
            class="inline-block md:hidden text-left shadow-lg bg-white menu-modal"
@@ -200,5 +252,40 @@ function turnVisibleMenuModal() {
     #006DFF 0%,
     #00B8FF 100%
   );
+}
+.menu-modal .menu-modal-btn-area button {
+  background: linear-gradient(
+    135deg,
+    #006DFF 0%,
+    #00B8FF 100%
+  );
+}
+
+/* Language Switcher */
+.language-switcher span,
+.mobile-language-switcher span {
+  color: #374151;
+  cursor: pointer;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.language-switcher span.active,
+.mobile-language-switcher span.active {
+  color: #006DFF;
+  font-weight: 700;
+}
+
+.language-switcher .language-divider,
+.mobile-language-switcher .language-divider {
+  color: #C5CBD3;
+  cursor: default;
+  font-weight: 400;
+}
+
+.mobile-language-switcher {
+  align-items: center;
+  margin-right: 16px;
+  white-space: nowrap;
 }
 </style>

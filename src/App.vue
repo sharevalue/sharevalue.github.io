@@ -21,7 +21,7 @@ useHead({
   meta: [
     {
       name: 'naver-site-verification',
-      content: '27fd3c598969d5356a9b3d3b2d3829b834b9a24a'
+      content: 'd92cf43deb406c202d4e0cf26c63778572b4d515'
     },
     {
       name: 'theme-color',
