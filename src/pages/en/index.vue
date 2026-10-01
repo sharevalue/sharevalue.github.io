@@ -59,9 +59,9 @@ useHead({
 
   link: [
     {
-      rel: 'canonical',
-      href: 'https://www.sharevaluecorp.com/en/'
-    },
+  rel: 'canonical',
+  href: 'https://www.sharevaluecorp.com/en'
+},
     {
       rel: 'alternate',
       hreflang: 'ko',
@@ -70,8 +70,7 @@ useHead({
     {
       rel: 'alternate',
       hreflang: 'en',
-      href: 'https://www.sharevaluecorp.com/en/'
-    },
+     href: 'https://www.sharevaluecorp.com/en'
     {
       rel: 'alternate',
       hreflang: 'x-default',
